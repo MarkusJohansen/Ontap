@@ -18,7 +18,7 @@ function promille(){
     let x = 0;
 
     if(kvinne.checked){
-        x = (parseFloat(alkohol.value)* 12.8 )/(parseFloat(vekt.value) * 0.70); // 12.8g alkohol/per enhet * antall enheter = antall gram alkohol
+        x = (parseFloat(alkohol.value)* 12.8 )/(parseFloat(vekt.value) * 0.60); // 12.8g alkohol/per enhet * antall enheter = antall gram alkohol
 
     }else if(mann.checked){
         x = (parseFloat(alkohol.value)* 12.8 )/(parseFloat(vekt.value) * 0.70); 

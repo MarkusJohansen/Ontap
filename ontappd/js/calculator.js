@@ -1,34 +1,33 @@
-let gender = document.querySelector(".gender"); //usikkert?
-let bodyweight = document.getElementById("height");
-let height = document.getElementById("bodyweight");
-let alko = document.getElementById("enheter alkohol") * 12 ;
-let drikkestart = document.getElementById("drikkestart");
+/*beer cursor https://www.youtube.com/watch?v=rfpRZ2t_BrQ&ab_channel=DesignCourse
+const cursor = document.querySelector("#cursor");
 
-console.log("Hei")
+document.addEventListener('mousemove', e => { //e?
+    cursor.setAttribute("style", "top: " + (e.pageY-10) + "px; left: " + (e.pageX-10) + "px;") //-10 fixes of point
+})
+*/
+
+//Promille kalkulator
+let kvinne = document.getElementById("Kvinne");
+let mann = document.getElementById("Mann");
+let bodyweight = document.getElementById("bodyweight");
+let alko = document.getElementById("alko");
+let drikkestart = document.getElementById("drikkestart");
+let prom = document.getElementById("svar_promille");
 
 function promille(){
     console.log("Promillekalkulator")
     let x = 0
     
-    if(gender.value == "Kvinne"){
-        x = parseFloat(alko.value)/(parseFloat(bodyweight.value) * 0.60);
+    if(kvinne.checked){
+        x = parseFloat(alko.value * 12)/(parseFloat(bodyweight.value) * 0.60);
+    }else if(mann.checked){
+        x = parseFloat(alko.value * 12)/(parseFloat(bodyweight.value) * 0.70);
     }else {
-        x = parseFloat(alko.value)/(parseFloat(bodyweight.value) * 0.70);
+        prom.innerHTML = "Ingen gender input, prøv igjen"
+        console.log("No gender input")
+        return false
     }
-
     let y = 0.15 * parseFloat(drikkestart.value);
     let p = x - y;
-    console.log(p)
-}
-
-function abv(){
-
-}
-
-function spleis(){
-
-}
-
-function literpris(){
-
+    prom.innerHTML = p + " I promille"
 }

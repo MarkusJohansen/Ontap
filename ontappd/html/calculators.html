@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/calculator.css">
     <title>Document</title>
 </head>
 <body>
+<!-- <img src="../images/cursor1.png" alt="cursor" id="cursor"> -->
     <main>
         <section>
             <button onclick="promille()">x</button><br>
@@ -24,17 +26,13 @@
                 <input class="gender" id="Mann" type="radio" name="gender">Mann</input><br>
             </div>
 
-            <div id="BMI_inputs">
+            <div id="text_input_promille">
                 <input id="bodyweight" type="number" step="any">Weight(Kg)</input><br>
-                <input id="height" type="number" step="any">Height(cm)</input><br>
-            </div>
-
-            <br>
-
-            <div id="alkoconsumption_inputs">
                 <input id="alko" type="number" step="any">Antall enheter??</input><br>
                 <input id="drikkestart" type="number" step="any">Antall timer fra drikkestart</input><br>
             </div>
+
+            <p id="svar_promille"></p>
         </section>
     </main>
 

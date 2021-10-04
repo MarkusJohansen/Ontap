@@ -1,0 +1,34 @@
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  color: black;
+  margin: 0%;
+}
+
+#pagetop {
+  background-color: rgb(13, 84, 116);
+  padding: 20px 10%;
+  color: white;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+#pagetop h1 {
+  font-size: 40px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0%;
+}
+
+article {
+  padding: 5px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+footer {
+  padding: 5px;
+  margin-left: 10%;
+  margin-right: 10%;
+}

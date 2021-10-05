@@ -19,6 +19,7 @@ body {
 ul {
   list-style: none;
   padding-left: 0%;
+  list-style-type: circle;
 }
 
 article {
@@ -31,4 +32,15 @@ footer {
   padding: 5px;
   margin-left: 10%;
   margin-right: 10%;
+}
+
+#homepage {
+  position: relative;
+  padding: 20px;
+  max-width: 50%;
+  width: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

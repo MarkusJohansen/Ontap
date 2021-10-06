@@ -6,10 +6,10 @@ body {
 
 #pagetop {
   background-color: rgb(13, 84, 116);
-  padding: 20px 10%;
+  padding: 20px 15%;
   color: white;
-  margin-left: 0%;
-  margin-right: 0%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #pagetop h1 {
@@ -17,24 +17,38 @@ body {
 }
 
 ul {
-  list-style: none;
-  padding-left: 0%;
-  list-style-type: circle;
+  list-style-type: circle, black;
 }
 
 article {
   padding: 5px;
-  margin-left: 10%;
-  margin-right: 10%;
+  max-width: 100%;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: large;
+  line-height: 1.6;
 }
 
 footer {
   padding: 5px;
-  margin-left: 10%;
-  margin-right: 10%;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #homepage {
+  position: relative;
+  padding: 20px;
+  max-width: 50%;
+  width: 50%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#nav_structure {
   position: relative;
   padding: 20px;
   max-width: 50%;

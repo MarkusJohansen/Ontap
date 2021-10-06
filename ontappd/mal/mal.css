@@ -15,10 +15,18 @@ nav{
 nav > button{
     background-color: #083448;
     color: white;
-    border: none;
+    border-color: #083448 ;
+    border-style: solid;
     margin: 10px;
     padding: 8px;
     text-decoration: underline;
+    transition: 0.1s;
+}
+
+nav > button:hover{
+    background-color: #0D5474;
+    color: white;
+    border-color: white;
 }
 
 /*Når du er på en spesiell side, bruk denne stylen for #id_til_knapp_du_er_på:
@@ -26,12 +34,9 @@ nav > button{
 #id_til_knapp_du_er_på{
     background-color: #0D5474;
     color: white;
-    border: thin;
-    margin: 10px;
+    border-style: solid;
     border-color: white;
 }
-
-
 */
 
 /*Innføre dette som standardclasses over alle sider? consistent desig?*/

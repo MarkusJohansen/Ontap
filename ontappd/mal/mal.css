@@ -13,13 +13,16 @@ body{
 
 #ontap_logo{
     height: 250px;
-    position: absolute;
-    left: 36vw;/*align center fix*/
+    display: block;
+    margin-left: auto ;
+    margin-right: auto;
 }
 
 .skaal{
     position: absolute;
     height: 200px;
+
+    top: 0%;
 }
 
 #skaal1{
@@ -95,7 +98,6 @@ footer{
     height: 50px;
     right: 20px;
 }
-
 
 /*-----------------------------------------------------------------------------*/
 /*Under her kommer alt som er unikt for denne nettsiden------------------------*/

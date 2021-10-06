@@ -1,0 +1,60 @@
+/*Page top + body er like for alle*/
+body{
+    color: white;
+}
+
+#pagetop{
+   background-color: #0D5474;
+}
+
+/*Navbar. minimale endringer men noen endringer hos forskjellige sider.*/
+nav{
+    background-color: #083448;
+}
+
+nav > button{
+    background-color: #083448;
+    color: white;
+    border-color: #083448 ;
+    border-style: solid;
+    margin: 10px;
+    padding: 8px;
+    text-decoration: underline;
+    transition: 0.1s;
+}
+
+nav > button:hover{
+    background-color: #0D5474;
+    color: white;
+    border-color: white;
+}
+
+/*Når du er på en spesiell side, bruk denne stylen for #id_til_knapp_du_er_på:
+
+#id_til_knapp_du_er_på{
+    background-color: #0D5474;
+    color: white;
+    border-style: solid;
+    border-color: white;
+}
+*/
+
+/*Innføre dette som standardclasses over alle sider? consistent desig?*/
+.textbox{
+    background-color: #0D5474;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+.elementbox{
+    background-color: #083448;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+/*Footer lik for alle sider (copypaste denne når den er ferdig) Ferdig?= nei */
+footer{
+    background-color: #0D5474;
+}

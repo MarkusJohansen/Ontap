@@ -42,3 +42,22 @@ footer {
   margin-left: auto;
   margin-right: auto;
 }
+
+table, th, td {
+  border: 1px solid black;
+}
+
+th, td {
+  padding: 5px;
+}
+
+table {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+#table_header {
+  margin-top: 50px;
+}

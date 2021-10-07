@@ -1,0 +1,106 @@
+/*Page top + body er like for alle*/
+body{
+    color: white;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0%;
+    background-color: azure;
+}
+
+#topbox{
+    background-color: #0D5474;
+    height: 220px;
+}
+
+#ontap_logo{
+    height: 250px;
+    display: block;
+    margin-left: auto ;
+    margin-right: auto;
+}
+
+.skaal{ /*Fikse slik at det holder en fast avstand til ontaplogoen*/
+    position: absolute;
+    height: 200px;
+    top: 0%;
+}
+
+#skaal1{
+    right: 150px;
+}
+
+#skaal2{
+    left: 150px;
+}
+
+/*Innføre dette som standardclasses over alle sider? consistent desig?*/
+.textbox{
+    background-color: #0D5474;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+.elementbox{
+    background-color: #083448;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+/*Navbar. minimale endringer men noen endringer hos forskjellige sider.*/
+nav{
+    background-color: #083448;
+    text-align: center;
+}
+
+nav > button{
+    background-color: #083448;
+    color: white;
+    border-color: #083448 ;
+    border-style: solid;
+    margin: 10px;
+    padding: 8px;
+    text-decoration: underline;
+    transition: 0.1s;
+}
+
+nav button:hover{
+    background-color: #0D5474;
+    color: white;
+    border-color: white;
+}
+
+/*Når du er på en spesiell side, bruk denne stylen for #id_til_knapp_du_er_på:
+
+#id_til_knapp_du_er_på{
+    background-color: #0D5474;
+    color: white;
+    border-style: solid;
+    border-color: white;
+}
+*/
+
+/*Footer lik for alle sider (copypaste denne når den er ferdig) Ferdig?= nei */
+footer{
+    background-color: #0D5474;
+    bottom: 0%;
+    width: 98.11%; /*hvorfor*/
+    position:absolute;
+    padding-left: 20px;
+    font-size: small;
+    line-height: 10px;
+}
+
+#online_logo_footer{
+    position: absolute;
+    bottom: 20px;
+    height: 50px;
+    right: 20px;
+}
+
+#contact_info a{
+    color:white ;
+}
+/*-----------------------------------------------------------------------------*/
+/*Under her kommer alt som er unikt for denne nettsiden------------------------*/
+/*-----------------------------------------------------------------------------*/

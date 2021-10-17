@@ -4,74 +4,30 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="../css/style.css">
         <title>Template by Markus Johansen</title>
     </head>
 
     <body>
-        <header id="pagetop">
-            <div id="topbox">
-                <div id="ontap">
-                    <img id="skaal1" class="skaal" src="../image/skaal.png" alt="Skål1">
-                    <img id="ontap_logo" src="../image/Ontap_logo_white.png" alt="Ontap logo">
-                    <img id="skaal2" class="skaal" src="../image/skaal.png" alt="Skål2">
-                </div>
-            </div>
-
-            <nav id="navbar">
-                <button id="kalk" onclick="window.location.href='../html/promille.html';">Promille Kalkulatoren</button>
-                <button>ABV Kalkulatoren</button>
-                <button>Spleise Kalkulatoren</button>
-                <button>How to</button>
-            </nav>
-        </header>
-
-        <main>
-            <section class="textbox">
-                <div class="elementbox">
-                    <section id="promille_kalkulator_section">
-                        <h3 class="section_title">Promille kalkulator</h3>
-                        <div id="promille_kalkulator" class="undersection">
-                            <div>
-                                <input type="radio" id="mann" name="gender">Mann</input>
-                                <input type="radio" id="kvinne" name="gender">Kvinne</input>
-                            </div>
-                    
-                            <div>
-                                <input id="kroppsvekt" type="number" step="any">Vekt(Kg)</input><br>
-                                <input id="enheter" type="number" step="any">Antall enheter</input><br>
-                                <input id="drikkestart" type="number" step="any">Antall timer fra drikkestart</input><br>
-                            </div>
-                    
-                            <button onclick="promille()">x</button>
-                    
-                            <div id="p_output"></div>
-                        </div>
-                    </section>
-                </div>
-
+        <section id="promille_kalkulator_section">
+            <h3 class="section_title">Promille kalkulator</h3>
+            <div id="promille_kalkulator" class="undersection">
                 <div>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci facilis quae consectetur,
-                        expedita sit nisi beatae dignissimos nemo modi sunt ea? Alias velit illo ea,
-                        similique rerum autem blanditiis. Doloribus.
-                    </p>
+                    <input type="radio" id="mann" name="gender">Mann</input>
+                    <input type="radio" id="kvinne" name="gender">Kvinne</input>
                 </div>
-            </section>
-        </main>
+        
+                <div>
+                    <input id="kroppsvekt" type="number" step="any">Vekt(Kg)</input><br>
+                    <input id="enheter" type="number" step="any">Antall enheter</input><br>
+                    <input id="drikkestart" type="number" step="any">Antall timer fra drikkestart</input><br>
+                </div>
+        
+                <button onclick="promille()">x</button>
+        
+                <div id="p_output"></div>
+            </div>
+        </section>
 
-        <footer id="pagebot">
-            <section id="contact_info">
-                <h3>Contact us</h3>
-                <p>Mail: <a href="Mailto:Ontappd@gmail.com">Ontappd@gmail.com</a></p>
-                <p>Tlf: <a href="tel:+4747474747">+4747474747</a></p>
-                <p>Chat med oss på <a href="slacklink">Slack</a></p>
-                <p>Adress</p>
-            </section>
-
-            <img id="online_logo_footer" src="../image/online_logo.svg" alt="Online linjeforening sin logo">
-        </footer>
-
-        <script rel="script" src="mal.js"></script>
+        <script rel="script" src="../js/script.js"></script>
     </body>
 </html>

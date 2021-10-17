@@ -29,13 +29,25 @@
         <main>
             <section class="textbox">
                 <div class="elementbox">
-                    <h2>Heading</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Voluptatem maxime voluptas quae veniam, 
-                        illo totam a vero quia. Veniam, sint quod sit quaerat at
-                        fuga repellendus maxime! Tempora, id asperiores?
-                    </p>
+                    <section id="promille_kalkulator_section">
+                        <h3 class="section_title">Promille kalkulator</h3>
+                        <div id="promille_kalkulator" class="undersection">
+                            <div>
+                                <input type="radio" id="mann" name="gender">Mann</input>
+                                <input type="radio" id="kvinne" name="gender">Kvinne</input>
+                            </div>
+                    
+                            <div>
+                                <input id="kroppsvekt" type="number" step="any">Vekt(Kg)</input><br>
+                                <input id="enheter" type="number" step="any">Antall enheter</input><br>
+                                <input id="drikkestart" type="number" step="any">Antall timer fra drikkestart</input><br>
+                            </div>
+                    
+                            <button onclick="promille()">x</button>
+                    
+                            <div id="p_output"></div>
+                        </div>
+                    </section>
                 </div>
 
                 <div>

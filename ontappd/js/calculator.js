@@ -1,9 +1,3 @@
-/*general
-function gid(x){
-    document.getElementById("x")
-}
-*/
-
 //Promille kalkulator
 
 let kvinne = document.getElementById("kvinne");
@@ -32,7 +26,13 @@ function promille(){
     let y = 0.15 * parseFloat(drikkestart.value);
     console.log("y = " + y)
     let p = x - y; //følger formel fra NHI: Alkohol i gram / (kroppsvekten i kg x 0.70) - (0,15 x timer fra drikkestart) = promille
+    
+    if(p <= 0){
+        prom.innerHTML = "Promille = 0";
+    }
+    else{
+        prom.innerHTML = "Promille = " + p;
+    }
     console.log("p = " + p);
 
-    prom.innerHTML = "Promille = " + p;
 }

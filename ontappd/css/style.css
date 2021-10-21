@@ -33,8 +33,6 @@ body{
 #skaal2{
     left: 150px;
 }
-
-/*Innføre dette som standardclasses over alle sider? consistent desig?*/
 .textbox{
     background-color: #0D5474;
     padding: 10px;
@@ -72,16 +70,6 @@ nav button:hover{
     border-color: white;
 }
 
-/*Når du er på en spesiell side, bruk denne stylen for #id_til_knapp_du_er_på:
-
-#id_til_knapp_du_er_på{
-    background-color: #0D5474;
-    color: white;
-    border-style: solid;
-    border-color: white;
-}
-*/
-
 /*Footer lik for alle sider (copypaste denne når den er ferdig) Ferdig?= nei */
 footer{
     background-color: #0D5474;
@@ -106,15 +94,41 @@ footer{
 /*------------------------------------------------
 --------------Promille kalkulator-----------------
 ------------------------------------------------*/
+/*Når du er på en spesiell side, bruk denne stylen for #id_til_knapp_du_er_på:
 
+#id_til_knapp_du_er_på{
+    background-color: #0D5474;
+    color: white;
+    border-style: solid;
+    border-color: white;
+}
+*/
 
 /*------------------------------------------------
 --------------Spleise kalkulator------------------
 ------------------------------------------------*/
+/*Når du er på en spesiell side, bruk denne stylen for #id_til_knapp_du_er_på:
+
+#id_til_knapp_du_er_på{
+    background-color: #0D5474;
+    color: white;
+    border-style: solid;
+    border-color: white;
+}
+*/
 
 /*------------------------------------------------
 ------------------Abv kalkulator------------------
 ------------------------------------------------*/
+/*Når du er på en spesiell side, bruk denne stylen for #id_til_knapp_du_er_på:
+
+#id_til_knapp_du_er_på{
+    background-color: #0D5474;
+    color: white;
+    border-style: solid;
+    border-color: white;
+}
+*/
 
 /*------------------------------------------------
 -------------------Main page----------------------

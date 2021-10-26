@@ -80,29 +80,52 @@ function ABV_calculator(){
 //*CONSTRUCTING BUTTONS IN NAVBAR
 let navbar = document.querySelector("#navbar");
 
-nav_buttons = [
-    ["abv.html","ABV Kalkulator"],
-    ["promille.html","Promille kalkulator"],
-    ["spleise.html","Spleise Kalkulator"],
-    ["howto.html","How to"],
-    ["contactus.html","Contact us"]
-]
+function nav(){//*Navbar buttons is created
+    console.log("navbar is being constructed");
+    nav_buttons = [
+        ["abv.html","ABV Kalkulator"],
+        ["promille.html","Promille kalkulator"],
+        ["spleise.html","Spleise Kalkulator"],
+        ["howto.html","How to"],
+        ["contactus.html","Contact us"]
+    ]
 
-for(let i = 0; i < nav_buttons.length; i++){
-    const x = document.createElement("button");
-    x.innerHTML = nav_buttons[i][1];
-    x.setAttribute("onclick","window.location.href='../html/" + nav_buttons[i][0] + "';");
-    navbar.appendChild(x);
+    for(let i = 0; i < nav_buttons.length; i++){
+        const x = document.createElement("button");
+        x.innerHTML = nav_buttons[i][1];
+        x.setAttribute("onclick","window.location.href='../html/" + nav_buttons[i][0] + "';");
+        navbar.appendChild(x);
+    }
 }
 
-/*UNIQUE STYLE FOR CURRENT VISITED "BUTTON_LINK"
-function set_home(){
-    for()
-        if (element.hasAttribute("id","home"));
-            element.setAttribute("id","");
+//TODO: Fikse denne funksjonen, som gjør at style endrer seg etter hvilken du er på
+/*function set_currentpage_style(navbar){
+    console.log("Changed current page style");
+    console.log(navbar)
+    for(i=0; i < navbar.firstchild; i++){
+        console.log(navbar.firstchild[i]);
+        if (navbar.hasAttribute("id","home"));
+            button.id = "";
     clicked_element.setAttribute("id","home");
-}*/
+    }
+}
+set_currentpage_style(navbar)*/
 
 //--------------------------------------------------
 //Picture slideshow
 //--------------------------------------------------
+
+
+//--------------------------------------------------
+//Main functions/function calls
+//--------------------------------------------------
+function header(){
+    nav();
+}
+
+function footer(){
+
+}
+
+header();
+footer();

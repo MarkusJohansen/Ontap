@@ -9,23 +9,6 @@
     </head>
 
     <body>
-        <header id="pagetop">
-            <div id="topbox">
-                <div id="ontap">
-                    <img id="skaal1" class="skaal" src="../image/skaal.png" alt="Skål1">
-                    <img id="ontap_logo" src="../image/Ontap_logo_white.png" alt="Ontap logo">
-                    <img id="skaal2" class="skaal" src="../image/skaal.png" alt="Skål2">
-                </div>
-            </div>
-
-            <nav id="navbar">
-                <button id="kalk" onclick="window.location.href='../html/promille.html';">Promille Kalkulatoren</button>
-                <button onclick="window.location.href='../html/abv.html';" id="home">ABV Kalkulatoren</button>
-                <button onclick="window.location.href='../html/spleise.html';">Spleise Kalkulatoren</button>
-                <button onclick="window.location.href='../html/howto.html';">How to</button>
-            </nav>
-        </header>
-
         <div class="flex-wrapper">
             <main>
                 <section class="textbox">
@@ -35,18 +18,14 @@
                             Under på denne siden finner du en kalkulator som regner prosenten av alkoholen du skal lage basert på
                         </p>
                     </div>
-
                     <div class="elementbox">
-
                         <form id="abv_form">
                             <label> Your staring gravity: <br>
                                 <input type="number" id="starting_gravity" placeholder="feks: 1.062" onchange="ABV_calculator()" required>
                             </label> <br>
-
                             <label> Your ending gravity: <br>
                                 <input type="number" id="end_gravity" placeholder="feks: 1.010" onchange="ABV_calculator()" required>
                             </label><br>
-
                             <label> ABV i prosent: <br><br>
                                 <input type="number" id="output_abv" disabled placeholder="ABV i prosent">
                             </label>
@@ -54,18 +33,6 @@
                     </div>
                 </section>
             </main>
-    
-            <footer id="pagebot">
-                <section id="contact_info">
-                    <h3>Contact us</h3>
-                    <p>Mail: <a href="Mailto:Ontappd@gmail.com">Ontappd@gmail.com</a></p>
-                    <p>Tlf: <a href="tel:+4747474747">+4747474747</a></p>
-                    <p>Chat med oss på <a href="slacklink">Slack</a></p>
-                    <p>Adress</p>
-                </section>
-    
-                <img id="online_logo_footer" src="../image/online_logo.svg" alt="Online linjeforening sin logo">
-            </footer>
         </div>
         <script rel="script" src="../js/script.js"></script>
     </body>

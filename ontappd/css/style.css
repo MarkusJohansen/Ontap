@@ -65,8 +65,7 @@ nav button:hover{
     border-radius: 10px;
 }
 
-
-#home{
+#current_page{
     background-color: #0D5474;
     color: white;
     border-style: solid;

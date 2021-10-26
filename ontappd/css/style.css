@@ -71,14 +71,11 @@ nav button:hover{
 }
 
 /*Footer lik for alle sider (copypaste denne når den er ferdig) Ferdig?= nei */
-footer{
-    background-color: #0D5474;
-    bottom: 0%;
-    width: 98.11%; /*hvorfor*/
-    position:absolute;
-    padding-left: 20px;
-    font-size: small;
-    line-height: 10px;
+#online_logo_footer{
+    position: absolute;
+    bottom: 20px;
+    height: 50px;
+    right: 20px;
 }
 
 footer{

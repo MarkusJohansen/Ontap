@@ -17,6 +17,7 @@ function check_if_zero_print(value,output){//bestemmer output avhengig av om inp
     }
     console.log("promille = " + p);//logger den faktiske promille verdien i konsollen.
 }
+
 function BAC_calculation(alcohol_by_units, weight, hours_from_start, output, female_button, male_button){//beregningene
     let x = 0;
 
@@ -62,9 +63,6 @@ function ABV_calculator(){
     const abv = ((starting_gravity.value)-(end_gravity.value))*131.25;
     output_abv.value = abv;
 }
-
-
-
 //--------------------------------------------------
 //Navbar
 //--------------------------------------------------

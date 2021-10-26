@@ -8,6 +8,9 @@ body{
     background-color: azure;
 }
 
+/*------------------------------------------------
+---------------------header-----------------------
+------------------------------------------------*/
 #topbox{
     background-color: #0D5474;
     height: 220px;
@@ -33,29 +36,10 @@ body{
 #skaal2{
     left: 150px;
 }
-@media only screen and (max-width: 1000px) {
-    #skaal1 {
-      display: none;
-    }
-    #skaal2{
-        display: none;
-    }
-}
-.textbox{
-    background-color: #0D5474;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 25px;
-}
 
-.elementbox{
-    background-color: #083448;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 25px;
-}
-
-/*Navbar. minimale endringer men noen endringer hos forskjellige sider.*/
+/*------------------------------------------------
+---------------------Navbar-----------------------
+------------------------------------------------*/
 nav{
     background-color: #083448;
     text-align: center;
@@ -77,10 +61,38 @@ nav button:hover{
     color: white;
     border: white solid 2px;
     border-radius: 10px;
-
 }
 
-/*Footer lik for alle sider (copypaste denne når den er ferdig) Ferdig?= nei */
+/*!FIX ASAP PLS
+
+#id_til_knapp_du_er_på{
+    background-color: #0D5474;
+    color: white;
+    border-style: solid;
+    border-color: white;
+}
+*/
+
+/*------------------------------------------------
+---------------------Main Content----------------
+------------------------------------------------*/
+.textbox{
+    background-color: #0D5474;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+.elementbox{
+    background-color: #083448;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+/*------------------------------------------------
+---------------------Footer-----------------------
+------------------------------------------------*/
 #online_logo_footer{
     position: absolute;
     bottom: 20px;
@@ -109,47 +121,33 @@ footer{
 /*------------------------------------------------
 --------------Promille kalkulator-----------------
 ------------------------------------------------*/
-/*Når du er på en spesiell side, bruk denne stylen for #id_til_knapp_du_er_på:
-
-#id_til_knapp_du_er_på{
-    background-color: #0D5474;
-    color: white;
-    border-style: solid;
-    border-color: white;
-}
-*/
 
 /*------------------------------------------------
 --------------Spleise kalkulator------------------
 ------------------------------------------------*/
-/*Når du er på en spesiell side, bruk denne stylen for #id_til_knapp_du_er_på:
-
-#id_til_knapp_du_er_på{
-    background-color: #0D5474;
-    color: white;
-    border-style: solid;
-    border-color: white;
-}
-*/
 
 /*------------------------------------------------
 ------------------Abv kalkulator------------------
 ------------------------------------------------*/
-/*Når du er på en spesiell side, bruk denne stylen for #id_til_knapp_du_er_på:
-
-#id_til_knapp_du_er_på{
-    background-color: #0D5474;
-    color: white;
-    border-style: solid;
-    border-color: white;
-}
-*/
 
 /*------------------------------------------------
 -------------------Main page----------------------
 ------------------------------------------------*/
 
 /*------------------------------------------------
--------------------Howto page----------------------
+-------------------Howto page---------------------
 ------------------------------------------------*/
+
+
+/*------------------------------------------------
+-------------------Media queries---------------------
+------------------------------------------------*/
+@media only screen and (max-width: 1000px) { /** Fjerner skål emojis når skjermen får width 1000px  */
+    #skaal1 {
+        display: none;
+    }
+    #skaal2{
+        display: none;
+    }
+}
 

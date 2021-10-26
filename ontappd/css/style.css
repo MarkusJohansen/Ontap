@@ -99,6 +99,14 @@ footer{
 #contact_info a{
     color:white ;
 }
+
+@media only screen and (max-width: 930px) {
+    #skaal1 {
+      display: none;
+    }
+    #skaal2{
+        display: none;
+    }
 /*------------------------------------------------
 --------------Promille kalkulator-----------------
 ------------------------------------------------*/

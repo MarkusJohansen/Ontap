@@ -125,8 +125,29 @@ footer{
     text-decoration: underline;
 }
 
-.gender{
-    
+input[type='radio']:after {/**lager et felt som overlapper radio buttons*/
+    /*?hva gjør after? */
+    width: 12px;
+    height: 12px;
+    border-radius: 5px;
+    left: -2px;/** flytter felt litt vekk fra label*/
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';/*? forstår koden er avhengig av denne men forstår den ikek*/
+    display: inline-block;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 12px;
+    height: 12px;
+    border-radius: 5px;
+    left: -2px;
+    position: relative;
+    background-color: #ffa500;
+    content: '';
+    display: inline-block;
+    border: 2px solid white;
 }
 
 #promille_kalkulator_other_inputs_box{/*!position denne boksen right og top*/

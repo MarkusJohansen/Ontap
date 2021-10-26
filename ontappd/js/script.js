@@ -54,6 +54,17 @@ function promille(){//funksjonen som får et kall fra submit knappen. Main funks
 //ABV kalkulator
 //--------------------------------------------------
 
+const starting_gravity = document.getElementById("starting_gravity");
+const end_gravity = document.getElementById("end_gravity");
+const output_abv = document.getElementById("output_abv");
+
+function ABV_calculator(){
+    const abv = ((starting_gravity.value)-(end_gravity.value))*131.25;
+    output_abv.value = abv;
+}
+
+
+
 //--------------------------------------------------
 //Navbar
 //--------------------------------------------------

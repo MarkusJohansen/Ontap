@@ -1,98 +1,111 @@
 /*------------------------------------------------
 -------------------Generell styling---------------
 ------------------------------------------------*/
-body {
-  color: white;
-  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
-  margin: 0%;
-  background-color: azure;
+body{
+    color: white;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0%;
+    background-color: azure;
 }
 
-#topbox {
-  background-color: #0d5474;
-  height: 220px;
+#topbox{
+    background-color: #0D5474;
+    height: 220px;
 }
 
-#ontap_logo {
-  height: 250px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+#ontap_logo{
+    height: 250px;
+    display: block;
+    margin-left: auto ;
+    margin-right: auto;
 }
 
-.skaal {
-  /*Fikse slik at det holder en fast avstand til ontaplogoen*/
-  position: absolute;
-  height: 200px;
-  top: 0%;
+.skaal{ /*Fikse slik at det holder en fast avstand til ontaplogoen*/
+    position: absolute;
+    height: 200px;
+    top: 0%;
 }
 
-#skaal1 {
-  right: 150px;
+#skaal1{
+    right: 150px;
 }
 
-#skaal2 {
-  left: 150px;
+#skaal2{
+    left: 150px;
 }
-.textbox {
-  background-color: #0d5474;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 25px;
+@media only screen and (max-width: 1000px) {
+    #skaal1 {
+      display: none;
+    }
+    #skaal2{
+        display: none;
+    }
+}
+.textbox{
+    background-color: #0D5474;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 25px;
 }
 
-.elementbox {
-  background-color: #083448;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 25px;
+.elementbox{
+    background-color: #083448;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 25px;
 }
 
 /*Navbar. minimale endringer men noen endringer hos forskjellige sider.*/
-nav {
-  background-color: #083448;
-  text-align: center;
+nav{
+    background-color: #083448;
+    text-align: center;
+    height: 50px;
 }
 
-nav > button {
-  background-color: #083448;
-  color: white;
-  border-color: #083448;
-  border-style: solid;
-  margin: 10px;
-  padding: 8px;
-  text-decoration: underline;
-  transition: 0.2s;
+nav > button{
+    background-color: #083448;
+    color: white;
+    border-color: #083448 ;
+    border-style: solid;
+    transition: 0.2s;
+    height: 50px;
+    width: 150px;
 }
 
-nav button:hover {
-  background-color: #0d5474;
-  color: white;
-  border-color: white;
+nav button:hover{
+    background-color: #0D5474;
+    color: white;
+    border: white solid 2px;
+    border-radius: 10px;
+
 }
 
 /*Footer lik for alle sider (copypaste denne når den er ferdig) Ferdig?= nei */
-footer {
-  background-color: #0d5474;
-  bottom: 0%;
-  width: 98.11%; /*hvorfor*/
-  position: absolute;
-  padding-left: 20px;
-  font-size: small;
-  line-height: 10px;
+#online_logo_footer{
+    position: absolute;
+    bottom: 20px;
+    height: 50px;
+    right: 20px;
 }
 
-#online_logo_footer {
-  position: absolute;
-  bottom: 20px;
-  height: 50px;
-  right: 20px;
+footer{
+    background-color: #0D5474;
+    bottom: 0%;
+    left: 0%;
+    width: 100%; 
+    position:relative;
+    font-size: small;
+    line-height: 10px;
 }
 
-#contact_info a {
-  color: white;
+#contact_info{
+    padding: 10px 20px;
 }
+
+#contact_info a{
+    color:white ;
+}
+
 /*------------------------------------------------
 --------------Promille kalkulator-----------------
 ------------------------------------------------*/
@@ -124,13 +137,14 @@ footer {
 ------------------------------------------------*/
 /*Når du er på en spesiell side, bruk denne stylen for #id_til_knapp_du_er_på:
 
-#submit_abv {
-    background-color: #0d5474;
+#id_til_knapp_du_er_på{
+    background-color: #0D5474;
     color: white;
     border-style: solid;
     border-color: white;
 }
 */
+
 /*------------------------------------------------
 -------------------Main page----------------------
 ------------------------------------------------*/
@@ -138,3 +152,4 @@ footer {
 /*------------------------------------------------
 -------------------Howto page----------------------
 ------------------------------------------------*/
+

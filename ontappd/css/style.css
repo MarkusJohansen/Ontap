@@ -123,14 +123,14 @@ footer {
 ------------------Abv kalkulator------------------
 ------------------------------------------------*/
 /*Når du er på en spesiell side, bruk denne stylen for #id_til_knapp_du_er_på:
-*/
-#submit_abv {
-  background-color: #0d5474;
-  color: white;
-  border-style: solid;
-  border-color: white;
-}
 
+#submit_abv {
+    background-color: #0d5474;
+    color: white;
+    border-style: solid;
+    border-color: white;
+}
+*/
 /*------------------------------------------------
 -------------------Main page----------------------
 ------------------------------------------------*/

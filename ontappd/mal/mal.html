@@ -8,60 +8,52 @@
         <title>Template by Markus Johansen</title>
     </head>
 
-    <body>
+    <body onload=main()"">
         <header id="pagetop">
             <div id="topbox">
                 <div id="ontap">
                     <img id="skaal1" class="skaal" src="../image/skaal.png" alt="Skål1">
-                    <img id="ontap_logo" src="../image/Ontap_logo_white.png" alt="Ontap logo">
+                    <img id="ontap_logo" src="../image/Ontap_logo_white.png" alt="Ontap logo" onclick="window.location.href='../html/main.html';">
                     <img id="skaal2" class="skaal" src="../image/skaal.png" alt="Skål2">
                 </div>
             </div>
             
-            <nav id="navbar">
-                <button>Hjem</button>
-                <button id="kalk" onclick="window.location.href='../html/promille.html';">Promille Kalkulatoren</button>
-                <button onclick="window.location.href='../html/abv.html';">ABV Kalkulatoren</button>
-                <button onclick="window.location.href='../html/spleise.html';">Spleise Kalkulatoren</button>
-                <button onclick="window.location.href='../html/howto.html';">How to</button>
-            </nav>
+            <nav id="navbar"></nav>
         </header>
 
-        <div class="flex-wrapper">
-            <main>
-                <section class="textbox">
-                    <div class="elementbox">
-                        <h2>Heading</h2>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Voluptatem maxime voluptas quae veniam, 
-                            illo totam a vero quia. Veniam, sint quod sit quaerat at
-                            fuga repellendus maxime! Tempora, id asperiores?
-                        </p>
-                    </div>
-    
-                    <div>
-                        <p>
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci facilis quae consectetur,
-                            expedita sit nisi beatae dignissimos nemo modi sunt ea? Alias velit illo ea,
-                            similique rerum autem blanditiis. Doloribus.
-                        </p>
-                    </div>
-                </section>
-            </main>
-    
-            <footer id="pagebot">
-                <section id="contact_info">
-                    <h3>Contact us</h3>
-                    <p>Mail: <a href="Mailto:Ontappd@gmail.com">Ontappd@gmail.com</a></p>
-                    <p>Tlf: <a href="tel:+4747474747">+4747474747</a></p>
-                    <p>Chat med oss på <a href="slacklink">Slack</a></p>
-                    <p>Adress</p>
-                </section>
-    
-                <img id="online_logo_footer" src="../image/online_logo.svg" alt="Online linjeforening sin logo">
-            </footer>
-        </div>
-        <script rel="script" src="mal.js"></script>
+        <main>
+            <section class="textbox">
+                <div class="elementbox">
+                    <h2>Heading</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatem maxime voluptas quae veniam, 
+                        illo totam a vero quia. Veniam, sint quod sit quaerat at
+                        fuga repellendus maxime! Tempora, id asperiores?
+                    </p>
+                </div>
+
+                <div>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci facilis quae consectetur,
+                        expedita sit nisi beatae dignissimos nemo modi sunt ea? Alias velit illo ea,
+                        similique rerum autem blanditiis. Doloribus.
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <footer id="pagebot">
+            <section id="contact_info">
+                <h3>Contact us</h3>
+                <p>Mail: <a href="Mailto:Ontappd@gmail.com">Ontappd@gmail.com</a></p>
+                <p>Tlf: <a href="tel:+4747474747">+4747474747</a></p>
+                <p>Chat med oss på <a href="slacklink">Slack</a></p>
+                <p>Adress</p>
+            </section>
+
+            <img id="online_logo_footer" src="../image/online_logo.svg" alt="Online linjeforening sin logo">
+        </footer>
+        <script rel="script" src="../js/script.js"></script>
     </body>
 </html>

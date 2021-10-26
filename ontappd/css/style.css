@@ -43,7 +43,8 @@ body{
 nav{
     background-color: #083448;
     text-align: center;
-    height: 50px;
+    height: 60px;
+    padding: 5px;
 }
 
 nav > button{
@@ -54,6 +55,7 @@ nav > button{
     transition: 0.2s;
     height: 50px;
     width: 150px;
+    margin: 5px;
 }
 
 nav button:hover{
@@ -63,18 +65,21 @@ nav button:hover{
     border-radius: 10px;
 }
 
-/*TODO:FIX ASAP PLS
-#id_til_knapp_du_er_på{
+
+#home{
     background-color: #0D5474;
     color: white;
     border-style: solid;
     border-color: white;
 }
-*/
 
 /*------------------------------------------------
 ---------------------Main Content----------------
 ------------------------------------------------*/
+main{
+    margin: 20px 0px;
+}
+
 .textbox{
     background-color: #0D5474;
     padding: 10px;
@@ -124,8 +129,8 @@ footer{
     margin: 0%;
     text-decoration: underline;
 }
-
-input[type='radio']:after {/**lager et felt som overlapper radio buttons*/
+/*lager et felt som overlapper radio buttons*/
+input[type='radio']:after {
     /*?hva gjør after? */
     width: 12px;
     height: 12px;
@@ -174,12 +179,26 @@ input[type='radio']:checked:after {
 /*------------------------------------------------
 -------------------Media queries---------------------
 ------------------------------------------------*/
-@media only screen and (max-width: 1000px) { /** Fjerner skål emojis når skjermen får width 1000px  */
+@media only screen and (max-width: 1000px) {
     #skaal1 {
         display: none;
     }
     #skaal2{
         display: none;
+    }
+
+    nav{
+        background-color: #083448;
+        text-align: center;
+        height: 120px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    nav{
+        background-color: #083448;
+        text-align: center;
+        height: 180px;
     }
 }
 

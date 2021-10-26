@@ -153,3 +153,22 @@ footer{
 -------------------Howto page----------------------
 ------------------------------------------------*/
 
+.videos {
+    display: inline;
+    border-radius: 25px;
+    width: 50%;
+    height: 500px;
+    
+
+}
+
+.paragraphs {
+    display: inline;
+    width: 40%;
+    
+}
+
+.div_child {
+    float: left;
+    width: 50%;
+}

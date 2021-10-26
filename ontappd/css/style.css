@@ -20,7 +20,7 @@ body{
     margin-right: auto;
 }
 
-.skaal{ /*Fikse slik at det holder en fast avstand til ontaplogoen*/
+.skaal{
     position: absolute;
     height: 200px;
     top: 0%;

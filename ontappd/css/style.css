@@ -63,8 +63,7 @@ nav button:hover{
     border-radius: 10px;
 }
 
-/*!FIX ASAP PLS
-
+/*TODO:FIX ASAP PLS
 #id_til_knapp_du_er_på{
     background-color: #0D5474;
     color: white;
@@ -121,7 +120,19 @@ footer{
 /*------------------------------------------------
 --------------Promille kalkulator-----------------
 ------------------------------------------------*/
+.input_title{
+    margin: 0%;
+    text-decoration: underline;
+}
 
+.gender{
+    
+}
+
+#promille_kalkulator_other_inputs_box{/*!position denne boksen right og top*/
+    position: relative;
+    align-self: right;
+}
 /*------------------------------------------------
 --------------Spleise kalkulator------------------
 ------------------------------------------------*/

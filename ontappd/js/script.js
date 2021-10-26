@@ -35,7 +35,7 @@ function BAC_calculation(alcohol_by_units, weight, hours_from_start, output, fem
     return promille = x - y;
 }
 
-function promille(){//funksjonen som får et kall fra submit knappen. Main funksjon for kalkulatoren.
+function promille(){//Funksjonen som får et kall fra submit knappen. Main funksjon for kalkulatoren.
     console.log("promillekalkulator starter..")
     BAC_calculation(alkohol, vekt, drikkestart, prom, kvinne, mann)
     check_if_zero_print(promille,prom);

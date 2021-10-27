@@ -67,20 +67,10 @@ function ABV_calculator(){
 //Navbar
 //--------------------------------------------------
 
-/*
-<nav id="navbar">
-<button id="kalk" onclick="window.location.href='../html/promille.html';">Promille Kalkulatoren</button>
-<button onclick="window.location.href='../html/abv.html';">ABV Kalkulatoren</button>
-<button onclick="window.location.href='../html/spleise.html';">Spleise Kalkulatoren</button>
-<button onclick="window.location.href='../html/howto.html';">How to</button>
-<button onclick="window.location.href='../html/contactus.html';">Contact us</button>
-</nav>
-*/
-
 //*CONSTRUCTING BUTTONS IN NAVBAR
 let navbar = document.querySelector("#navbar");
 
-function nav(){//*Navbar buttons is created
+function nav_buttons(){//*Navbar buttons is created
     console.log("navbar is being constructed");
     nav_buttons = [
         ["abv.html","ABV Kalkulator"],
@@ -120,7 +110,7 @@ set_currentpage_style(navbar)*/
 //Main functions/function calls
 //--------------------------------------------------
 function header(){
-    nav();
+    nav_buttons();
 }
 
 function footer(){

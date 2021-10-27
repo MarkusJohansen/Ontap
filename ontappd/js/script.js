@@ -55,16 +55,27 @@ function promille(){//Funksjonen som får et kall fra submit knappen. Main funks
 //ABV kalkulator
 //--------------------------------------------------
 
-//*VARIABLER
 const starting_gravity = document.getElementById("starting_gravity");
 const end_gravity = document.getElementById("end_gravity");
 const output_abv = document.getElementById("output_abv");
 
-//*
 function ABV_calculator(){
     const abv = ((starting_gravity.value)-(end_gravity.value))*131.25;
     output_abv.value = abv;
 }
+
+//--------------------------------------------------
+//Picture slideshow
+//--------------------------------------------------
+
+
+//--------------------------------------------------
+//Topbox
+//--------------------------------------------------
+
+//*CONSTRUCTING TOPBOX DIV
+//Skal vi konstruere ontap div? ref:structure
+//*APPENDING PICTURES AS CHILDS TO TOPBOX
 
 //--------------------------------------------------
 //Navbar
@@ -95,7 +106,7 @@ function nav_buttons_component(){
         const x = document.createElement("button");
         x.setAttribute("onclick","window.location.href='../html/" + nav_buttons[i][0] + "';");
         x.innerHTML = nav_buttons[i][1];
-        navbar.appendChild(x); //!Finner ikke navbar id? sier at navbar har verdi null
+        //navbar.appendChild(x); //!Finner ikke navbar id? sier at navbar har verdi null
     }
 }
 
@@ -114,9 +125,19 @@ function nav_buttons_component(){
 set_currentpage_style(navbar)*/
 
 //--------------------------------------------------
-//Picture slideshow
+//Footer
 //--------------------------------------------------
 
+//*CONSTRUCTS DIV WITHIN FOOTER
+let pagebottom = document.getElementById("footer");
+
+function footer_section(){
+    let x = document.createElement("div");
+    x.id = "contact_info";
+    pagebottom.appendChild(x)
+}
+//*FILL DIV WITH PARAGRAPHS AND HEADINGS
+//*ADD ONLINE LOGO
 
 //--------------------------------------------------
 //Main functions/function calls
@@ -127,7 +148,7 @@ function header(){
 }
 
 function footer(){
-
+    footer_section();
 }
 
 header();

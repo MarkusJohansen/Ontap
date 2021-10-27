@@ -55,23 +55,34 @@ function promille(){//Funksjonen som får et kall fra submit knappen. Main funks
 //ABV kalkulator
 //--------------------------------------------------
 
+//*VARIABLER
 const starting_gravity = document.getElementById("starting_gravity");
 const end_gravity = document.getElementById("end_gravity");
 const output_abv = document.getElementById("output_abv");
 
+//*
 function ABV_calculator(){
     const abv = ((starting_gravity.value)-(end_gravity.value))*131.25;
     output_abv.value = abv;
 }
+
 //--------------------------------------------------
 //Navbar
 //--------------------------------------------------
 
+//*CONSTRUCTING NAVBAR
+let head = document.querySelector("#header") 
+function navbar_component(){
+    console.log("navbar being constructed");
+    let y = document.createElement("nav");
+    y.id = "navbar";
+    head.appendChild(y);
+}
+
 //*CONSTRUCTING BUTTONS IN NAVBAR
 let navbar = document.querySelector("#navbar");
-
-function nav_buttons(){//*Navbar buttons is created
-    console.log("navbar is being constructed");
+function nav_buttons_component(){
+    console.log("nav buttons is being constructed");
     nav_buttons = [
         ["abv.html","ABV Kalkulator"],
         ["promille.html","Promille kalkulator"],
@@ -82,13 +93,14 @@ function nav_buttons(){//*Navbar buttons is created
 
     for(let i = 0; i < nav_buttons.length; i++){
         const x = document.createElement("button");
-        x.innerHTML = nav_buttons[i][1];
         x.setAttribute("onclick","window.location.href='../html/" + nav_buttons[i][0] + "';");
-        navbar.appendChild(x);
+        x.innerHTML = nav_buttons[i][1];
+        navbar.appendChild(x); //!Finner ikke navbar id? sier at navbar har verdi null
     }
 }
 
-//TODO: Fikse denne funksjonen, som gjør at style endrer seg etter hvilken du er på
+//*SETS STYLE ACCORDING TO CURRENT PAGE
+//TODO: Fikse denne funksjonen, som gjør at style endrer seg etter hvilken du er på finn en måte å finne clicked element
 /*function set_currentpage_style(navbar){
     console.log("Changed current page style");
     console.log(navbar)
@@ -110,7 +122,8 @@ set_currentpage_style(navbar)*/
 //Main functions/function calls
 //--------------------------------------------------
 function header(){
-    nav_buttons();
+    navbar_component();
+    nav_buttons_component();
 }
 
 function footer(){

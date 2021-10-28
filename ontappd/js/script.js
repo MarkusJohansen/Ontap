@@ -59,8 +59,32 @@ set_currentpage_style(navbar)*/
 let pagebottom = document.querySelector("#footer");
 
 function footer_div(){
-    let x = document.createElement("div");
-    x.id = "contact_info";
+    let footerDiv = document.createElement("div");
+    footerDiv.id = "contact_info";
+
+    let FootHeader = document.createElement("h3");
+    FootHeader.value = "Contact us!"
+    footerDiv.appendChild(FootHeader);
+
+    let footer_mail = document.createElement("p");
+    footer_mail.value = "Mail:"
+    footerDiv.appendChild(footer_mail);
+
+    let mail_link = document.createElement("a");
+    mail_link.setAttribute("href=", "Mailto:Ontappd@gmail.com");
+    mail_link.value = "Ontappd@gmail.com";
+    footer_mail.appendChild(mail_link);
+
+    let footer_tlf = document.createElement("p");
+    footer_tlf.value = "Tlf:";
+    footerDiv.appendChild(footer_tlf);
+
+    let tlf_link = document.createElement("a");
+    tlf_link.setAttribute("href=", "tel:+4747474747");
+    tlf_link.value = "+4747474747";
+    footerDiv.appendChild(tlf_link);
+    
+
     pagebottom.appendChild(x)
 }
 //*FILL DIV WITH PARAGRAPHS AND HEADINGS

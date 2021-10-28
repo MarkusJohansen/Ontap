@@ -82,10 +82,23 @@ function footer_div(){
     let tlf_link = document.createElement("a");
     tlf_link.setAttribute("href=", "tel:+4747474747");
     tlf_link.value = "+4747474747";
-    footerDiv.appendChild(tlf_link);
+    footer_tlf.appendChild(tlf_link);
+
+    let footer_slack = document.createElement("p");
+    footer_slack.value = "Chat med oss på";
+    footerDiv.appendChild(footer_slack);
+
+    let slack_link = document.createElement("a")
+    slack_link.setAttribute("href=", "slacklink");
+    slack_link.value = "Slack";
+    footer_slack.appendChild(slack_link);
+    
+    
+    
     
 
-    pagebottom.appendChild(x)
+    pagebottom.appendChild(footerDiv);
+
 }
 //*FILL DIV WITH PARAGRAPHS AND HEADINGS
 //*ADD ONLINE LOGO

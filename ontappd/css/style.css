@@ -196,7 +196,7 @@ input[type='radio']:checked:after {
 /*------------------------------------------------
 -------------------Media queries---------------------
 ------------------------------------------------*/
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 810px) {
     #skaal1 {
         display: none;
     }
@@ -205,17 +205,19 @@ input[type='radio']:checked:after {
     }
 
     nav{
-        background-color: #083448;
-        text-align: center;
         height: 120px;
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 490px) {
     nav{
-        background-color: #083448;
-        text-align: center;
         height: 180px;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    nav{
+        height: 320px;
     }
 }
 

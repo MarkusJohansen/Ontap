@@ -12,7 +12,7 @@ submit.addEventListener("click",function(event){
     const antallLiterValue = antallLiter.value 
     const totalKostnadValue = totalKostnad.value
     if (antallPersonerValue=="" || antallPersonerValue<1 ){
-        document.getElementById("span1").innerText="* Tallet må være 1 eller større enn 1"
+        document.getElementById("span1").innerText="* Tallet må være 1 eller større "
         document.getElementById("span1").style.display="inline"
     }
     else{
@@ -20,7 +20,7 @@ submit.addEventListener("click",function(event){
 
     }
     if (antallLiterValue=="" || antallLiterValue<1 ){
-        document.getElementById("span2").innerText="*Tallet må være 1 eller større enn 1"
+        document.getElementById("span2").innerText="*Tallet må være 1 eller større"
         document.getElementById("span2").style.display="inline"
     }
     else{
@@ -29,7 +29,7 @@ submit.addEventListener("click",function(event){
     }
 
     if (totalKostnadValue=="" || totalKostnadValue <1 ){
-        document.getElementById("span3").innerText="*Tallet må være 1 eller større enn 1"
+        document.getElementById("span3").innerText="*Tallet må være 1 eller større"
         document.getElementById("span3").style.display="inline"
     }
     else{

@@ -238,14 +238,14 @@ label{
     max-width: 500px;
     width: 100%;
     height: auto;
-  }
+}
 
 .imagetext {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
     text-align: center;
-  }
+}
 /*------------------------------------------------
 -------------------Howto page---------------------
 ------------------------------------------------*/
@@ -272,28 +272,24 @@ label{
 /*------------------------------------------------
 -------------------Media queries---------------------
 ------------------------------------------------*/
-@media only screen and (max-width: 810px) {
+@media only screen and (max-width: 1000px) {
     #skaal1 {
         display: none;
     }
     #skaal2{
         display: none;
     }
+}
 
+@media only screen and (max-width: 800px) {
     nav{
         height: 120px;
     }
 }
 
-@media only screen and (max-width: 490px) {
+@media only screen and (max-width: 550px) {
     nav{
         height: 180px;
-    }
-}
-
-@media only screen and (max-width: 330px) {
-    nav{
-        height: 320px;
     }
 }
 

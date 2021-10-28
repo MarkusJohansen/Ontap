@@ -161,7 +161,68 @@ input[type='radio']:checked:after {
 /*------------------------------------------------
 --------------Spleise kalkulator------------------
 ------------------------------------------------*/
+#submit{
 
+    margin: auto;
+    height: 30px;
+}
+#h1{
+    text-align: center;
+
+}
+
+#topbox{
+    background-color: #0D5474;
+    height: 220px;
+}
+
+#dividiv2{
+    position: absolute; 
+    top: 10%;
+    left: 65%; 
+    right: 5%;  
+    padding: 10px;
+}
+#dividiv1{
+    margin-left: 30px;
+    height: 450px;
+    width: 50%;
+    background-color: #083448;
+    padding: 20px;
+    border-radius: 25px;
+    position: relative;
+}
+.inputs{
+    margin-top: 10px;
+    width: 200px;
+    height: 30px;
+
+}
+.outputs{
+    width: 40%;
+    height: 30px;
+    margin-left: 100px;
+    margin-top: 10px;
+    background-color: white;
+}
+
+#div1{
+    height: 600px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 90%;
+    background-color: #0D5474;
+    position: relative;
+    border-radius: 25px 25px;
+    
+
+
+}
+
+label{
+    margin-top: 300px;
+}
 /*------------------------------------------------
 ------------------Abv kalkulator------------------
 ------------------------------------------------*/
@@ -169,7 +230,22 @@ input[type='radio']:checked:after {
 /*------------------------------------------------
 -------------------Main page----------------------
 ------------------------------------------------*/
+.slideshow {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+  }
 
+.imagetext {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+  }
 /*------------------------------------------------
 -------------------Howto page---------------------
 ------------------------------------------------*/
@@ -196,7 +272,7 @@ input[type='radio']:checked:after {
 /*------------------------------------------------
 -------------------Media queries---------------------
 ------------------------------------------------*/
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 810px) {
     #skaal1 {
         display: none;
     }
@@ -205,17 +281,19 @@ input[type='radio']:checked:after {
     }
 
     nav{
-        background-color: #083448;
-        text-align: center;
         height: 120px;
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 490px) {
     nav{
-        background-color: #083448;
-        text-align: center;
         height: 180px;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    nav{
+        height: 320px;
     }
 }
 

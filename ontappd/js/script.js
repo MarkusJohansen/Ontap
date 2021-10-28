@@ -95,11 +95,8 @@ function navbar_component(){
     let y = document.createElement("nav");
     y.id = "navbar";
     head.appendChild(y);
-}
 
-//*CONSTRUCTING BUTTONS IN NAVBAR
-let navbar = document.querySelector("#navbar");
-function nav_buttons_component(){
+    //*CONSTRUCTING BUTTONS IN NAVBAR
     console.log("nav buttons is being constructed");
     nav_buttons = [
         ["abv.html","ABV Kalkulator"],
@@ -113,7 +110,7 @@ function nav_buttons_component(){
         const x = document.createElement("button");
         x.setAttribute("onclick","window.location.href='../html/" + nav_buttons[i][0] + "';");
         x.innerHTML = nav_buttons[i][1];
-        //navbar.appendChild(x); //!Finner ikke navbar id? sier at navbar har verdi null
+        y.appendChild(x);
     }
 }
 
@@ -138,7 +135,7 @@ set_currentpage_style(navbar)*/
 //*CONSTRUCTS DIV WITHIN FOOTER
 let pagebottom = document.getElementById("footer");
 
-function footer_section(){
+function footer_div(){
     let x = document.createElement("div");
     x.id = "contact_info";
     pagebottom.appendChild(x)
@@ -151,11 +148,10 @@ function footer_section(){
 //--------------------------------------------------
 function header(){
     navbar_component();
-    nav_buttons_component();
 }
 
 function footer(){
-    footer_section();
+    footer_div();
 }
 
 header();

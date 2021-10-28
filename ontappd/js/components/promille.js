@@ -38,3 +38,8 @@ function promille(){//Funksjonen som får et kall fra submit knappen. Main funks
     BAC_calculation(alkohol, vekt, drikkestart, prom, kvinne, mann)
     check_if_zero_print(promille,prom);
 }
+
+/*BUGS:
+-Knapp refresher ikke resultatet, du kan ikke endre uten reload
+-trykker du inn gender og submitter får du promille NaN. gjør alle felt required
+*/

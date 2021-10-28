@@ -309,3 +309,7 @@ label{
 .div_child {
     width: 50%;
 }
+
+.checkbox {
+    display: none;
+}

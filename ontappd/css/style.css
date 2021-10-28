@@ -8,6 +8,9 @@ body{
     background-color: azure;
 }
 
+/*------------------------------------------------
+---------------------header-----------------------
+------------------------------------------------*/
 #topbox{
     background-color: #0D5474;
     height: 220px;
@@ -20,7 +23,7 @@ body{
     margin-right: auto;
 }
 
-.skaal{ /*Fikse slik at det holder en fast avstand til ontaplogoen*/
+.skaal{
     position: absolute;
     height: 200px;
     top: 0%;
@@ -33,14 +36,49 @@ body{
 #skaal2{
     left: 150px;
 }
-@media only screen and (max-width: 1000px) {
-    #skaal1 {
-      display: none;
-    }
-    #skaal2{
-        display: none;
-    }
+
+/*------------------------------------------------
+---------------------Navbar-----------------------
+------------------------------------------------*/
+nav{
+    background-color: #083448;
+    text-align: center;
+    height: 60px;
+    padding: 5px;
 }
+
+nav > button{
+    background-color: #083448;
+    color: white;
+    border-color: #083448 ;
+    border-style: solid;
+    transition: 0.2s;
+    height: 50px;
+    width: 150px;
+    margin: 5px;
+}
+
+nav button:hover{
+    background-color: #0D5474;
+    color: white;
+    border: white solid 2px;
+    border-radius: 10px;
+}
+
+#current_page{
+    background-color: #0D5474;
+    color: white;
+    border-style: solid;
+    border-color: white;
+}
+
+/*------------------------------------------------
+---------------------Main Content----------------
+------------------------------------------------*/
+main{
+    margin: 20px 0px;
+}
+
 .textbox{
     background-color: #0D5474;
     padding: 10px;
@@ -55,32 +93,9 @@ body{
     border-radius: 25px;
 }
 
-/*Navbar. minimale endringer men noen endringer hos forskjellige sider.*/
-nav{
-    background-color: #083448;
-    text-align: center;
-    height: 50px;
-}
-
-nav > button{
-    background-color: #083448;
-    color: white;
-    border-color: #083448 ;
-    border-style: solid;
-    transition: 0.2s;
-    height: 50px;
-    width: 150px;
-}
-
-nav button:hover{
-    background-color: #0D5474;
-    color: white;
-    border: white solid 2px;
-    border-radius: 10px;
-
-}
-
-/*Footer lik for alle sider (copypaste denne når den er ferdig) Ferdig?= nei */
+/*------------------------------------------------
+---------------------Footer-----------------------
+------------------------------------------------*/
 #online_logo_footer{
     position: absolute;
     bottom: 20px;
@@ -109,49 +124,174 @@ footer{
 /*------------------------------------------------
 --------------Promille kalkulator-----------------
 ------------------------------------------------*/
-/*Når du er på en spesiell side, bruk denne stylen for #id_til_knapp_du_er_på:
-
-#id_til_knapp_du_er_på{
-    background-color: #0D5474;
-    color: white;
-    border-style: solid;
-    border-color: white;
+.input_title{
+    margin: 0%;
+    text-decoration: underline;
 }
-*/
+/*lager et felt som overlapper radio buttons*/
+input[type='radio']:after {
+    /*?hva gjør after? */
+    width: 12px;
+    height: 12px;
+    border-radius: 5px;
+    left: -2px;/** flytter felt litt vekk fra label*/
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';/*? forstår koden er avhengig av denne men forstår den ikek*/
+    display: inline-block;
+    border: 2px solid white;
+}
 
+input[type='radio']:checked:after {
+    width: 12px;
+    height: 12px;
+    border-radius: 5px;
+    left: -2px;
+    position: relative;
+    background-color: #ffa500;
+    content: '';
+    display: inline-block;
+    border: 2px solid white;
+}
+
+#promille_kalkulator_other_inputs_box{/*!position denne boksen right og top*/
+    position: relative;
+    align-self: right;
+}
 /*------------------------------------------------
 --------------Spleise kalkulator------------------
 ------------------------------------------------*/
-/*Når du er på en spesiell side, bruk denne stylen for #id_til_knapp_du_er_på:
+#submit{
 
-#id_til_knapp_du_er_på{
-    background-color: #0D5474;
-    color: white;
-    border-style: solid;
-    border-color: white;
+    margin: auto;
+    height: 30px;
 }
-*/
+#h1{
+    text-align: center;
 
+}
+.spans{
+    display: none;
+}
+
+#topbox{
+    background-color: #0D5474;
+    height: 220px;
+}
+
+#dividiv2{
+    position: absolute; 
+    top: 10%;
+    left: 65%; 
+    right: 5%;  
+    padding: 10px;
+}
+#dividiv1{
+    margin-left: 30px;
+    height: 450px;
+    width: 50%;
+    background-color: #083448;
+    padding: 20px;
+    border-radius: 25px;
+    position: relative;
+}
+.inputs{
+    margin-top: 10px;
+    width: 200px;
+    height: 30px;
+
+}
+.outputs{
+    width: 40%;
+    height: 30px;
+    margin-left: 100px;
+    margin-top: 10px;
+    background-color: white;
+}
+
+#div1{
+    height: 600px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 90%;
+    background-color: #0D5474;
+    position: relative;
+    border-radius: 25px 25px;
+    
+
+
+}
+
+label{
+    margin-top: 300px;
+}
 /*------------------------------------------------
 ------------------Abv kalkulator------------------
 ------------------------------------------------*/
-/*Når du er på en spesiell side, bruk denne stylen for #id_til_knapp_du_er_på:
-
-#id_til_knapp_du_er_på{
-    background-color: #0D5474;
-    color: white;
-    border-style: solid;
-    border-color: white;
-}
-*/
 
 /*------------------------------------------------
 -------------------Main page----------------------
 ------------------------------------------------*/
+.slideshow {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+}
+
+.imagetext {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+}
+/*------------------------------------------------
+-------------------Howto page---------------------
+------------------------------------------------*/
+.videos {
+    display: inline;
+    border-radius: 25px;
+    width: 50%;
+    height: 500px;
+    
+
+}
+
+.paragraphs {
+    display: inline;
+    width: 40%;
+    
+}
+
+.div_child {
+    float: left;
+    width: 50%;
+}
 
 /*------------------------------------------------
--------------------Howto page----------------------
+-------------------Media queries---------------------
 ------------------------------------------------*/
+@media only screen and (max-width: 1000px) {
+    .skaal{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 810px) {
+    nav{
+        height: 120px;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    nav{
+        height: 180px;
+    }
+}
 
 .videos {
     border-radius: 25px;

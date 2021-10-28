@@ -9,64 +9,55 @@
     </head>
 
     <body>
-        <header id="pagetop">
-            <div id="topbox">
-                <div id="ontap">
-                    <img id="skaal1" class="skaal" src="../image/skaal.png" alt="Skål1">
-                    <img id="ontap_logo" src="../image/Ontap_logo_white.png" alt="Ontap logo">
-                    <img id="skaal2" class="skaal" src="../image/skaal.png" alt="Skål2">
-                </div>
-            </div>
-
-            <nav id="navbar">
-                <button id="kalk" onclick="window.location.href='../html/promille.html';">Promille Kalkulatoren</button>
-                <button onclick="window.location.href='../html/abv.html';">ABV Kalkulatoren</button>
-                <button onclick="window.location.href='../html/spleise.html';">Spleise Kalkulatoren</button>
-                <button onclick="window.location.href='../html/howto.html';">How to</button>
-            </nav>
-        </header>
-
         <div class="flex-wrapper">
             <main>
                 <section class="textbox">
                     <div class="elementbox">
-                        <h2>ABV Calculator</h2>
-                        <p>
-                            Under på denne siden finner du en kalkulator som regner prosenten av alkoholen du skal lage basert på
-                        </p>
+
+                        <h2>ABV Calculator</h2> <br>
+                        <form id="abv_form">
+
+                            <label> Your staring gravity: <br>
+                                <input type="number" id="starting_gravity" placeholder="feks: 1.062" 
+                                onchange="ABV_calculator()" min="0.1" required>
+                            </label> <br><br>
+
+                            <label> Your ending gravity: <br>
+                                <input type="number" id="end_gravity" placeholder="feks: 1.010" 
+                                onchange="ABV_calculator()" min="0.1" required>
+                            </label><br><br>
+
+                            <label> ABV i prosent: <br>
+                                <input type="text" id="output_abv" disabled placeholder="ABV i prosent">
+                            </label>
+
+                        </form>
                     </div>
 
                     <div class="elementbox">
+                        
+                        <h3>Hvordan kalkulatoren funker.</h3>
+                        <p>
+                            Måten man beregner mengden alkohol (i volum) i ølen som du skal brygge gjøres ved å måle gravity før og etter gjæringen.
+                            Man kan bruke disse tallene for å beregne alkoholprosenten(ABV). Her er det viktig å tenke på at hvis man legger til gjæringselementer etter målt gravity vil ikke beregningene bli riktige.
+                            Vi klarer å regne ut alkoholprosenten ved å se på tettheten til vann i forhold til det vi har brygget siden noen av ingrediensene har blitt omdannet til alkohol og dermed oppnå en mindre tetthet.
+                        </p>
 
-                        <form id="abv_form">
-                            <label> Your staring gravity: <br>
-                                <input type="number" id="starting_gravity" placeholder="feks: 1.062" onchange="ABV_calculator()" required>
-                            </label> <br>
-
-                            <label> Your ending gravity: <br>
-                                <input type="number" id="end_gravity" placeholder="feks: 1.010" onchange="ABV_calculator()" required>
-                            </label><br>
-
-                            <label> ABV i prosent: <br><br>
-                                <input type="number" id="output_abv" disabled placeholder="ABV i prosent">
-                            </label>
-                        </form>
+                
                     </div>
+
+                    <div class="elementbox">
+                        <h3>Formelen:</h3>
+                        <p>
+                            ABV = (OG - FG) * 131,25 <br>
+                            (OG = Original Gravity, FG = Final Gravity)
+                        </p>
+                    </div>
+
                 </section>
             </main>
-    
-            <footer id="pagebot">
-                <section id="contact_info">
-                    <h3>Contact us</h3>
-                    <p>Mail: <a href="Mailto:Ontappd@gmail.com">Ontappd@gmail.com</a></p>
-                    <p>Tlf: <a href="tel:+4747474747">+4747474747</a></p>
-                    <p>Chat med oss på <a href="slacklink">Slack</a></p>
-                    <p>Adress</p>
-                </section>
-    
-                <img id="online_logo_footer" src="../image/online_logo.svg" alt="Online linjeforening sin logo">
-            </footer>
         </div>
+        <script rel="script" src="../js/components/abv.js"></script>
         <script rel="script" src="../js/script.js"></script>
     </body>
 </html>

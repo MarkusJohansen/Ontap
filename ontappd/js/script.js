@@ -1,19 +1,42 @@
-
+let head = document.querySelector("#header") 
+let pagebottom = document.getElementById("footer");
 
 //--------------------------------------------------
 //Topbox
 //--------------------------------------------------
 
 //*CONSTRUCTING TOPBOX DIV
-//Skal vi konstruere ontap div? ref:structure
-//*APPENDING PICTURES AS CHILDS TO TOPBOX
+function topbox_component(){
+    let topbox_div = document.createElement("div");
+    topbox_div.id = "topbox";
+    head.appendChild(topbox_div)
+
+    //*SETTING PICTURE ATTRIBUTES IN LIST IMAGES
+    images = [
+        ["skaal1", "skaal", "skaal.png", "Skål1"],
+        ["ontap_logo", "", "Ontap_logo_white.png", "Ontap logo"],
+        ["skaal2", "skaal", "skaal.png", "Skål2"]
+    ]
+
+    //*APPENDING PICTURES AS CHILDS TO TOPBOX, WITH ATTRIBUTES
+    console.log(images.length)
+    for(let i = 0; i < images.length; i++){
+        const img = document.createElement("img");
+
+        img.id = images[i][0];
+        img.setAttribute("class", images[i][1]);
+        img.src = "../image/" + images[i][2];
+        img.setAttribute("alt", images[i][3]);
+
+        topbox_div.appendChild(img);
+    }
+}
 
 //--------------------------------------------------
 //Navbar
 //--------------------------------------------------
 
 //*CONSTRUCTING NAVBAR
-let head = document.querySelector("#header") 
 function navbar_component(){
     console.log("navbar being constructed");
     let y = document.createElement("nav");
@@ -50,14 +73,15 @@ function navbar_component(){
     clicked_element.setAttribute("id","home");
     }
 }
-set_currentpage_style(navbar)*/
+set_currentpage_style(navbar)
+
+noe eventlistener shit*/
 
 //--------------------------------------------------
 //Footer
 //--------------------------------------------------
 
 //*CONSTRUCTS DIV WITHIN FOOTER
-let pagebottom = document.getElementById("footer");
 
 function footer_div(){
     let x = document.createElement("div");
@@ -71,6 +95,7 @@ function footer_div(){
 //Main functions/function calls
 //--------------------------------------------------
 function header(){
+    topbox_component();
     navbar_component();
 }
 

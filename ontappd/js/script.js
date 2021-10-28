@@ -98,9 +98,6 @@ function footer_div(){
 function header(){
     topbox_component();
     navbar_component();
-
-
-    console.log("22222")
 }
 
 function footer(){

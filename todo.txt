@@ -1,0 +1,12 @@
+slides i slideshow mappe, fikse script etter dette = Oscar 
+Tutorial list for howto = Benjamin
+Modularity topbox = Markus
+Spleise kalkulator = Naqibullah
+? = Sander
+
+//////////////////////////////////////////////////////////////////////
+-Fikse promille kalk BUGS
+-fikse footer position
+-fikse footer modularity
+-
+//////////////////////////////////////////////////////////////////////

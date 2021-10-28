@@ -56,7 +56,7 @@ set_currentpage_style(navbar)*/
 //--------------------------------------------------
 
 //*CONSTRUCTS DIV WITHIN FOOTER
-let pagebottom = document.getElementById("footer");
+let pagebottom = document.querySelector("#footer");
 
 function footer_div(){
     let x = document.createElement("div");

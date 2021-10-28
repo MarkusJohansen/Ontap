@@ -10,8 +10,10 @@
     <body>
         <section class="textbox">
             <div class="elementbox">
+
                 <section id="promille_kalkulator_section">
                     <h3 class="section_title">Promille kalkulator</h3>
+                    
                     <div id="promille_kalkulator" class="undersection">
                         <div id="gender_selection_box">
                             <h4 class="input_title">Kjønn</h4>
@@ -22,13 +24,13 @@
 
                         <div id="promille_kalkulator_other_inputs_box">
                             <h4 class="input_title">Kjønn</h4>
-                            <input id="kroppsvekt" type="number" step="any">Vekt(Kg)</input><br>
+                            <input id="kroppsvekt" type="number" step="any" required>Vekt(Kg)</input><br>
 
                             <h4 class="input_title">Kjønn</h4>
-                            <input id="enheter" type="number" step="any">Antall enheter</input><br>
+                            <input id="enheter" type="number" step="any" required>Antall enheter</input><br>
 
                             <h4 class="input_title">Kjønn</h4>
-                            <input id="drikkestart" type="number" step="any">Antall timer fra drikkestart</input>
+                            <input id="drikkestart" type="number" step="any" required>Antall timer fra drikkestart</input>
                         </div>
                 
                         <button onclick="promille()">x</button>
@@ -36,6 +38,7 @@
                         <div id="p_output"></div>
                     </div>
                 </section>
+
             </div>
         </section>
         <script rel="script" src="../js/components/promille.js"></script>

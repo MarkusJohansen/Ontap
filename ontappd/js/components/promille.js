@@ -22,6 +22,7 @@ function BAC_calculation(alcohol_by_units, weight, hours_from_start, output, fem
     console.log("y = " + y)
     return promille = x - y;
 }
+
 function check_if_zero_print(value,output){//bestemmer output avhengig av om input <= 0 eller input > 0
     if(value <= 0){
         output.innerHTML = "Promille = 0";//Dersom promillen er 0 eller mindre utifra formelen er minste mulige verdi av promille i blodet 0 eller tilnærmet null og derfor setter vi verdien til 0 i dette intervallet.

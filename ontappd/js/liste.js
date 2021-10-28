@@ -1,12 +1,15 @@
-const li = document.createElement("li");
-const tutorial = [""];
+const ul = document.getElementById("tutorial_list");
+const li = document.createElement("li")
+const tutorial = ["a", "b", "c", "d", "e"];
 const checkbox = document.createElement("input");
-task1.type = "checkbox";
+checkbox.type = "checkbox";
 
 
-let text = "";
-function brygge_liste() {
-    for (let i = 0; i < 6; i++) {
 
-    }
+for (let i = 0; i < tutorial.length; i++) {
+    
+    li.appendChild.checkbox
+    ul.appendChild.li
+    li.innerHTML = tutorial[i]
 }
+

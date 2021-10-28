@@ -8,13 +8,13 @@ let imagetext = [];
 let time = 3000; // 3 sekunder
 
 // Bildeliste
-images[0] = '../image/rodvin.jpg';
-images[1] = '../image/ol.jpg';
-images[2] = '../image/kasseol.jpg';
-images[3] = '../image/maltpose.jpg';
-images[4] = '../image/korkemaskin.jpg';
-images[5] = '../image/kjolingssystem.jpg';
-images[6] = '../image/bryggemaskin.jpg';
+images[0] = '../image/slideshow/rodvin.jpg';
+images[1] = '../image/slideshow/ol.jpg';
+images[2] = '../image/slideshow/kasseol.jpg';
+images[3] = '../image/slideshow/maltpose.jpg';
+images[4] = '../image/slideshow/korkemaskin.jpg';
+images[5] = '../image/slideshow/kjolingssystem.jpg';
+images[6] = '../image/slideshow/bryggemaskin.jpg';
             
 // Bildetekstliste
 imagetext[0] = "Gjæringskar med rødvin";

@@ -5,9 +5,81 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/style.css">
-        <title>Document</title>
+        <title>Spleise kalkulator</title>
     </head>
     <body>
+        <body>
+    <header id="pagetop">
+        <div id="topbox">
+            <div id="ontap">
+                <img id="skaal1" class="skaal" src="../image/skaal.png" alt="Skål1">
+                <img id="ontap_logo" src="../image/Ontap_logo_white.png" alt="Ontap logo">
+                <img id="skaal2" class="skaal" src="../image/skaal.png" alt="Skål2">
+            </div>
+        </div>
+
+        <nav id="navbar">
+            <button>Hjem</button>
+            <button id="kalk">Promille Kalkulatoren</button>
+            <button>ABV Kalkulatoren</button>
+            <button>Spleise Kalkulatoren</button>
+            <button>How to</button>
+        </nav>
+    </header>
+
+    <main>
+        <div id="div1">
+            <h1 id="h1">Spliese Kalkulator</h1>
+            <div id="dividiv1">
+
+                <form>
+                    <label for="antallPersoner">Antall personer som deler </label>  <br>
+                    <input type="number" id="antallPersoner" min="1" class="inputs" required>                
+                    <br>
+                    <br>
+                    <label for="antallLiter" >Antall liter</label> <br>
+                    <input type="number" id="antallLiter" class="inputs" required >
+                    <br>
+                    <br>
+                    <label for="totalKostnad">Totale kostnader</label> <br>
+                    <input type="number" id="totalKostnad" class="inputs" required>
+                    <button type="submit" id="submit">Regn ut</button>
+                    <hr>
+                    <label for="LiterPerPers">Liter/person</label> <br>
+                    <input type="number" class="outputs" id="literPerPers" disabled>
+                    <br>
+                    <label for="KronerPerPers">Kroner/person</label> <br>
+                    <input type="number" class="outputs" id="kronerPerPers" disabled>
+                    <br>
+                    <label for="KronerPerLiter">Kroner/liter</label> <br>
+                    <input type="number" class="outputs" id="kronerPerLiter" disabled> 
+                </form>
+                   
+                     
+             </div>
+            <div id="dividiv2">
+                <h3>Om Kalkulatoren</h3>
+                Denne Kalkulatoren brukes når flere brygger sammen. I den første inputen må man 
+                skrive antall folk som brygger sammen, i den andre inputen må man skrive antall liter 
+                ål og i den tredje inputen må man skrive den totale kostnaden.  
+            </div>
+            
+        </div>
+    </main>
+
+    <footer id="pagebot">
+        <section id="contact_info">
+            <h3>Contact us</h3>
+            <p>Mail: <a href="Mailto:Ontappd@gmail.com">Ontappd@gmail.com</a></p>
+            <p>Tlf: <a href="tel:+4747474747">+4747474747</a></p>
+            <p>Chat med oss på <a href="slacklink">Slack</a></p>
+            <p>Adress</p>
+        </section>
+
+        <img id="online_logo_footer" src="../image/online_logo.svg" alt="Online linjeforening sin logo">
+    </footer>
+
+    <script src="pris.js"></script>
         <script rel="script" src="../js/script.js"></script>
     </body>
 </html>

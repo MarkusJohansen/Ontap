@@ -82,6 +82,7 @@ noe eventlistener shit*/
 //--------------------------------------------------
 
 //*CONSTRUCTS DIV WITHIN FOOTER
+let pagebottom = document.querySelector("#footer");
 
 function footer_div(){
     let x = document.createElement("div");

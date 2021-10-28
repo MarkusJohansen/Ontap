@@ -11,6 +11,31 @@ submit.addEventListener("click",function(event){
     const antallPersonerValue = antallPersoner.value
     const antallLiterValue = antallLiter.value 
     const totalKostnadValue = totalKostnad.value
+    if (antallPersonerValue=="" || antallPersonerValue<1 ){
+        document.getElementById("span1").innerText="* Tallet må være 1 eller større enn 1"
+        document.getElementById("span1").style.display="inline"
+    }
+    else{
+        document.getElementById("span1").style.display="none"
+
+    }
+    if (antallLiterValue=="" || antallLiterValue<1 ){
+        document.getElementById("span2").innerText="*Tallet må være 1 eller større enn 1"
+        document.getElementById("span2").style.display="inline"
+    }
+    else{
+        document.getElementById("span2").style.display="none"
+
+    }
+
+    if (totalKostnadValue=="" || totalKostnadValue <1 ){
+        document.getElementById("span3").innerText="*Tallet må være 1 eller større enn 1"
+        document.getElementById("span3").style.display="inline"
+    }
+    else{
+        document.getElementById("span3").style.display="none"
+
+    }
     const literPerPerson = antallLiterValue/antallPersonerValue
     const kronerPerPerson = totalKostnadValue/antallPersonerValue
     const kronerPerLiter = totalKostnadValue/antallLiterValue

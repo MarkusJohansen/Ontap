@@ -170,6 +170,9 @@ input[type='radio']:checked:after {
     text-align: center;
 
 }
+.spans{
+    display: none;
+}
 
 #topbox{
     background-color: #0D5474;

@@ -8,8 +8,7 @@ let prom = document.getElementById("p_output")
 function check_if_zero_print(value,output){//bestemmer output avhengig av om input <= 0 eller input > 0
     if(value <= 0){
         output.innerHTML = "Promille = 0";//Dersom promillen er 0 eller mindre utifra formelen er minste mulige verdi av promille i blodet 0 eller tilnærmet null og derfor setter vi verdien til 0 i dette intervallet.
-    }
-    else{
+    }else{
         output.innerHTML = "Promille = " + parseFloat(value).toFixed(3); //viser promille verdien på nettsiden, med opptil tre decimaler.
     }
     console.log("promille = " + p);//logger den faktiske promille verdien i konsollen.

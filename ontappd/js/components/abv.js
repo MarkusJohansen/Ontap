@@ -11,9 +11,7 @@ function ABV_calculator(){
     const insufficient_values = "Uyldig verdi"
     if (abv < 0){
         output_abv.value = insufficient_values;
-    }
-    else {
+    }else{
         output_abv.value = abv;
-    }
-    
+    }   
 }

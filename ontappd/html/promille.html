@@ -15,29 +15,27 @@
 
                 <section id="promille_kalkulator_section">
                     <h3 class="section_title">Promille kalkulator</h3>
-                        <form>
-                            <div id="gender_selection_box">
-                                <h4 class="input_title">Kjønn</h4>
-                                <input type="radio" class="gender" id="mann" name="gender">Mann</input>
-                                <br>
-                                <input type="radio" class="gender" id="kvinne" name="gender">Kvinne</input>
-                            </div>
+                        <div id="gender_selection_box">
+                            <h4 class="input_title">Kjønn</h4>
+                            <input type="radio" class="gender" id="mann" name="gender">Mann</input>
+                            <br>
+                            <input type="radio" class="gender" id="kvinne" name="gender">Kvinne</input>
+                        </div>
 
-                            <div id="promille_kalkulator_other_inputs_box">
-                                <h4 class="input_title">Vekt</h4>
-                                <input id="kroppsvekt" type="number" step="any" required>Vekt(Kg)</input><br>
+                        <div id="promille_kalkulator_other_inputs_box">
+                            <h4 class="input_title">Vekt</h4>
+                            <input id="kroppsvekt" type="number" step="any" required>Vekt(Kg)</input><br>
 
-                                <h4 class="input_title">Antall enheter</h4>
-                                <input id="enheter" type="number" step="any" required>Antall enheter</input><br>
+                            <h4 class="input_title">Antall enheter</h4>
+                            <input id="enheter" type="number" step="any" required>Antall enheter</input><br>
 
-                                <h4 class="input_title">Antall timer fra drikkestart</h4>
-                                <input id="drikkestart" type="number" step="any" required></input>
-                            </div>
-                    
-                            <button type="submit" onclick="promille()">Regn ut</button>
-                    
-                            <div id="p_output"></div>
-                        </form>
+                            <h4 class="input_title">Antall timer fra drikkestart</h4>
+                            <input id="drikkestart" type="number" step="any" required></input>
+                        </div>
+                
+                        <button type="submit" onclick="promille()">Regn ut</button>
+                
+                        <div id="p_output"></div>
                 </section>
             </div>
         </section>

@@ -36,9 +36,7 @@ function BAC_calculation(alcohol_by_units, weight, hours_from_start, output, fem
         output.innerHTML = "Promille = " + parseFloat(promille_value).toFixed(3); //viser promille verdien på nettsiden, med opptil tre decimaler.
     }
 
-    //?prevent default?
     console.log("promille = " + promille_value);//logger den faktiske promille verdien i konsollen.
-    event.preventDefault()//? hva gjør den at den ikke går blank?
 }
 
 function promille(){//Funksjonen som får et kall fra submit knappen. Main funksjon for kalkulatoren.
@@ -49,5 +47,4 @@ function promille(){//Funksjonen som får et kall fra submit knappen. Main funks
 
 /*
     - Fix a output field
-    - bug, goes blank when all other fiels er filled but no genderbox checked
 */

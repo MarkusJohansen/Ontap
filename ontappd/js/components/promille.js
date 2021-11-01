@@ -5,6 +5,15 @@ let alkohol = document.getElementById("enheter")
 let drikkestart = document.getElementById("drikkestart")
 let prom = document.getElementById("p_output")
 
+function allfields_required(input1,input2,input3,output){//!fungerer ikke
+    console.log(input1.value)
+    console.log("") //value er den samme som dette
+    if(input1 == ""||input2 == ""||input3 == ""){//!her ligger bug
+        console.log("alle felter er ikke fyllt")
+        output.innerHTML = "Alle feltene må fylles ut! Prøv igjen."
+    }
+}
+
 function BAC_calculation(alcohol_by_units, weight, hours_from_start, output, female_button, male_button){//beregningene
     let x = 0;
 

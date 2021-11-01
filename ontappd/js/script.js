@@ -82,7 +82,6 @@ noe eventlistener shit*/
 //--------------------------------------------------
 
 //*CONSTRUCTS DIV WITHIN FOOTER
-let pagebottom = document.querySelector("#footer");
 
 function footer_div(){
     console.log("Footer is being constructed.");

@@ -198,12 +198,12 @@ input[type='radio']:checked:after {
 .inputs{
     margin-top: 10px;
     width: 200px;
-    height: 30px;
+    height: 23px;
 
 }
 .outputs{
     width: 40%;
-    height: 30px;
+    height: 23px;
     margin-left: 100px;
     margin-top: 10px;
     background-color: white;
@@ -276,10 +276,7 @@ label{
 -------------------Media queries---------------------
 ------------------------------------------------*/
 @media only screen and (max-width: 1000px) {
-    #skaal1 {
-        display: none;
-    }
-    #skaal2{
+    .skaal{
         display: none;
     }
 }
@@ -290,7 +287,7 @@ label{
     }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 510px) {
     nav{
         height: 180px;
     }

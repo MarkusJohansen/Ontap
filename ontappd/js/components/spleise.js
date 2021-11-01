@@ -25,7 +25,6 @@ submit.addEventListener("click",function(event){
     }
     else{
         document.getElementById("span2").style.display="none"
-
     }
 
     if (totalKostnadValue=="" || totalKostnadValue <1 ){
@@ -34,7 +33,6 @@ submit.addEventListener("click",function(event){
     }
     else{
         document.getElementById("span3").style.display="none"
-
     }
     const literPerPerson = antallLiterValue/antallPersonerValue
     const kronerPerPerson = totalKostnadValue/antallPersonerValue

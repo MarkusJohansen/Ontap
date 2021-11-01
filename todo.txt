@@ -1,12 +1,10 @@
-slides i slideshow mappe, fikse script etter dette = Oscar 
+Fikse footer modularity = Oscar 
 Tutorial list for howto = Benjamin
-Modularity topbox = Markus
+fikse promille kalk BUGS = Markus
 Spleise kalkulator = Naqibullah
 ? = Sander
 
 //////////////////////////////////////////////////////////////////////
--Fikse promille kalk BUGS
--fikse footer position
--fikse footer modularity
--
+    -   Fikse footer position
+    -   Bug fikse ferdig ABV kalk
 //////////////////////////////////////////////////////////////////////

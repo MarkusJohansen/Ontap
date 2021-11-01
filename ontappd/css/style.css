@@ -111,14 +111,24 @@ footer{
     position:relative;
     font-size: small;
     line-height: 10px;
+    padding: 10px 0px;
 }
 
-#contact_info{
-    padding: 10px 20px;
+footer p, h3{ /*? kan jeg ta med h1 elementer i denne*/
+    margin-left: 10px;
 }
+
 
 #contact_info a{
     color:white ;
+}
+/*------------------------------------------------
+------------------Alle kalkulatorer-----------------
+------------------------------------------------*/
+#whiteline{
+    background-color: white;
+    height: 2px;
+    width: 100%;
 }
 
 /*------------------------------------------------
@@ -158,6 +168,13 @@ input[type='radio']:checked:after {
     position: relative;
     align-self: right;
 }
+
+.input_set{
+    margin: 10px 0px;
+}
+
+#promille_kalkulator_section{
+
 /*------------------------------------------------
 --------------Spleise kalkulator------------------
 ------------------------------------------------*/
@@ -218,9 +235,6 @@ input[type='radio']:checked:after {
     background-color: #0D5474;
     position: relative;
     border-radius: 25px 25px;
-    
-
-
 }
 
 label{

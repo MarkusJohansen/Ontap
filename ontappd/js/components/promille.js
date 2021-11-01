@@ -31,9 +31,9 @@ function BAC_calculation(alcohol_by_units, weight, hours_from_start, output, fem
 
     //*CHECKS IF VALUE = 0, THEN DOES OUTPUT
     if(promille_value <= 0){
-        output.innerHTML = "Promille = 0";//Dersom promillen er 0 eller mindre utifra formelen er minste mulige verdi av promille i blodet 0 eller tilnærmet null og derfor setter vi verdien til 0 i dette intervallet.
+        output.value = "Promille = 0";//Dersom promillen er 0 eller mindre utifra formelen er minste mulige verdi av promille i blodet 0 eller tilnærmet null og derfor setter vi verdien til 0 i dette intervallet.
     }else{
-        output.innerHTML = "Promille = " + parseFloat(promille_value).toFixed(3); //viser promille verdien på nettsiden, med opptil tre decimaler.
+        output.value = "Promille = " + parseFloat(promille_value).toFixed(3); //viser promille verdien på nettsiden, med opptil tre decimaler.
     }
 
     console.log("promille = " + promille_value);//logger den faktiske promille verdien i konsollen.

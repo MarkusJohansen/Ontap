@@ -59,6 +59,8 @@ set_currentpage_style(navbar)*/
 let pagebottom = document.querySelector("#footer");
 
 function footer_div(){
+    console.log("Footer is being constructed.")
+
     let footerDiv = document.createElement("div");
     footerDiv.id = "contact_info";
 
@@ -71,7 +73,7 @@ function footer_div(){
     footerDiv.appendChild(footer_mail);
 
     let mail_link = document.createElement("a");
-    mail_link.setAttribute("href=", "Mailto:Ontappd@gmail.com");
+    mail_link.setAttribute("href", "Mailto:Ontappd@gmail.com");
     mail_link.value = "Ontappd@gmail.com";
     footer_mail.appendChild(mail_link);
 
@@ -80,7 +82,7 @@ function footer_div(){
     footerDiv.appendChild(footer_tlf);
 
     let tlf_link = document.createElement("a");
-    tlf_link.setAttribute("href=", "tel:+4747474747");
+    tlf_link.setAttribute("href", "tel:+4747474747");
     tlf_link.value = "+4747474747";
     footer_tlf.appendChild(tlf_link);
 
@@ -88,14 +90,14 @@ function footer_div(){
     footer_slack.value = "Chat med oss på";
     footerDiv.appendChild(footer_slack);
 
-    let slack_link = document.createElement("a")
-    slack_link.setAttribute("href=", "slacklink");
+    let slack_link = document.createElement("a");
+    slack_link.setAttribute("href", "slacklink");
     slack_link.value = "Slack";
     footer_slack.appendChild(slack_link);
     
-    
-    
-    
+    let footer_address = document.createElement("p");
+    footer_address.value = "Adress";
+    footerDiv.appendChild("footer_address");
 
     pagebottom.appendChild(footerDiv);
 
@@ -110,9 +112,6 @@ function header(){
     navbar_component();
 }
 
-function footer(){
-    footer_div();
-}
 
 header();
-footer();
+footer_div();

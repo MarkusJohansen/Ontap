@@ -11,7 +11,7 @@ submit.addEventListener("click",function(event){
     const antallPersonerValue = antallPersoner.value
     const antallLiterValue = antallLiter.value 
     const totalKostnadValue = totalKostnad.value
-    if (antallPersonerValue=="" || antallPersonerValue<1 ){
+    if (antallPersonerValue == "" || antallPersonerValue<1 ){
         document.getElementById("span1").innerText="* Tallet må være 1 eller større enn 1"
         document.getElementById("span1").style.display="inline"
     }

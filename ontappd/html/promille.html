@@ -8,39 +8,40 @@
         <title>Document</title>
     </head>
     <body>
+        <header id="header"></header>
+
         <section class="textbox">
             <div class="elementbox">
 
                 <section id="promille_kalkulator_section">
                     <h3 class="section_title">Promille kalkulator</h3>
+                        <form>
+                            <div id="gender_selection_box">
+                                <h4 class="input_title">Kjønn</h4>
+                                <input type="radio" class="gender" id="mann" name="gender">Mann</input>
+                                <br>
+                                <input type="radio" class="gender" id="kvinne" name="gender">Kvinne</input>
+                            </div>
+
+                            <div id="promille_kalkulator_other_inputs_box">
+                                <h4 class="input_title">Vekt</h4>
+                                <input id="kroppsvekt" type="number" step="any" required>Vekt(Kg)</input><br>
+
+                                <h4 class="input_title">Antall enheter</h4>
+                                <input id="enheter" type="number" step="any" required>Antall enheter</input><br>
+
+                                <h4 class="input_title">Antall timer fra drikkestart</h4>
+                                <input id="drikkestart" type="number" step="any" required></input>
+                            </div>
                     
-                    <div id="promille_kalkulator" class="undersection">
-                        <div id="gender_selection_box">
-                            <h4 class="input_title">Kjønn</h4>
-                            <input type="radio" class="gender" id="mann" name="gender">Mann</input>
-                            <br>
-                            <input type="radio" class="gender" id="kvinne" name="gender">Kvinne</input>
-                        </div>
-
-                        <div id="promille_kalkulator_other_inputs_box">
-                            <h4 class="input_title">Kjønn</h4>
-                            <input id="kroppsvekt" type="number" step="any" required>Vekt(Kg)</input><br>
-
-                            <h4 class="input_title">Kjønn</h4>
-                            <input id="enheter" type="number" step="any" required>Antall enheter</input><br>
-
-                            <h4 class="input_title">Kjønn</h4>
-                            <input id="drikkestart" type="number" step="any" required>Antall timer fra drikkestart</input>
-                        </div>
-                
-                        <button onclick="promille()">x</button>
-                
-                        <div id="p_output"></div>
-                    </div>
+                            <button type="submit" onclick="promille()">Regn ut</button>
+                    
+                            <div id="p_output"></div>
+                        </form>
                 </section>
-
             </div>
         </section>
+
         <script rel="script" src="../js/components/promille.js"></script>
         <script rel="script" src="../js/script.js"></script>
     </body>

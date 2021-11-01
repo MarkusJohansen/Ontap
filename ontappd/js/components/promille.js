@@ -5,50 +5,49 @@ let alkohol = document.getElementById("enheter")
 let drikkestart = document.getElementById("drikkestart")
 let prom = document.getElementById("p_output")
 
-function allfields_required(input1,input2,input3,output){//!fungerer ikke
-    console.log(input1.value)
-    console.log("") //value er den samme som dette
-    if(input1 == ""||input2 == ""||input3 == ""){//!her ligger bug
-        console.log("alle felter er ikke fyllt")
-        output.innerHTML = "Alle feltene må fylles ut! Prøv igjen."
-    }
-}
-
 function BAC_calculation(alcohol_by_units, weight, hours_from_start, output, female_button, male_button){//beregningene
-    let x = 0;
-
+    //*CHECKS IF ALL TEXT FIELDS ARE fulfilled
+    if(alcohol_by_units.value == "" || weight.value == "" || hours_from_start.value == ""){
+        console.log("ERROR: alle felter er ikke fyllt")
+        output.innerHTML = "Alle feltene må fylles ut! Prøv igjen."
+        return false
+    }
+    
+    //*CALCULATION OF BAC PART 1: GENDER DIFFERENCE
+    //?Why shouldnt i declare x before conditional statements?
     if(female_button.checked){
         x = (parseFloat(alcohol_by_units.value)* 12.8 )/(parseFloat(weight.value) * 0.60); // 12.8g alkohol/per enhet * antall enheter = antall gram alkohol
     }else if(male_button.checked){
         x = (parseFloat(alcohol_by_units.value)* 12.8 )/(parseFloat(weight.value) * 0.70); 
     }else{
-        console.log("No gender picked...");
+        console.log("ERROR: No gender checked");
         output.innerHTML = "No gender picked. Try again, pick a gender.";
         return false
     }
 
+    //*CALCULATION OF BAC PART 2: ACCOUNT FOR DECREASE OF BAC OVER TIME
     let y = 0.15 * parseFloat(hours_from_start.value);
-    console.log("y = " + y)
-    return promille = x - y;
-}
+    promille_value = x - y;
 
-function check_if_zero_print(value,output){//bestemmer output avhengig av om input <= 0 eller input > 0
-    if(value <= 0){
+    //*CHECKS IF VALUE = 0, THEN DOES OUTPUT
+    if(promille_value <= 0){
         output.innerHTML = "Promille = 0";//Dersom promillen er 0 eller mindre utifra formelen er minste mulige verdi av promille i blodet 0 eller tilnærmet null og derfor setter vi verdien til 0 i dette intervallet.
+    }else{
+        output.innerHTML = "Promille = " + parseFloat(promille_value).toFixed(3); //viser promille verdien på nettsiden, med opptil tre decimaler.
     }
-    else{
-        output.innerHTML = "Promille = " + parseFloat(value).toFixed(3); //viser promille verdien på nettsiden, med opptil tre decimaler.
-    }
-    console.log("promille = " + p);//logger den faktiske promille verdien i konsollen.
+
+    //?prevent default?
+    console.log("promille = " + promille_value);//logger den faktiske promille verdien i konsollen.
+    event.preventDefault()//? hva gjør den at den ikke går blank?
 }
 
 function promille(){//Funksjonen som får et kall fra submit knappen. Main funksjon for kalkulatoren.
+    console.log("----------------------------")
     console.log("promillekalkulator starter..")
     BAC_calculation(alkohol, vekt, drikkestart, prom, kvinne, mann)
-    check_if_zero_print(promille,prom);
 }
 
-/*BUGS:
--Knapp refresher ikke resultatet, du kan ikke endre uten reload
--trykker du inn gender og submitter får du promille NaN. gjør alle felt required
+/*
+    - Fix a output field
+    - bug, goes blank when all other fiels er filled but no genderbox checked
 */

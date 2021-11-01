@@ -59,46 +59,32 @@ set_currentpage_style(navbar)*/
 let pagebottom = document.querySelector("#footer");
 
 function footer_div(){
-    console.log("Footer is being constructed.")
+    console.log("Footer is being constructed.");
 
     let footerDiv = document.createElement("div");
     footerDiv.id = "contact_info";
 
-    let FootHeader = document.createElement("h3");
-    FootHeader.value = "Contact us!"
-    footerDiv.appendChild(FootHeader);
+    footer_content = [
+        ["h3","Kontakt oss!"],
+        ["p", "Mail: Ontappd@gmail.com ", "Mailto:Ontappd@gmail.com"],
+        ["p", "Tlf: +4747474747 ", "TEL:+4747474747"],
+        ["p", "Chat med oss på Slack", "https://app.slack.com/client/T03S8TX18/C357EQS3U"],
+        ["p", "Adresse: NTNU Gløshaugen, Realfagsbygget, A4-137", "https://use.mazemap.com/#v=1&zlevel=4&center=10.405053,63.415402&zoom=18.4&campusid=1&sharepoitype=poi&sharepoi=1000292593"]
+    ]
 
-    let footer_mail = document.createElement("p");
-    footer_mail.value = "Mail:"
-    footerDiv.appendChild(footer_mail);
+    for (let i = 0;i<footer_content.length;i++){
+        const x = document.createElement(footer_content[i][0]);
+        footerDiv.appendChild(x);
 
-    let mail_link = document.createElement("a");
-    mail_link.setAttribute("href", "Mailto:Ontappd@gmail.com");
-    mail_link.value = "Ontappd@gmail.com";
-    footer_mail.appendChild(mail_link);
-
-    let footer_tlf = document.createElement("p");
-    footer_tlf.value = "Tlf:";
-    footerDiv.appendChild(footer_tlf);
-
-    let tlf_link = document.createElement("a");
-    tlf_link.setAttribute("href", "tel:+4747474747");
-    tlf_link.value = "+4747474747";
-    footer_tlf.appendChild(tlf_link);
-
-    let footer_slack = document.createElement("p");
-    footer_slack.value = "Chat med oss på";
-    footerDiv.appendChild(footer_slack);
-
-    let slack_link = document.createElement("a");
-    slack_link.setAttribute("href", "slacklink");
-    slack_link.value = "Slack";
-    footer_slack.appendChild(slack_link);
-    
-    let footer_address = document.createElement("p");
-    footer_address.value = "Adress";
-    footerDiv.appendChild("footer_address");
-
+        if (footer_content[i].length > 2){
+            const y = document.createElement("a")
+            y.setAttribute("href", footer_content[i][2]);
+            y.innerHTML = footer_content[i][1]
+            x.appendChild(y);
+        } else{
+            x.innerHTML = footer_content[i][1];
+        }
+    }
     pagebottom.appendChild(footerDiv);
 
 }

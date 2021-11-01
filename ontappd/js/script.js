@@ -38,7 +38,7 @@ function navbar_component(){
 }
 
 //*SETS STYLE ACCORDING TO CURRENT PAGE
-//TODO: Fikse denne funksjonen, som gjør at style endrer seg etter hvilken du er på finn en måte å finne clicked element
+//TODO: Fikse denne funksjonen, som gjør at style endrer seg etter hvilken side du er på. Og finn en måte å finne clicked element
 /*function set_currentpage_style(navbar){
     console.log("Changed current page style");
     console.log(navbar)

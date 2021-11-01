@@ -5,15 +5,6 @@ let alkohol = document.getElementById("enheter")
 let drikkestart = document.getElementById("drikkestart")
 let prom = document.getElementById("p_output")
 
-function allfields_required(input1,input2,input3,output){//!fungerer ikke
-    console.log(input1.value)
-    console.log("") //value er den samme som dette
-    if(input1 == ""||input2 == ""||input3 == ""){//!her ligger bug
-        console.log("alle felter er ikke fyllt")
-        output.innerHTML = "Alle feltene må fylles ut! Prøv igjen."
-    }
-}
-
 function check_if_zero_print(value,output){//*bestemmer output avhengig av om input <= 0 eller input > 0
     if(value <= 0){
         output.innerHTML = "Promille = 0";//Dersom promillen er 0 eller mindre utifra formelen er minste mulige verdi av promille i blodet 0 eller tilnærmet null og derfor setter vi verdien til 0 i dette intervallet.

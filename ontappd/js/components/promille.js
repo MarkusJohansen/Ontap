@@ -25,15 +25,6 @@ function BAC_calculation(alcohol_by_units, weight, hours_from_start, output, fem
         output.innerHTML = "No gender picked. Try again, pick a gender.";
         return false
     }
-
-    let y = 0.15 * parseFloat(hours_from_start.value);
-    console.log("y = " + y)
-    if(y == NaN){//!fungerer ikke
-        console.log("y value is NaN");
-    }else{
-        console.log("y value is not NaN")
-        return promille = x - y;
-    }    
 }
 
 function promille(){//*Funksjonen som får et kall fra submit knappen. Main funksjon for kalkulatoren.

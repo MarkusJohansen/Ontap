@@ -9,6 +9,7 @@
     </head>
 
     <body>
+        <header id="header"></header>
         <div class="flex-wrapper">
             <main>
                 <section class="textbox">
@@ -18,14 +19,16 @@
                         <form id="abv_form">
 
                             <label> Your staring gravity: <br>
-                                <input type="number" id="starting_gravity" placeholder="feks: 1.062" 
+                                <input type="number" id="starting_gravity" placeholder="feks: 1.234" 
                                 onchange="ABV_calculator()" min="0.1" required>
                             </label> <br><br>
 
                             <label> Your ending gravity: <br>
-                                <input type="number" id="end_gravity" placeholder="feks: 1.010" 
+                                <input type="number" id="end_gravity" placeholder="feks: 0.123" 
                                 onchange="ABV_calculator()" min="0.1" required>
                             </label><br><br>
+
+                            <div id="whiteline"></div>
 
                             <label> ABV i prosent: <br>
                                 <input type="text" id="output_abv" disabled placeholder="ABV i prosent">
@@ -57,6 +60,7 @@
                 </section>
             </main>
         </div>
+        <footer id="footer"></footer>
         <script rel="script" src="../js/components/abv.js"></script>
         <script rel="script" src="../js/script.js"></script>
     </body>

@@ -304,6 +304,11 @@ label {
 #tutorial_list, li {
     margin-top: 10px;
 }
+
+.checkboxes[type="checkbox"]:before::after {
+    border-radius: 10px;
+
+}
 /*------------------------------------------------
 -------------------Media queries---------------------
 ------------------------------------------------*/

@@ -12,6 +12,7 @@ for (let i = 0; i < tutorial.length; i++) {
 
     let checkbox = document.createElement("input");
     checkbox.type = "checkbox";
+    checkbox.className = "checkboxes"
     checkbox.setAttribute("onclick", "checked_boxes()")
 
     li.appendChild(checkbox)

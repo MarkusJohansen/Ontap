@@ -255,14 +255,18 @@ input[type="radio"]:checked:after {
   height: 23px;
 }
 .outputs {
-  width: 40%;
+  width: 60%;
   height: 23px;
   position: relative;
   float: right;
-  right: 100px;
+  right: 40%;
   clear: both;
   margin-top: 20px;
   background-color: white;
+}
+
+table{
+  width: 100%;
 }
 
 

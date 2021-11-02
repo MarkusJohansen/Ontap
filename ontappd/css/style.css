@@ -100,10 +100,6 @@ main {
   margin: 20px 0px;
 }
 
-h1 {
-  text-align: center;
-}
-
 .textbox{
   background-color: #0d5474;
   padding: 30px;
@@ -120,6 +116,7 @@ h1 {
 
 .section_titles {
   text-align: center;
+  font-size: 30px;
 }
 
 /*------------------------------------------------
@@ -215,10 +212,6 @@ input[type="radio"]:checked:after {
 #submit {
   margin: auto;
   height: 30px;
-}
-
-#h1 {
-  text-align: center;
 }
 
 .spans {

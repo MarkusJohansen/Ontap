@@ -372,6 +372,7 @@ label {
 /*------------------------------------------------
 -------------------Slideshow V2---------------------
 ------------------------------------------------*/
+
 /* Slideshow container */
 .slideshow-container {
     
@@ -381,13 +382,13 @@ label {
     margin: auto;
   }
   
-  /* Hide the images by default */
+  /* Skjuler alle bilder som default */
   .mySlides {
     margin-top: 50px;
     display: none;
   }
   
-  /* Next & previous buttons */
+  /* Neste & Forrige knapper */
   .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -403,18 +404,18 @@ label {
     user-select: none;
   }
   
-  /* Position the "next button" to the right */
+  /* Posisjonere neste-knappen til høyre */
   .next {
     right: 0;
     border-radius: 3px 0 0 3px;
   }
   
-  /* On hover, add a black background color with a little bit see-through */
+  /* Når musepeker er over knappene */
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
   }
   
-  /* Caption text */
+  /* Bildetekst */
   .text {
     color: #f2f2f2;
     font-size: 15px;
@@ -425,7 +426,7 @@ label {
     text-align: center;
   }
   
-  /* Fading animation */
+  /* Myk transistion */
   .fade {
     -webkit-animation-name: fade;
     -webkit-animation-duration: 1.5s;
@@ -434,12 +435,12 @@ label {
   }
   
   @-webkit-keyframes fade {
-    from {opacity: .4} 
+    from {opacity: .2} 
     to {opacity: 1}
   }
   
   @keyframes fade {
-    from {opacity: .4} 
+    from {opacity: .2} 
     to {opacity: 1}
   }
 

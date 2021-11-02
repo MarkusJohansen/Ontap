@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Kontaktside</title>
+    </head>
+
+    <body>
+        <header id="header"></header>
+        <div class="flex-wrapper">
+            <main>
+                <section class="textbox">
+                    <h1>Kontakt oss!</h1>
+
+                    <div class="elementbox">
+                        <form name="contact_form" id="contact_form" onsubmit="return autofillEmail()">
+                            <label>Navn</label><br>
+                            <input id="name" name="navn" type="text" placeholder="Ditt navn" required=""><br>
+                    
+                            <label>Emne</label><br>
+                            <input id="subject" name="emne" type="text" placeholder="Skriv emne her" required=""><br>
+                    
+                            <label>Melding</label><br>
+                            <textarea id="message" name="melding" placeholder="Skriv din melding her..." required="" spellcheck="false"></textarea><br>
+                    
+                            <input id="submit" name="submit" type="submit" value="Send" onclick="autofillEmail()">
+                        </form>
+                    </div>
+
+                </section>
+            </main>
+        </div>
+        <footer id="footer"></footer>
+        <script rel="script" src="../js/components/abv.js"></script>
+        <script rel="script" src="../js/script.js"></script>
+    </body>
+</html>

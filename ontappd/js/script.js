@@ -81,6 +81,7 @@ noe eventlistener shit*/
 //Footer
 //--------------------------------------------------
 
+<<<<<<< HEAD
 //*CONSTRUCTS DIV WITHIN FOOTER
 
 function footer_div(){
@@ -127,6 +128,8 @@ function footer_div(){
 //*FILL DIV WITH PARAGRAPHS AND HEADINGS
 //*ADD ONLINE LOGO
 
+=======
+>>>>>>> bc92bdc5322500b512ad0e5f1e8cf8de0f9a1c84
 //--------------------------------------------------
 //Main functions/function calls
 //--------------------------------------------------
@@ -135,6 +138,11 @@ function header(){
     navbar_component();
 }
 
+<<<<<<< HEAD
+=======
+function footer(){
+}
+>>>>>>> bc92bdc5322500b512ad0e5f1e8cf8de0f9a1c84
 
 header();
 footer_div();

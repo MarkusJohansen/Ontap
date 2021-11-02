@@ -9,37 +9,64 @@
     </head>
     <body>
         <header id="header"></header>
+<<<<<<< HEAD
+=======
+
+>>>>>>> bc92bdc5322500b512ad0e5f1e8cf8de0f9a1c84
         <section class="textbox">
-            <div class="elementbox">
-                <section id="promille_kalkulator_section">
-                    <h3 class="section_title">Promille kalkulator</h3>
-                    <div id="promille_kalkulator" class="undersection">
+            <h2 class="section_titles">Promillekalkulator</h2>
+            <div class="flex_wrapper">
+                <div class="elementbox flex_child">
+                    <div id="promille_kalkulator_section">
                         <div id="gender_selection_box">
                             <h4 class="input_title">Kjønn</h4>
                             <input type="radio" class="gender" id="mann" name="gender">Mann</input>
                             <br>
                             <input type="radio" class="gender" id="kvinne" name="gender">Kvinne</input>
                         </div>
-
+    
                         <div id="promille_kalkulator_other_inputs_box">
-                            <h4 class="input_title">Kjønn</h4>
-                            <input id="kroppsvekt" type="number" step="any">Vekt(Kg)</input><br>
-
-                            <h4 class="input_title">Kjønn</h4>
-                            <input id="enheter" type="number" step="any">Antall enheter</input><br>
-
-                            <h4 class="input_title">Kjønn</h4>
-                            <input id="drikkestart" type="number" step="any">Antall timer fra drikkestart</input>
+                            <div class = "input_set">
+                                <h4 class="input_title">Vekt</h4>
+                                <input id="kroppsvekt" type="number" step="any" required></input><br>
+                            </div>
+                            
+                            <div class = "input_set">
+                                <h4 class="input_title">Antall enheter</h4>
+                                <input id="enheter" type="number" step="any" required></input><br>
+                            </div>
+    
+                            <div class = "input_set">
+                                <h4 class="input_title">Antall timer fra drikkestart</h4>
+                                <input id="drikkestart" type="number" step="any" required></input>      
+                            </div>
                         </div>
-                
-                        <button onclick="promille()">x</button>
-                
-                        <div id="p_output"></div>
+    
+                        <button type="submit" onclick="promille()">Regn ut</button>
+    
+                        <div id="whiteline"></div>
+                        <input id="p_output" type="text" disabled></input>
                     </div>
-                </section>
+                </div>
+                <div class="flex_child">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Ducimus tenetur, cumque tempore maiores eius nisi vero 
+                        molestiae voluptates. Laboriosam facilis quisquam excepturi 
+                        dignissimos, rem expedita laborum officia at reprehenderit 
+                        similique. Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Ad laborum voluptates enim? Cumque aut unde molestiae 
+                        distinctio vitae porro repellendus, enim necessitatibus consectetur 
+                        fugit voluptas nam, itaque et quasi similique?
+                    </p>
+                </div>     
             </div>
         </section>
+<<<<<<< HEAD
         <footer id="footer"></footer>
+=======
+
+>>>>>>> bc92bdc5322500b512ad0e5f1e8cf8de0f9a1c84
         <script rel="script" src="../js/components/promille.js"></script>
         <script rel="script" src="../js/script.js"></script>
     </body>

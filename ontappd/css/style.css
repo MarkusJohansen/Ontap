@@ -327,6 +327,7 @@ label {
     background-color: #083448;
     border-radius: 10%;
     margin-left: 75px;
+    margin-top: 50px;
 }  
 .flex-child2 {
     flex: 1;
@@ -343,6 +344,7 @@ label {
 }
 .overskrift{
     text-align: center;
+    margin-bottom: 50px;
 }
 .slideshow {
   display: block;
@@ -361,9 +363,10 @@ label {
   text-align: center;
 }
 .tekstogsånt{
-    margin: 10px;
+    margin: 50px;
     text-align: center;
     line-height: 200%;
+    font-size: medium;
 }
 
 /*------------------------------------------------
@@ -371,13 +374,15 @@ label {
 ------------------------------------------------*/
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1000px;
+    
+    max-width: 400px;
     position: relative;
     margin: auto;
   }
   
   /* Hide the images by default */
   .mySlides {
+    margin-top: 50px;
     display: none;
   }
   

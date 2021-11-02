@@ -7,6 +7,9 @@ body {
     sans-serif;
   margin: 0%;
   background-color: azure;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /*------------------------------------------------
@@ -80,6 +83,10 @@ main {
   margin: 20px 0px;
 }
 
+h1 {
+  text-align: center;
+}
+
 .textbox {
   background-color: #0d5474;
   padding: 10px;
@@ -112,6 +119,7 @@ footer {
   position: relative;
   font-size: small;
   line-height: 10px;
+  margin-top: auto;
 }
 
 #contact_info {
@@ -284,4 +292,12 @@ label {
   nav {
     height: 180px;
   }
+}
+
+/*---------------------------------------------------
+----------------------Kontaktside--------------------
+---------------------------------------------------*/
+
+#contact_form {
+  text-align: center;
 }

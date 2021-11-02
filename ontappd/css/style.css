@@ -258,12 +258,12 @@ input[type="radio"]:checked:after {
 .outputs {
   width: 40%;
   height: 23px;
-  margin-left: 100px;
-  margin-top: 10px;
+  position: relative;
+  right: 0;
+  margin-top: 20px;
   background-color: white;
 }
 
-<<<<<<< HEAD
 #div1{
     height: 600px;
     margin: auto;
@@ -273,36 +273,12 @@ input[type="radio"]:checked:after {
     background-color: #0D5474;
     position: relative;
     border-radius: 25px 25px;
-<<<<<<< HEAD
+
     padding: 10px;
+}
     
 
 
-=======
->>>>>>> bc92bdc5322500b512ad0e5f1e8cf8de0f9a1c84
-=======
-#div1 {
-  height: 600px;
-  margin: auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  width: 90%;
-  background-color: #0d5474;
-  position: relative;
-  border-radius: 25px 25px;
->>>>>>> f8718bea7e6b84fdd0178eab9f63103688094eff
-}
-
-#div1 {
-  height: 600px;
-  margin: auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  width: 90%;
-  background-color: #0d5474;
-  position: relative;
-  border-radius: 25px 25px;
-}
 
 label {
   margin-top: 300px;

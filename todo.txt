@@ -2,7 +2,7 @@ Fikse footer modularity = Oscar
 Tutorial list for howto = Benjamin
 fikse promille kalk BUGS = Markus
 Spleise kalkulator = Naqibullah
-Fikse avrundede hjørner og fiks bilde = Sander
+Rydde opp ved bruk av generell styling = Sander
 
 //////////////////////////////////////////////////////////////////////
     -   Fikse footer position

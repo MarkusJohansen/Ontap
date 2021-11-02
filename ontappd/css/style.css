@@ -306,21 +306,28 @@ input[type="radio"]:checked:after {
 -------------------Howto page---------------------
 ------------------------------------------------*/
 .videos {
-  display: inline;
-  border-radius: 25px;
-  width: 50%;
-  height: 500px;
+    border-radius: 25px;
+    width: 90%;
+    height: inherit;
 }
 
 .paragraphs {
-  display: inline;
-  width: 40%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 
-.div_child {
-  float: left;
-  width: 50%;
+.left {
+    width: 50%;
+    height: 500px;
+    float: left
 }
+
+.right {
+    width: 45%;
+    margin-left: 50%;
+    height: 500px;
+}
+
 
 /*------------------------------------------------
 -------------------Media queries---------------------
@@ -343,6 +350,12 @@ input[type="radio"]:checked:after {
   }
 }
 
+
+
+
+.checkbox {
+    display: none;
+}
 /*---------------------------------------------------
 ----------------------Kontaktside--------------------
 ---------------------------------------------------*/

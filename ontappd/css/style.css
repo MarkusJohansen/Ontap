@@ -218,6 +218,8 @@ input[type="radio"]:checked:after {
 #submit {
   margin: auto;
   height: 30px;
+  background-color: #ffa500;
+  border: none;
 }
 
 #h1 {
@@ -253,6 +255,7 @@ input[type="radio"]:checked:after {
   margin-top: 10px;
   width: 200px;
   height: 23px;
+  border: none;
 }
 .outputs {
   width: 60%;
@@ -261,6 +264,7 @@ input[type="radio"]:checked:after {
   float: right;
   right: 40%;
   clear: both;
+  border: none;
   margin-top: 20px;
   background-color: white;
 }

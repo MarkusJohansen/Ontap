@@ -7,7 +7,7 @@ function howtoliste() {
     const span = document.createElement("span")
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
-    checkbox.class = "checkbox"
+    
 
 
     for (let i = 0; i < tutorial.length; i++) {

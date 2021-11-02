@@ -253,24 +253,28 @@ label{
 -------------------Howto page---------------------
 ------------------------------------------------*/
 .videos {
-    display: inline;
     border-radius: 25px;
-    width: 50%;
-    height: 500px;
-    
-
+    width: 90%;
+    height: inherit;
 }
 
 .paragraphs {
-    display: inline;
-    width: 40%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 }
 
-.div_child {
-    float: left;
+.left {
     width: 50%;
+    height: 500px;
+    float: left
 }
+
+.right {
+    width: 40%;
+    margin-left: 50%;
+    height: 500px;
+}
+
 
 /*------------------------------------------------
 -------------------Media queries---------------------
@@ -293,22 +297,8 @@ label{
     }
 }
 
-.videos {
-    border-radius: 25px;
-    width: 50%;
-    height: 500px;
-    
 
-}
 
-.paragraphs {
-    width: 40%;
-    
-}
-
-.div_child {
-    width: 50%;
-}
 
 .checkbox {
     display: none;

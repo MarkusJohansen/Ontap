@@ -42,7 +42,6 @@ function BAC_calculation(alcohol_by_units, weight, hours_from_start, output, fem
 function promille(){//Funksjonen som får et kall fra submit knappen. Main funksjon for kalkulatoren.
     console.log("----------------------------")
     console.log("promillekalkulator starter..")
-    allfields_required(alkohol,drikkestart,vekt,prom)
     BAC_calculation(alkohol, vekt, drikkestart, prom, kvinne, mann)
 }
 

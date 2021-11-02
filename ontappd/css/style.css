@@ -1,230 +1,292 @@
 /*------------------------------------------------
 -------------------Generell styling---------------
 ------------------------------------------------*/
-body{
-    color: white;
-    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 0%;
-    background-color: azure;
+body {
+  color: white;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  margin: 0%;
+  background-color: azure;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  font-size: 25px;
+}
+
+.flex_wrapper {
+  display: flex;
+}
+
+.flex_child {
+  flex: 1;
+}
+
+.flex_child:first-child {
+  margin-right: 50px;
 }
 
 /*------------------------------------------------
 ---------------------header-----------------------
 ------------------------------------------------*/
-#topbox{
-    background-color: #0D5474;
-    height: 220px;
+#topbox {
+  background-color: #0d5474;
+  height: 220px;
 }
 
-#ontap_logo{
-    height: 250px;
-    display: block;
-    margin-left: auto ;
-    margin-right: auto;
+#ontap_logo {
+  height: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.skaal{
-    position: absolute;
-    height: 200px;
-    top: 0%;
+.skaal {
+  position: absolute;
+  height: 200px;
+  top: 0%;
 }
 
-#skaal1{
-    right: 150px;
+#skaal1 {
+  right: 150px;
 }
 
-#skaal2{
-    left: 150px;
+#skaal2 {
+  left: 150px;
 }
 
 /*------------------------------------------------
 ---------------------Navbar-----------------------
 ------------------------------------------------*/
-nav{
-    background-color: #083448;
-    text-align: center;
-    height: 60px;
-    padding: 5px;
+nav {
+  background-color: #083448;
+  text-align: center;
+  height: 80px;
+  padding: 5px;
 }
 
-nav > button{
-    background-color: #083448;
-    color: white;
-    border-color: #083448 ;
-    border-style: solid;
-    transition: 0.2s;
-    height: 50px;
-    width: 150px;
-    margin: 5px;
+nav > button {
+  background-color: #083448;
+  color: white;
+  border-color: #083448;
+  border-style: solid;
+  transition: 0.2s;
+  height: 70px;
+  width: 250px;
+  margin: 5px;
+  font-size: 20px;
 }
 
-nav button:hover{
-    background-color: #0D5474;
-    color: white;
-    border: white solid 2px;
-    border-radius: 10px;
+nav button:hover {
+  background-color: #0d5474;
+  color: white;
+  border: white solid 2px;
+  border-radius: 10px;
 }
 
-#current_page{
-    background-color: #0D5474;
-    color: white;
-    border-style: solid;
-    border-color: white;
+#current_page {
+  background-color: #0d5474;
+  color: white;
+  border-style: solid;
+  border-color: white;
 }
 
 /*------------------------------------------------
 ---------------------Main Content----------------
 ------------------------------------------------*/
-main{
-    margin: 20px 0px;
+main {
+  margin: 20px 0px;
 }
 
-.textbox{
-    background-color: #0D5474;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 25px;
+h1 {
+  text-align: center;
 }
 
-.elementbox{
-    background-color: #083448;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 25px;
+.textbox {
+  background-color: #0d5474;
+  padding: 30px;
+  margin: 60px 50px;
+  border-radius: 25px;
+}
+
+.textbox {
+  background-color: #0d5474;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 25px;
+}
+
+.elementbox {
+  background-color: #083448;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 25px;
+}
+
+.section_titles {
+  text-align: center;
 }
 
 /*------------------------------------------------
 ---------------------Footer-----------------------
 ------------------------------------------------*/
-#online_logo_footer{
-    position: absolute;
-    bottom: 20px;
-    height: 50px;
-    right: 20px;
+#online_logo_footer {
+  position: absolute;
+  bottom: 20px;
+  height: 50px;
+  right: 20px;
 }
 
-footer{
-    background-color: #0D5474;
-    bottom: 0%;
-    left: 0%;
-    width: 100%; 
-    position:relative;
-    font-size: small;
-    line-height: 10px;
+footer {
+  background-color: #0d5474;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  position: relative;
+  font-size: small;
+  line-height: 10px;
+  margin-top: auto;
 }
 
-#contact_info{
-    padding: 10px 20px;
+footer p h3 {
+  margin-left: 10px;
 }
 
-#contact_info a{
-    color:white ;
+#contact_info {
+  padding: 10px 20px;
+}
+
+#contact_info a {
+  color: white;
+}
+/*------------------------------------------------
+------------------Alle kalkulatorer-----------------
+------------------------------------------------*/
+#whiteline {
+  background-color: white;
+  height: 2px;
+  width: 100%;
 }
 
 /*------------------------------------------------
 --------------Promille kalkulator-----------------
 ------------------------------------------------*/
-.input_title{
-    margin: 0%;
-    text-decoration: underline;
+.input_title {
+  margin: 0%;
+  text-decoration: underline;
 }
 /*lager et felt som overlapper radio buttons*/
-input[type='radio']:after {
-    /*?hva gjør after? */
-    width: 12px;
-    height: 12px;
-    border-radius: 5px;
-    left: -2px;/** flytter felt litt vekk fra label*/
-    position: relative;
-    background-color: #d1d3d1;
-    content: '';/*? forstår koden er avhengig av denne men forstår den ikek*/
-    display: inline-block;
-    border: 2px solid white;
+input[type="radio"]:after {
+  /*?hva gjør after? */
+  width: 12px;
+  height: 12px;
+  border-radius: 5px;
+  left: -2px; /** flytter felt litt vekk fra label*/
+  position: relative;
+  background-color: #d1d3d1;
+  content: ""; /*? forstår koden er avhengig av denne men forstår den ikek*/
+  display: inline-block;
+  border: 2px solid white;
 }
 
-input[type='radio']:checked:after {
-    width: 12px;
-    height: 12px;
-    border-radius: 5px;
-    left: -2px;
-    position: relative;
-    background-color: #ffa500;
-    content: '';
-    display: inline-block;
-    border: 2px solid white;
+input[type="radio"]:checked:after {
+  width: 12px;
+  height: 12px;
+  border-radius: 5px;
+  left: -2px;
+  position: relative;
+  background-color: #ffa500;
+  content: "";
+  display: inline-block;
+  border: 2px solid white;
 }
 
-#promille_kalkulator_other_inputs_box{/*!position denne boksen right og top*/
-    position: relative;
-    align-self: right;
+#promille_kalkulator_other_inputs_box {
+  /*!position denne boksen right og top*/
+  position: relative;
+  align-self: right;
 }
+
+.input_set {
+  margin: 10px 0px;
+}
+
 /*------------------------------------------------
 --------------Spleise kalkulator------------------
 ------------------------------------------------*/
-#submit{
-
-    margin: auto;
-    height: 30px;
-}
-#h1{
-    text-align: center;
-
-}
-.spans{
-    display: none;
+#submit {
+  margin: auto;
+  height: 30px;
 }
 
-#topbox{
-    background-color: #0D5474;
-    height: 220px;
+#h1 {
+  text-align: center;
 }
 
-#dividiv2{
-    position: absolute; 
-    top: 10%;
-    left: 65%; 
-    right: 5%;  
-    padding: 10px;
-}
-#dividiv1{
-    margin-left: 30px;
-    height: 450px;
-    width: 50%;
-    background-color: #083448;
-    padding: 20px;
-    border-radius: 25px;
-    position: relative;
-}
-.inputs{
-    margin-top: 10px;
-    width: 200px;
-    height: 23px;
-
-}
-.outputs{
-    width: 40%;
-    height: 23px;
-    margin-left: 100px;
-    margin-top: 10px;
-    background-color: white;
+.spans {
+  display: none;
 }
 
-#div1{
-    height: 600px;
-    margin: auto;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    width: 90%;
-    background-color: #0D5474;
-    position: relative;
-    border-radius: 25px 25px;
-    
-
-
+#topbox {
+  background-color: #0d5474;
+  height: 220px;
 }
 
-label{
-    margin-top: 300px;
+#dividiv2 {
+  position: absolute;
+  top: 10%;
+  left: 65%;
+  right: 5%;
+  padding: 10px;
+}
+#dividiv1 {
+  margin-left: 30px;
+  height: 450px;
+  width: 50%;
+  background-color: #083448;
+  padding: 20px;
+  border-radius: 25px;
+  position: relative;
+}
+.inputs {
+  margin-top: 10px;
+  width: 200px;
+  height: 23px;
+}
+.outputs {
+  width: 40%;
+  height: 23px;
+  margin-left: 100px;
+  margin-top: 10px;
+  background-color: white;
+}
+
+#div1 {
+  height: 600px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 90%;
+  background-color: #0d5474;
+  position: relative;
+  border-radius: 25px 25px;
+}
+
+#div1 {
+  height: 600px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 90%;
+  background-color: #0d5474;
+  position: relative;
+  border-radius: 25px 25px;
+}
+
+label {
+  margin-top: 300px;
 }
 /*------------------------------------------------
 ------------------Abv kalkulator------------------
@@ -234,25 +296,26 @@ label{
 -------------------Main page----------------------
 ------------------------------------------------*/
 .slideshow {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    max-width: 500px;
-    width: 100%;
-    height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  max-width: 500px;
+  width: 100%;
+  height: auto;
 }
 
 .imagetext {
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  text-align: center;
 }
 /*------------------------------------------------
 -------------------Howto page---------------------
 ------------------------------------------------*/
 .videos {
+<<<<<<< HEAD
     border-radius: 25px;
     width: 90%;
     height: inherit;
@@ -273,6 +336,22 @@ label{
     width: 40%;
     margin-left: 50%;
     height: 500px;
+=======
+  display: inline;
+  border-radius: 25px;
+  width: 50%;
+  height: 500px;
+}
+
+.paragraphs {
+  display: inline;
+  width: 40%;
+}
+
+.div_child {
+  float: left;
+  width: 50%;
+>>>>>>> f8718bea7e6b84fdd0178eab9f63103688094eff
 }
 
 
@@ -280,26 +359,36 @@ label{
 -------------------Media queries---------------------
 ------------------------------------------------*/
 @media only screen and (max-width: 1000px) {
-    .skaal{
-        display: none;
-    }
+  .skaal {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 810px) {
-    nav{
-        height: 120px;
-    }
+  nav {
+    height: 120px;
+  }
 }
 
 @media only screen and (max-width: 510px) {
-    nav{
-        height: 180px;
-    }
+  nav {
+    height: 180px;
+  }
 }
 
+<<<<<<< HEAD
 
 
 
 .checkbox {
     display: none;
 }
+=======
+/*---------------------------------------------------
+----------------------Kontaktside--------------------
+---------------------------------------------------*/
+
+#contact_form {
+  text-align: center;
+}
+>>>>>>> f8718bea7e6b84fdd0178eab9f63103688094eff

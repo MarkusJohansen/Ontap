@@ -10,12 +10,12 @@
 
     <body>
         <header id="header"></header>
-        <div class="flex-wrapper">
-            <main>
-                <section class="textbox">
-                    <div class="elementbox">
 
-                        <h2>ABV Calculator</h2> <br>
+        <main>
+            <section class="textbox">
+                <h2 class="section_titles">ABV Calculator</h2><br>
+                <div class ="flex_wrapper">
+                    <div class="elementbox flex_child">
                         <form id="abv_form">
 
                             <label> Your staring gravity: <br>
@@ -33,34 +33,33 @@
                             <label> ABV i prosent: <br>
                                 <input type="text" id="output_abv" disabled placeholder="ABV i prosent">
                             </label>
-
+                            
                         </form>
                     </div>
 
-                    <div class="elementbox">
-                        
-                        <h3>Hvordan kalkulatoren funker.</h3>
-                        <p>
-                            Måten man beregner mengden alkohol (i volum) i ølen som du skal brygge gjøres ved å måle gravity før og etter gjæringen.
-                            Man kan bruke disse tallene for å beregne alkoholprosenten(ABV). Her er det viktig å tenke på at hvis man legger til gjæringselementer etter målt gravity vil ikke beregningene bli riktige.
-                            Vi klarer å regne ut alkoholprosenten ved å se på tettheten til vann i forhold til det vi har brygget siden noen av ingrediensene har blitt omdannet til alkohol og dermed oppnå en mindre tetthet.
-                        </p>
+                    <div class="flex_child">
+                        <div>
+                            <p>
+                                Måten man beregner mengden alkohol (i volum) i ølen som du skal brygge gjøres ved å måle gravity før og etter gjæringen.
+                                Man kan bruke disse tallene for å beregne alkoholprosenten(ABV). Her er det viktig å tenke på at hvis man legger til gjæringselementer etter målt gravity vil ikke beregningene bli riktige.
+                                Vi klarer å regne ut alkoholprosenten ved å se på tettheten til vann i forhold til det vi har brygget siden noen av ingrediensene har blitt omdannet til alkohol og dermed oppnå en mindre tetthet.
+                            </p>
+                        </div>
 
-                
+                        <div>
+                            <h3>Formelen:</h3>
+                            <p>
+                                ABV = (OG - FG) * 131,25 <br>
+                                (OG = Original Gravity, FG = Final Gravity)
+                            </p>
+                        </div>
                     </div>
+                </div>
+            </section>  
+        </main>
 
-                    <div class="elementbox">
-                        <h3>Formelen:</h3>
-                        <p>
-                            ABV = (OG - FG) * 131,25 <br>
-                            (OG = Original Gravity, FG = Final Gravity)
-                        </p>
-                    </div>
-
-                </section>
-            </main>
-        </div>
         <footer id="footer"></footer>
+        
         <script rel="script" src="../js/components/abv.js"></script>
         <script rel="script" src="../js/script.js"></script>
     </body>

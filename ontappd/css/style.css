@@ -315,7 +315,6 @@ label {
 -------------------Howto page---------------------
 ------------------------------------------------*/
 .videos {
-<<<<<<< HEAD
     border-radius: 25px;
     width: 90%;
     height: inherit;
@@ -333,25 +332,9 @@ label {
 }
 
 .right {
-    width: 40%;
+    width: 45%;
     margin-left: 50%;
     height: 500px;
-=======
-  display: inline;
-  border-radius: 25px;
-  width: 50%;
-  height: 500px;
-}
-
-.paragraphs {
-  display: inline;
-  width: 40%;
-}
-
-.div_child {
-  float: left;
-  width: 50%;
->>>>>>> f8718bea7e6b84fdd0178eab9f63103688094eff
 }
 
 
@@ -376,14 +359,12 @@ label {
   }
 }
 
-<<<<<<< HEAD
 
 
 
 .checkbox {
     display: none;
 }
-=======
 /*---------------------------------------------------
 ----------------------Kontaktside--------------------
 ---------------------------------------------------*/
@@ -391,4 +372,3 @@ label {
 #contact_form {
   text-align: center;
 }
->>>>>>> f8718bea7e6b84fdd0178eab9f63103688094eff

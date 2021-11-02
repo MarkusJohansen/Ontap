@@ -8,6 +8,36 @@ body{
     background-color: azure;
 }
 
+h1{
+
+}
+
+h2{
+
+}
+
+h3{
+
+}
+
+p{
+    font-size: 25px;
+}
+
+
+.flex_wrapper{
+    display: flex;
+}  
+    
+.flex_child{
+    flex: 1;
+}
+
+.flex_child:first-child{
+    margin-right: 50px;
+} 
+
+
 /*------------------------------------------------
 ---------------------header-----------------------
 ------------------------------------------------*/
@@ -43,7 +73,7 @@ body{
 nav{
     background-color: #083448;
     text-align: center;
-    height: 60px;
+    height: 80px;
     padding: 5px;
 }
 
@@ -53,9 +83,10 @@ nav > button{
     border-color: #083448 ;
     border-style: solid;
     transition: 0.2s;
-    height: 50px;
-    width: 150px;
+    height: 70px;
+    width: 250px;
     margin: 5px;
+    font-size: 20px;
 }
 
 nav button:hover{
@@ -81,8 +112,8 @@ main{
 
 .textbox{
     background-color: #0D5474;
-    padding: 10px;
-    margin: 10px;
+    padding: 30px;
+    margin: 60px 50px;
     border-radius: 25px;
 }
 
@@ -91,6 +122,10 @@ main{
     padding: 10px;
     margin: 10px;
     border-radius: 25px;
+}
+
+.section_titles{
+    text-align: center;
 }
 
 /*------------------------------------------------
@@ -111,14 +146,23 @@ footer{
     position:relative;
     font-size: small;
     line-height: 10px;
+    padding: 10px 0px;
 }
 
-#contact_info{
-    padding: 10px 20px;
+footer p h3{
+    margin-left: 10px;
 }
 
 #contact_info a{
     color:white ;
+}
+/*------------------------------------------------
+------------------Alle kalkulatorer-----------------
+------------------------------------------------*/
+#whiteline{
+    background-color: white;
+    height: 2px;
+    width: 100%;
 }
 
 /*------------------------------------------------
@@ -158,18 +202,19 @@ input[type='radio']:checked:after {
     position: relative;
     align-self: right;
 }
+
+.input_set{
+    margin: 10px 0px;
+}
+
+#promille_kalkulator_section{
+
+} 
+
 /*------------------------------------------------
 --------------Spleise kalkulator------------------
 ------------------------------------------------*/
-#submit{
 
-    margin: auto;
-    height: 30px;
-}
-#h1{
-    text-align: center;
-
-}
 .spans{
     display: none;
 }
@@ -218,10 +263,13 @@ input[type='radio']:checked:after {
     background-color: #0D5474;
     position: relative;
     border-radius: 25px 25px;
+<<<<<<< HEAD
     padding: 10px;
     
 
 
+=======
+>>>>>>> bc92bdc5322500b512ad0e5f1e8cf8de0f9a1c84
 }
 
 label{

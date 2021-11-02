@@ -5,7 +5,7 @@
 let i = 0;
 let images = [];
 let imagetext = [];
-let time = 3000; // 3 sekunder
+let time = 3000; // 3000ms = 3 sekunder
 
 // Bildeliste
 images[0] = '../image/slideshow/rodvin.jpg';
@@ -34,11 +34,10 @@ function change(){
 
     if (i < images.length - 1){ //indeksen øker så lenge den ikke går lenger enn indeksen til antall bilder
         i++;  
-    } else{
+    }else{
         i = 0; // når den øker til mer enn indeksen så går den tilbake til null
     }
     setTimeout('change()', time); //kjører funksjonen hvert tredje sekund
-
 }
 
 window.onload = change; //kjører funksjonen med enganng siden er lastet inn

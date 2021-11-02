@@ -81,17 +81,6 @@ noe eventlistener shit*/
 //Footer
 //--------------------------------------------------
 
-//*CONSTRUCTS DIV WITHIN FOOTER
-let pagebottom = document.querySelector("#footer");
-
-function footer_div(){
-    let x = document.createElement("div");
-    x.id = "contact_info";
-    pagebottom.appendChild(x)
-}
-//*FILL DIV WITH PARAGRAPHS AND HEADINGS
-//*ADD ONLINE LOGO
-
 //--------------------------------------------------
 //Main functions/function calls
 //--------------------------------------------------
@@ -101,7 +90,6 @@ function header(){
 }
 
 function footer(){
-    footer_div();
 }
 
 header();

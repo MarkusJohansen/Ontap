@@ -13,7 +13,7 @@ body {
 }
 
 p {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .flex_wrapper {
@@ -31,9 +31,9 @@ p {
 /*------------------------------------------------
 ---------------------header-----------------------
 ------------------------------------------------*/
-#topbox {
+#topbox{
   background-color: #0d5474;
-  height: 220px;
+  height: 320px;
 }
 
 #ontap_logo {
@@ -104,23 +104,16 @@ h1 {
   text-align: center;
 }
 
-.textbox {
+.textbox{
   background-color: #0d5474;
   padding: 30px;
-  margin: 60px 50px;
-  border-radius: 25px;
-}
-
-.textbox {
-  background-color: #0d5474;
-  padding: 10px;
-  margin: 10px;
+  margin: 90px 50px;
   border-radius: 25px;
 }
 
 .elementbox {
   background-color: #083448;
-  padding: 10px;
+  padding: 30px;
   margin: 10px;
   border-radius: 25px;
 }
@@ -145,9 +138,12 @@ footer {
   left: 0%;
   width: 100%;
   position: relative;
-  font-size: small;
   line-height: 10px;
   margin-top: auto;
+}
+
+#footer p{
+  font-size: 12px;
 }
 
 footer p h3 {
@@ -229,27 +225,6 @@ input[type="radio"]:checked:after {
   display: none;
 }
 
-#topbox {
-  background-color: #0d5474;
-  height: 220px;
-}
-
-#dividiv2 {
-  position: absolute;
-  top: 10%;
-  left: 65%;
-  right: 5%;
-  padding: 10px;
-}
-#dividiv1 {
-  margin-left: 30px;
-  height: 450px;
-  width: 50%;
-  background-color: #083448;
-  padding: 20px;
-  border-radius: 25px;
-  position: relative;
-}
 .inputs {
   margin-top: 10px;
   width: 200px;
@@ -261,28 +236,6 @@ input[type="radio"]:checked:after {
   margin-left: 100px;
   margin-top: 10px;
   background-color: white;
-}
-
-#div1 {
-  height: 600px;
-  margin: auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  width: 90%;
-  background-color: #0d5474;
-  position: relative;
-  border-radius: 25px 25px;
-}
-
-#div1 {
-  height: 600px;
-  margin: auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  width: 90%;
-  background-color: #0d5474;
-  position: relative;
-  border-radius: 25px 25px;
 }
 
 label {

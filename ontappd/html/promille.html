@@ -11,17 +11,17 @@
         <header id="header"></header>
 
         <section class="textbox">
-            <div class="elementbox">
-
-                <section id="promille_kalkulator_section">
-                    <h3 class="section_title">Promille kalkulator</h3>
+            <h2 class="section_titles">Promillekalkulator</h2>
+            <div class="flex_wrapper">
+                <div class="elementbox flex_child">
+                    <div id="promille_kalkulator_section">
                         <div id="gender_selection_box">
                             <h4 class="input_title">Kjønn</h4>
                             <input type="radio" class="gender" id="mann" name="gender">Mann</input>
                             <br>
                             <input type="radio" class="gender" id="kvinne" name="gender">Kvinne</input>
                         </div>
-
+    
                         <div id="promille_kalkulator_other_inputs_box">
                             <div class = "input_set">
                                 <h4 class="input_title">Vekt</h4>
@@ -32,18 +32,31 @@
                                 <h4 class="input_title">Antall enheter</h4>
                                 <input id="enheter" type="number" step="any" required></input><br>
                             </div>
-                        
+    
                             <div class = "input_set">
                                 <h4 class="input_title">Antall timer fra drikkestart</h4>
                                 <input id="drikkestart" type="number" step="any" required></input>      
                             </div>
                         </div>
-                
+    
                         <button type="submit" onclick="promille()">Regn ut</button>
-                
+    
                         <div id="whiteline"></div>
                         <input id="p_output" type="text" disabled></input>
-                </section>
+                    </div>
+                </div>
+                <div class="flex_child">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Ducimus tenetur, cumque tempore maiores eius nisi vero 
+                        molestiae voluptates. Laboriosam facilis quisquam excepturi 
+                        dignissimos, rem expedita laborum officia at reprehenderit 
+                        similique. Lorem ipsum dolor sit amet consectetur adipisicing 
+                        elit. Ad laborum voluptates enim? Cumque aut unde molestiae 
+                        distinctio vitae porro repellendus, enim necessitatibus consectetur 
+                        fugit voluptas nam, itaque et quasi similique?
+                    </p>
+                </div>     
             </div>
         </section>
 

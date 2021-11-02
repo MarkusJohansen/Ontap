@@ -295,7 +295,6 @@ label {
 /*------------------------------------------------
 -------------------Main page----------------------
 ------------------------------------------------*/
-<<<<<<< HEAD
 /* .slideshow {
     display: block;
     margin-left: auto;
@@ -344,7 +343,7 @@ label {
 }
 .overskrift{
     text-align: center;
-=======
+}
 .slideshow {
   display: block;
   margin-left: auto;
@@ -360,7 +359,6 @@ label {
   margin-right: auto;
   width: 50%;
   text-align: center;
->>>>>>> f8718bea7e6b84fdd0178eab9f63103688094eff
 }
 .tekstogsånt{
     margin: 10px;

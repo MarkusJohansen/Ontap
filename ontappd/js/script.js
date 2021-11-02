@@ -50,7 +50,7 @@ function navbar_component(){
         ["promille.html","Promille kalkulator"],
         ["spleise.html","Spleise Kalkulator"],
         ["howto.html","How to"],
-        ["contactus.html","Contact us"]
+        ["contactus.html","Contact us"],
     ]
 
     for(let i = 0; i < nav_buttons.length; i++){
@@ -104,14 +104,25 @@ function footer_div(){
         if (footer_content[i].length > 2){
             const y = document.createElement("a")
             y.setAttribute("href", footer_content[i][2]);
+            y.setAttribute("target", "_blank");
             y.innerHTML = footer_content[i][1]
             x.appendChild(y);
-        } else{
+        }   else {
             x.innerHTML = footer_content[i][1];
         }
     }
-    pagebottom.appendChild(footerDiv);
+    const online_logo_link = document.createElement("a");
+    online_logo_link.setAttribute("href", "https://online.ntnu.no/");
+    online_logo_link.setAttribute("target", "_blank");
+    footerDiv.appendChild(online_logo_link);
 
+    const pic = document.createElement("img");
+    pic.setAttribute("src", "../image/online_logo.svg");
+    pic.setAttribute("id", "online_logo_footer");
+    pic.setAttribute("alt", "Online linjeforening sin logo");
+    online_logo_link.appendChild(pic);
+
+    pagebottom.appendChild(footerDiv);
 }
 //*FILL DIV WITH PARAGRAPHS AND HEADINGS
 //*ADD ONLINE LOGO

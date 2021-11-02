@@ -135,11 +135,5 @@ function header(){
     navbar_component();
 }
 
-<<<<<<< HEAD
-=======
-function footer(){
-}
-
->>>>>>> 801005ed6811d7895274b02362e78f23f9ba7b4b
 header();
 footer_div();

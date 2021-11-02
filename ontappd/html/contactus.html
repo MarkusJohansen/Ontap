@@ -17,24 +17,35 @@
                     <h1>Kontakt oss!</h1>
                     <p>Send oss en melding så skal vi svare på spørsmålet ditt så fort som mulig!</p>
                     <div class="elementbox">
-                        <form name="contact_form" id="contact_form" method="POST">
-                            <label>Navn<br>
-                                <input id="form_name" name="form_name" type="text" placeholder="Ditt navn" required><br>
-                            </label>
+                        <form name="contact_form" id="contact_form" method="POST" onsubmit="return sendEmail()">
+                            
+                            <div class="form_group">
+                                <label>Navn<br>
+                                    <input id="form_name" name="form_name" type="text" placeholder="Ditt navn" required>
+                                </label>
+                            </div>
 
-                            <label> Mail <br>
-                                <input type="email" name="form_email" id="form_mail" placeholder="examplemail@mail.com" required><br>
-                            </label>
-                    
-                            <label>Emne<br>
-                                <input id="form_subject" name="form_subject" type="text" placeholder="Skriv emne her" required><br>
-                            </label>
+                            <div class="form_group">
+                                <label> Mail <br>
+                                    <input type="email" name="form_email" id="form_mail" placeholder="examplemail@mail.com" required>
+                                </label>
+                            </div>
 
-                            <label>Melding<br>
-                                <textarea id="form_message" name="form_message" placeholder="Skriv din melding her..." required spellcheck="false"></textarea><br>
-                            </label>
+                            <div class="form_group">
+                                <label>Emne<br>
+                                    <input id="form_subject" name="form_subject" type="text" placeholder="Skriv emne her" required>
+                                </label>
+                            </div>
 
-                            <input id="form_submit" name="form_submit" type="submit" value="Send" onclick="sendEmail()" >
+                            <div class="form_group">
+                                <label>Melding<br>
+                                    <textarea id="form_message" name="form_message" placeholder="Skriv din melding her..." required spellcheck="false" required></textarea>
+                                </label>
+                            </div>
+
+                            <div class="form_group">
+                                <input id="form_submit" name="form_submit" type="submit" value="Send">
+                            </div>
                         </form>
                     </div>
 

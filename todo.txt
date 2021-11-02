@@ -1,4 +1,4 @@
-Fikse footer modularity = Oscar 
+= Oskar 
 Tutorial list for howto = Benjamin
 fikse promille kalk BUGS = Markus
 Spleise kalkulator = Naqibullah

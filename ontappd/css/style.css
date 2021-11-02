@@ -249,6 +249,22 @@ label{
     width: 50%;
     text-align: center;
 }
+
+
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+    flex: 1;
+    border: 2px solid;
+    background-color: #083448;
+    border-radius: 10%;
+}  
+
+.flex-child:first-child {
+    margin-right: 20px;
+} 
 /*------------------------------------------------
 -------------------Howto page---------------------
 ------------------------------------------------*/

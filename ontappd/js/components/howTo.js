@@ -1,17 +1,20 @@
 
 const ul = document.getElementById("tutorial_list");
-const li = document.createElement("li")
-const tutorial = ["a", "b", "c", "d", "e"];
-const span = document.createElement("span")
-const checkbox = document.createElement("input");
-checkbox.type = "checkbox";
-    
-
+const tutorial = ["a", "b", "c", "d", "e"];    
 
 for (let i = 0; i < tutorial.length; i++) {
-    ul.appendChild(li)
+    let li = document.createElement("li")
+
+    let span = document.createElement("span")
+    span.innerHTML = tutorial[i]
+    console.log(tutorial[i])
+    console.log(span)
+
+    let checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+
     li.appendChild(checkbox)
     li.appendChild(span)
-    span.innerHTML(tutorial[i])
+    ul.appendChild(li)
 }
 

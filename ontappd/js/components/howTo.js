@@ -12,9 +12,20 @@ for (let i = 0; i < tutorial.length; i++) {
 
     let checkbox = document.createElement("input");
     checkbox.type = "checkbox";
+    checkbox.setAttribute("onclick", "checked_boxes()")
 
     li.appendChild(checkbox)
     li.appendChild(span)
     ul.appendChild(li)
 }
 
+
+const antallsjekket = document.getElementById("antallchecked")
+antallsjekket.innerHTML = "0/5 steg gjennomført"
+
+
+function checked_boxes() {
+    let allebokser = document.querySelectorAll("input[type=checkbox]")
+    let avhuketbokser = document.querySelectorAll("input[type=checkbox]:checked")
+    antallsjekket.innerHTML = avhuketbokser.length + "/" + allebokser.length + " steg gjennomført"
+}

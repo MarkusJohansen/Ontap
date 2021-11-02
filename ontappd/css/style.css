@@ -328,6 +328,9 @@ label {
     line-height: 200%;
     font-size: medium;
 }
+.bildeSlide{
+    border-radius: 15%;
+}
 
 /*------------------------------------------------
 -------------------Slideshow V2---------------------

@@ -3,11 +3,7 @@
 ------------------------------------------------*/
 body {
   color: white;
-<<<<<<< HEAD
-  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",sans-serif;
-=======
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
->>>>>>> 801005ed6811d7895274b02362e78f23f9ba7b4b
   margin: 0%;
   min-height: 100vh;
   display: flex;
@@ -256,7 +252,6 @@ input[type="radio"]:checked:after {
   background-color: white;
 }
 
-<<<<<<< HEAD
 table{
   width: 100%;
 }
@@ -275,11 +270,6 @@ table{
 }
 
 
-=======
-label {
-  margin-top: 300px;
-}
->>>>>>> 801005ed6811d7895274b02362e78f23f9ba7b4b
 /*------------------------------------------------
 ------------------Abv kalkulator------------------
 ------------------------------------------------*/

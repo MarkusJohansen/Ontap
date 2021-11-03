@@ -305,8 +305,8 @@ label {
     margin-top: 10px;
 }
 
-.checkboxes[type="checkbox"]:before::after {
-    border-radius: 10px;
+#tutorial_list, li, input[type="checkbox"]:before {
+    border-radius: 25px;
 
 }
 /*------------------------------------------------

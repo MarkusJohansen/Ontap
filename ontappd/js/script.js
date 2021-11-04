@@ -35,17 +35,18 @@ function topbox_component(){
 //--------------------------------------------------
 //Navbar
 //--------------------------------------------------
+const navbar = document.getElementById("navbar");
 
 //*CONSTRUCTING NAVBAR
 function navbar_component(){
     console.log("navbar being constructed");
     let y = document.createElement("nav");
-    y.id = "navbar";
+    y.setAttribute("id", "navbar");
     head.appendChild(y);
 
     //*CONSTRUCTING BUTTONS IN NAVBAR
     console.log("nav buttons is being constructed");
-    nav_buttons = [
+    let nav_buttons = [
         ["abv.html","ABV Kalkulator"],
         ["promille.html","Promille kalkulator"],
         ["spleise.html","Spleise Kalkulator"],
@@ -58,6 +59,17 @@ function navbar_component(){
         x.setAttribute("onclick","window.location.href='../html/" + nav_buttons[i][0] + "';");
         x.innerHTML = nav_buttons[i][1];
         y.appendChild(x);
+    }
+    //henter filnavnet på aktiv fil
+    var pathname = window.location.pathname;
+    //setter stil på aktiv lenke til mørkere med understrek
+    for (let i = 0; i < nav_buttons.length; i++) {
+        let aTagHref = nav_buttons[i][0];
+        if (pathname.includes(aTagHref)) {
+            document.getElementById('navbar').style.color ='green';
+        } else{
+            return false;
+        }
     }
 }
 
@@ -75,8 +87,8 @@ function navbar_component(){
 }
 set_currentpage_style(navbar)
 
-noe eventlistener shit*/
 
+*/
 //--------------------------------------------------
 //Footer
 //--------------------------------------------------

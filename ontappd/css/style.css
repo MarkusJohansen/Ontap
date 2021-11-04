@@ -255,33 +255,9 @@ label {
 /*------------------------------------------------
 -------------------Main page----------------------
 ------------------------------------------------*/
-/* .slideshow {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    max-width: 300px;
-    width: 100%;
-    height: auto;
-}
-
-.imagetext {
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    text-align: center;
-    color: black;
-} */
-
-/* ALt kommentert ut over er STYLE til tidligere versjon av slideshow, prøver med ny under */
 
 
-.flex-container {
-    display: flex;
-    margin-bottom: 10px;
-}
-
-.flex-child {
+#firstContainer {
     flex: 1;
     border: 2px solid;
     background-color: #083448;
@@ -289,31 +265,10 @@ label {
     margin-left: 75px;
     margin-top: 50px;
 }  
-.flex-child2 {
-    flex: 1;
-    border: 2px solid;
-    background-color: white;
-    border-radius: 10%;
-}  
 
-.flex-child:first-child {
-    margin-right: 20px;
-} 
-.slideshow{
-    border-radius: 10%;
-}
 .overskrift{
     text-align: center;
     margin-bottom: 50px;
-}
-.slideshow {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  max-width: 500px;
-  width: 100%;
-  height: auto;
 }
 
 .imagetext {
@@ -322,25 +277,25 @@ label {
   width: 50%;
   text-align: center;
 }
-.tekstogsånt{
+.about{
     margin: 50px;
-    text-align: center;
-    line-height: 200%;
-    font-size: medium;
-}
-.bildeSlide{
-    border-radius: 15%;
+    
 }
 
 /*------------------------------------------------
 -------------------Slideshow V2---------------------
 ------------------------------------------------*/
 
+.bildeSlide{
+    border-radius: 15%;
+    width: 100%;
+    border: #083448 2px solid;
+}
+
+
 /* Slideshow container */
 .slideshow-container {
-    
-    max-width: 400px;
-    max-height: 533px;
+    max-width: 500px;
     position: relative;
     margin: auto;
   }
@@ -356,21 +311,18 @@ label {
     cursor: pointer;
     position: absolute;
     top: 50%;
-    width: auto;
     margin-top: -22px;
-    padding: 16px;
-    color: white;
+    padding: 20px;
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
+    background-color: rgba(0,0,0,0.2)
   }
   
-  /* Posisjonere neste-knappen til høyre */
+  /* Posisjonere neste-knappen helt til høyre */
   .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
+    margin-right: -2px;
   }
   
   /* Når musepeker er over knappene */
@@ -380,8 +332,6 @@ label {
   
   /* Bildetekst */
   .text {
-    color: #f2f2f2;
-    font-size: 15px;
     padding: 8px 12px;
     position: absolute;
     bottom: 8px;

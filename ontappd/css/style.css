@@ -226,38 +226,11 @@ input[type="radio"]:checked:after {
 /*------------------------------------------------
 --------------Spleise kalkulator------------------
 ------------------------------------------------*/
-<<<<<<< HEAD
-#submit {
-  margin: auto;
-  height: 30px;
-  background-color: #ffa500;
-  border: none;
-}
-=======
-
->>>>>>> 6d876da3c3da93a8e00fcee59cc233afc417303f
 
 .spans {
   display: none;
 }
 
-<<<<<<< HEAD
-.inputs {
-  margin-top: 10px;
-  width: 200px;
-  height: 23px;
-  border: none;
-}
-.outputs {
-  width: 60%;
-  height: 23px;
-  position: relative;
-  float: right;
-  right: 40%;
-  clear: both;
-  border: none;
-  margin-top: 20px;
-=======
 .inputs-spleis{
   
   width: 50%;
@@ -268,33 +241,13 @@ input[type="radio"]:checked:after {
   height: 30px;
   margin-left: 100px;
   margin-top: 10px;
->>>>>>> 6d876da3c3da93a8e00fcee59cc233afc417303f
   background-color: white;
 }
 
 table{
   width: 100%;
-<<<<<<< HEAD
 }
 
-
-#div1{
-  height: 600px;
-  margin: auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
-  width: 90%;
-  background-color: #0D5474;
-  position: relative;
-  border-radius: 25px 25px;
-  padding: 10px;
-}
-
-
-=======
-}
-
->>>>>>> 6d876da3c3da93a8e00fcee59cc233afc417303f
 /*------------------------------------------------
 ------------------Abv kalkulator------------------
 ------------------------------------------------*/

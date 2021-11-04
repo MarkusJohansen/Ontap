@@ -15,40 +15,63 @@
                 <h1 class="section_titles">Spliese Kalkulator</h1>
                 <div class="flex_wrapper">
                     <div class="elementbox flex_child">
-                        <form>
-                            <label for="antallPersoner">Antall personer som deler </label>  <br>
-                            <input type="number" id="antallPersoner" min="1" class="inputs" required> 
-                            <span id="span1" class="spans"></span>               
-                            <br>
-                            <br>
-                            <label for="antallLiter" >Antall liter</label> <br>
-                            <input type="number" id="antallLiter" class="inputs" required >
-                            <span id="span2" class="spans"></span>
-                            <br>
-                            <br>
-                            <label for="totalKostnad">Totale kostnader</label> <br>
-                            <input type="number" id="totalKostnad" class="inputs" required>
-                            <span id="span3" class="spans"></span>
-                            <br>
-                            <br>
-                            <button type="submit" id="submit">Regn ut</button>
-                            <div id="whiteline"></div>
-                            <label for="LiterPerPers">Liter/person</label> <br>
-                            <input type="number" class="outputs" id="literPerPers" disabled>
-                            <br>
-                            <label for="KronerPerPers">Kroner/person</label> <br>
-                            <input type="number" class="outputs" id="kronerPerPers" disabled>
-                            <br>
-                            <label for="KronerPerLiter">Kroner/liter</label> <br>
-                            <input type="number" class="outputs" id="kronerPerLiter" disabled> 
-                        </form>
+                        
+                        <label class="label-kalkulator" for="antallPersoner">Antall personer som deler </label>  <br>
+                        <input type="number" id="antallPersoner" min="1" class="inputs" required> 
+                        <span id="span1" class="spans"></span>               
+                        <br>
+                        <br>
+                        <label class="label-kalkulator" for="antallLiter" >Antall liter</label> <br>
+                        <input type="number" id="antallLiter" class="inputs" required >
+                        <span id="span2" class="spans"></span>
+                        <br>
+                        <br>
+                        <label class="label-kalkulator" for="totalKostnad">Totale kostnader</label> <br>
+                        <input type="number" id="totalKostnad"  class="inputs" required>
+                        <span id="span3" class="spans"></span>
+                        <br>
+                        <br>
+                        <button type="submit" id="submit">Regn ut</button>
+                        <div id="whiteline"></div>
+                        <table>
+                            <tr>
+                                <td>
+                                    <label class="label-kalkulator">Liter/person</label> 
+                                </td>
+                                <td>
+                                    <input type="number" class="outputs" id="literPerPers" disabled>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="label-kalkulator">Kroner/person</label>
+                                </td>
+                                <td>
+                                    <input type="number" class="outputs" id="kronerPerPers" disabled>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label class="label-kalkulator">Kroner/liter</label> 
+                                </td>
+                                <td>
+                                    <input type="number" class="outputs" id="kronerPerLiter" disabled>   
+                                </td>
+                            </tr>
+                        </table>  
+
+                        
                     </div>
     
                     <div class="flex_child">
                         <p>
                             Denne Kalkulatoren brukes når flere brygger sammen. I den første inputen må man 
                             skrive antall folk som brygger sammen, i den andre inputen må man skrive antall liter 
-                            ål og i den tredje inputen må man skrive den totale kostnaden.  
+                            øl og i den tredje inputen må man skrive den totale kostnaden.  
+                            <br><br>
+                            De tre siste inputene brukes til å skrive ut resultatet. Det er ikke mulig å fylle disse 
+                            inputene. Når du trykker på "regn ut" så får du resultatet.
+
                         </p>
                     </div>
                 </div>

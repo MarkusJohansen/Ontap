@@ -23,32 +23,29 @@
                                 <div id="gender_selection_box">
                                     <div class="input_set">
                                         <p class="input_title">Kjønn</p>
-                                        <input type="radio" class="gender" id="mann" name="gender">Mann</input>
+                                        <input type="radio" class="gender" id="mann" name="gender" onchange="promille()">Mann</input>
                                         <br>
-                                        <input type="radio" class="gender" id="kvinne" name="gender">Kvinne</input>
+                                        <input type="radio" class="gender" id="kvinne" name="gender" onchange="promille()">Kvinne</input>
                                     </div>
                                 </div>
             
                                 <div id="promille_kalkulator_other_inputs_box" class="flex_child">
                                     <div class = "input_set">
                                         <p class="input_title">Vekt</p>
-                                        <input class="kalkulator_input_textfield" id="kroppsvekt" type="number" step="any" required></input><br>
+                                        <input class="kalkulator_input_textfield" id="kroppsvekt" type="number" step="any" onchange="promille()"></input><br>
                                     </div>
                                     
                                     <div class = "input_set">
                                         <p class="input_title">Antall enheter</p>
-                                        <input class="kalkulator_input_textfield" id="enheter" type="number" step="any" required></input><br>
+                                        <input class="kalkulator_input_textfield" id="enheter" type="number" step="any" onchange="promille()"></input><br>
                                     </div>
             
                                     <div class = "input_set">
                                         <p class="input_title">Antall timer fra drikkestart</p>
-                                        <input class="kalkulator_input_textfield" id="drikkestart" type="number" step="any" required></input>      
+                                        <input class="kalkulator_input_textfield" id="drikkestart" type="number" step="any" onchange="promille()"></input>      
                                     </div>
                                 </div>
                             </div>
-
-                            <button type="submit" onclick="promille()">Regn ut</button>
-
                             <div id="whiteline"></div>
 
                             <div class="flex_wrapper_secondary">

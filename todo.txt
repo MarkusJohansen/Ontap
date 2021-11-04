@@ -1,10 +1,18 @@
-Fikse footer modularity = Oscar 
 Tutorial list for howto = Benjamin
 fikse promille kalk BUGS = Markus
 Spleise kalkulator = Naqibullah
-? = Sander
+Gjøre ferdig hjem side = Sander
 
 //////////////////////////////////////////////////////////////////////
-    -   Fikse footer position
-    -   Bug fikse ferdig ABV kalk
+    -   Css hovedside
+    -   Validering av ferdige scripts
+    -   Validering av ferdig html
+    -   Legge til hjem knapp
+    -   Consistensy i design over alle kalkulatorene
+    -   consistensy i design over alle sidene
+    -   evt changes og additions
+    -   fjerne unødvendig kode i css
+    -   fjerne unødvendig kode i html (classes og id etc)
+    -   fjerne overflødig javascript kode
+    -   gjøre ferdig text content
 //////////////////////////////////////////////////////////////////////

@@ -15,19 +15,37 @@
             <main>
                 <section class="textbox">
                     <h1>Kontakt oss!</h1>
-
+                    <p>Send oss en melding så skal vi svare på spørsmålet ditt så fort som mulig!</p>
                     <div class="elementbox">
-                        <form name="contact_form" id="contact_form" onsubmit="return autofillEmail()">
-                            <label>Navn</label><br>
-                            <input id="name" name="navn" type="text" placeholder="Ditt navn" required=""><br>
-                    
-                            <label>Emne</label><br>
-                            <input id="subject" name="emne" type="text" placeholder="Skriv emne her" required=""><br>
-                    
-                            <label>Melding</label><br>
-                            <textarea id="message" name="melding" placeholder="Skriv din melding her..." required="" spellcheck="false"></textarea><br>
-                    
-                            <input id="submit" name="submit" type="submit" value="Send" onclick="autofillEmail()">
+                        <form name="contact_form" id="contact_form" method="POST" onsubmit="return sendEmail()">
+                            
+                            <div class="form_group">
+                                <label>Navn<br>
+                                    <input id="form_name" name="form_name" type="text" placeholder="Ditt navn" required>
+                                </label>
+                            </div>
+
+                            <div class="form_group">
+                                <label> Mail <br>
+                                    <input type="email" name="form_email" id="form_mail" placeholder="examplemail@mail.com" required>
+                                </label>
+                            </div>
+
+                            <div class="form_group">
+                                <label>Emne<br>
+                                    <input id="form_subject" name="form_subject" type="text" placeholder="Skriv emne her" required>
+                                </label>
+                            </div>
+
+                            <div class="form_group">
+                                <label>Melding<br>
+                                    <textarea id="form_message" name="form_message" placeholder="Skriv din melding her..." required spellcheck="false" required></textarea>
+                                </label>
+                            </div>
+
+                            <div class="form_group">
+                                <input id="form_submit" name="form_submit" type="submit" value="Send">
+                            </div>
                         </form>
                     </div>
 
@@ -36,7 +54,7 @@
         </div>
 
         <footer id="footer"></footer>
-        <script rel="script" src="../js/components/abv.js"></script>
+        <script rel="script" src="../js/components/kontakside.js"></script>
         <script rel="script" src="../js/script.js"></script>
     </body>
 </html>

@@ -9,58 +9,12 @@
     </head>
     <body>
         <header id="header"></header>
+        
         <main>
             <div class="textbox">
                 <h1 class="section_titles">Spleise Kalkulator</h1>
                 <div class="flex_wrapper">
                     <div class="elementbox flex_child">
-<<<<<<< HEAD
-                        <form>
-                            <label for="antallPersoner">Antall personer som deler </label>  <br>
-                            <input type="number" id="antallPersoner" min="1" class="inputs" required> 
-                            <span id="span1" class="spans"></span>               
-                            <br>
-                            <br>
-                            <label for="antallLiter" >Antall liter</label> <br>
-                            <input type="number" id="antallLiter" class="inputs" required >
-                            <span id="span2" class="spans"></span>
-                            <br>
-                            <br>
-                            <label for="totalKostnad">Totale kostnader</label> <br>
-                            <input type="number" id="totalKostnad" class="inputs" required>
-                            <span id="span3" class="spans"></span>
-                            <br>
-                            <br>
-                            <button type="submit" id="submit">Regn ut</button>
-                            <div id="whiteline"></div>
-                            <table>
-                                <tr>
-                                    <td>
-                                        <label>Liter/person</label> 
-                                    </td>
-                                    <td>
-                                        <input type="number" class="outputs" id="literPerPers" disabled>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <label>Kroner/person</label>
-                                    </td>
-                                    <td>
-                                        <input type="number" class="outputs" id="kronerPerPers" disabled>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <label>Kroner/liter</label> 
-                                    </td>
-                                    <td>
-                                        <input type="number" class="outputs" id="kronerPerLiter" disabled>   
-                                    </td>
-                                </tr>
-                            </table>  
-                        </form>
-=======
                         <p class="input_title">Antall personer som deler</p>
                         <input type="number" id="antallPersoner" min="1" class="inputs-spleis" onchange="spleisKalkulator()" required> 
                         <span id="span1" class="spans"></span>               
@@ -104,30 +58,25 @@
                         </table>  
 
                         
->>>>>>> 6d876da3c3da93a8e00fcee59cc233afc417303f
                     </div>
-
+    
                     <div class="flex_child">
                         <p>
                             Denne Kalkulatoren brukes når flere brygger sammen. I den første inputen må man 
                             skrive antall folk som brygger sammen, i den andre inputen må man skrive antall liter 
                             øl og i den tredje inputen må man skrive den totale kostnaden.  
-<<<<<<< HEAD
-                            <br>
-                            <br>
-                            De tre siste inputene brukes til å skrive ut resultatet. Det er ikke mulig å fylle disse 
-                            inputene. Når du trykker på "regn ut" så får du resultatet
-=======
                             <br><br>
                             De tre siste inputene brukes til å skrive ut resultatet. Det er ikke mulig å fylle disse 
                             inputene. Når du trykker på "regn ut" så får du resultatet.
 
->>>>>>> 6d876da3c3da93a8e00fcee59cc233afc417303f
                         </p>
                     </div>
                 </div>
+
+                
             </div>
         </main>
+
         <footer id="footer"></footer>
 
         <script rel="script" src="../js/components/spleise.js"></script>

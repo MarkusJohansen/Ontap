@@ -7,28 +7,28 @@ const output2 = document.getElementById("kronerPerPers")
 const output3 = document.getElementById("kronerPerLiter")
 
 
-submit.addEventListener("click",function(event){
+function spleisKalkulator(){
     const antallPersonerValue = antallPersoner.value
     const antallLiterValue = antallLiter.value 
     const totalKostnadValue = totalKostnad.value
-    if (antallPersonerValue == "" || antallPersonerValue<1 ){
-        document.getElementById("span1").innerText="* Tallet må være 1 eller større enn 1"
+    if (antallPersonerValue<1 ){
+        document.getElementById("span1").innerText="* Tallet må være 1 eller større "
         document.getElementById("span1").style.display="inline"
     }
     else{
         document.getElementById("span1").style.display="none"
 
     }
-    if (antallLiterValue=="" || antallLiterValue<1 ){
-        document.getElementById("span2").innerText="*Tallet må være 1 eller større enn 1"
+    if (antallLiterValue<1 ){
+        document.getElementById("span2").innerText="*Tallet må være 1 eller større "
         document.getElementById("span2").style.display="inline"
     }
     else{
         document.getElementById("span2").style.display="none"
     }
 
-    if (totalKostnadValue=="" || totalKostnadValue <1 ){
-        document.getElementById("span3").innerText="*Tallet må være 1 eller større enn 1"
+    if ( totalKostnadValue <1 ){
+        document.getElementById("span3").innerText="*Tallet må være 1 eller større "
         document.getElementById("span3").style.display="inline"
     }
     else{
@@ -43,5 +43,5 @@ submit.addEventListener("click",function(event){
     event.preventDefault()
 
     
-})
+}
 

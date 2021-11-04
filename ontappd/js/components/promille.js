@@ -9,7 +9,7 @@ function BAC_calculation(alcohol_by_units, weight, hours_from_start, output, fem
     //*CHECKS IF ALL TEXT FIELDS ARE fulfilled
     if(alcohol_by_units.value == "" || weight.value == "" || hours_from_start.value == ""){
         console.log("ERROR: alle felter er ikke fyllt")
-        output.innerHTML = "Alle feltene må fylles ut! Prøv igjen."
+        output.value = "Alle feltene må fylles ut! Prøv igjen."
         return false
     }
     
@@ -21,7 +21,7 @@ function BAC_calculation(alcohol_by_units, weight, hours_from_start, output, fem
         x = (parseFloat(alcohol_by_units.value)* 12.8 )/(parseFloat(weight.value) * 0.70); 
     }else{
         console.log("ERROR: No gender checked");
-        output.innerHTML = "No gender picked. Try again, pick a gender.";
+        output.value = "No gender picked. Try again, pick a gender.";
         return false
     }
 
@@ -45,6 +45,4 @@ function promille(){//Funksjonen som får et kall fra submit knappen. Main funks
     BAC_calculation(alkohol, vekt, drikkestart, prom, kvinne, mann)
 }
 
-/*
-    - Fix a output field
-*/
+//no negative numbers

@@ -12,21 +12,20 @@
         
         <main>
             <div class="textbox">
-                <h1 class="section_titles">Spliese Kalkulator</h1>
+                <h1 class="section_titles">Spleise Kalkulator</h1>
                 <div class="flex_wrapper">
                     <div class="elementbox flex_child">
-                        
-                        <label class="label-kalkulator" for="antallPersoner">Antall personer som deler </label>  <br>
+                        <p class="input_title">Antall personer som deler</p>
                         <input type="number" id="antallPersoner" min="1" class="inputs-spleis" onchange="spleisKalkulator()" required> 
                         <span id="span1" class="spans"></span>               
                         <br>
                         <br>
-                        <label class="label-kalkulator" for="antallLiter"  >Antall liter</label> <br>
+                        <p class="input_title" >Antall liter</p>
                         <input type="number" id="antallLiter" class="inputs-spleis" onchange="spleisKalkulator()" required >
                         <span id="span2" class="spans"></span>
                         <br>
                         <br>
-                        <label class="label-kalkulator" for="totalKostnad">Totale kostnader</label> <br>
+                        <p class="input_title">Totale kostnader</p>
                         <input type="number" id="totalKostnad"  class="inputs-spleis" onchange="spleisKalkulator()" required>
                         <span id="span3" class="spans"></span>
                         
@@ -34,7 +33,7 @@
                         <table>
                             <tr>
                                 <td>
-                                    <label class="label-kalkulator">Liter/person</label> 
+                                    <p class="input_title">Liter/person</p>
                                 </td>
                                 <td>
                                     <input type="number" class="outputs-spleis" id="literPerPers" disabled>
@@ -42,7 +41,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <label class="label-kalkulator">Kroner/person</label>
+                                    <p class="input_title">Kroner/person</p>
                                 </td>
                                 <td>
                                     <input type="number" class="outputs-spleis" id="kronerPerPers" disabled>
@@ -50,7 +49,7 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <label class="label-kalkulator">Kroner/liter</label> 
+                                    <p class="input_title">Kroner/liter</p>
                                 </td>
                                 <td>
                                     <input type="number" class="outputs-spleis" id="kronerPerLiter" disabled>   

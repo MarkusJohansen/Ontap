@@ -284,6 +284,7 @@ table{
 
 .paragraphs {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0px 0px 0px 50px;
 }
 
 .left {
@@ -328,6 +329,10 @@ table{
 @media only screen and (max-width: 877px) {
   .flex_wrapper {
     display: block;
+  }
+
+  .paragraphs {
+    margin: 30px 0px 0px 0px;
   }
 }
 

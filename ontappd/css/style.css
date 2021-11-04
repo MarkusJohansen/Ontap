@@ -233,13 +233,13 @@ input[type="radio"]:checked:after {
 
 .inputs-spleis{
   
-  width: 50%;
+  width: 80%;
   height: 30px;
 }
 .outputs-spleis {
-  width: 60%;
+  width: 0100%;
   height: 30px;
-  margin-left: 100px;
+  margin-left: 5%;
   margin-top: 10px;
   background-color: white;
 }

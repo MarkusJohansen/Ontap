@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+fikse script til knapper = Oscar 
+>>>>>>> 67e12afbc3f64c80f92ec63a1fef76f824767d1f
 Tutorial list for howto = Benjamin
 fikse promille kalk BUGS = Markus
 Spleise kalkulator = Naqibullah

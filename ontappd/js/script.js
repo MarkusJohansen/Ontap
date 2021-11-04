@@ -45,16 +45,16 @@ function navbar_component(){
 
     //*CONSTRUCTING BUTTONS IN NAVBAR
     console.log("nav buttons is being constructed");
+
     let nav_buttons = [
         ["main.html", "Hjem"],
         ["abv.html","ABV Kalkulator"],
         ["promille.html","Promille kalkulator"],
         ["spleise.html","Spleise Kalkulator"],
         ["howto.html","How to"],
-        ["contactus.html","Contact us"],
+        ["contactus.html","Contact us"]
     ];
     
-    var pathname = window.location.pathname;
     for(let i = 0; i < nav_buttons.length; i++){
         const x = document.createElement("button");
         x.setAttribute("onclick","window.location.href='../html/" + nav_buttons[i][0] + "';");
@@ -72,6 +72,7 @@ function navbar_component(){
         borderRadius: '10px'
     };
 
+    var pathname = window.location.pathname;
     for (let i = 0; i < nav_buttons.length; i++) {
         let aTagHref = nav_buttons[i][0];
         if (pathname.includes(aTagHref)) {

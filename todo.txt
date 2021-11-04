@@ -1,7 +1,11 @@
 Tutorial list for howto = Benjamin
 fikse promille kalk BUGS = Markus
 Spleise kalkulator = Naqibullah
+<<<<<<< HEAD
+Rydde opp ved bruk av generell styling = Sander
+=======
 Gjøre ferdig hjem side = Sander
+>>>>>>> 6d876da3c3da93a8e00fcee59cc233afc417303f
 
 //////////////////////////////////////////////////////////////////////
     -   Css hovedside

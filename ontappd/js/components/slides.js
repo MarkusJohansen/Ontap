@@ -5,11 +5,11 @@
 let slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
-function plusSlides(n) {
+// Skifte bilde
+function changeSlides(n) {
   showSlides(slideIndex += n);
 }
-
+// Hovedfunksjonen
 function showSlides(n) {
   let slides = document.getElementsByClassName("mySlides");
   
@@ -23,5 +23,6 @@ function showSlides(n) {
       slides[i].style.display = "none"; 
   }
   
+
   slides[slideIndex-1].style.display = "block"; 
 }

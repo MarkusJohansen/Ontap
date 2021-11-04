@@ -1,3 +1,4 @@
+
 const antallPersoner = document.getElementById("antallPersoner");
 const antallLiter = document.getElementById("antallLiter");
 const totalKostnad = document.getElementById("totalKostnad");
@@ -5,11 +6,12 @@ const output1 = document.getElementById("literPerPers");
 const output2 = document.getElementById("kronerPerPers");
 const output3 = document.getElementById("kronerPerLiter");
 
-
+// defining a function to todo all the calculations
 function spleisKalkulator(){
     const antallPersonerValue = antallPersoner.value
     const antallLiterValue = antallLiter.value 
     const totalKostnadValue = totalKostnad.value
+    
     if (antallPersonerValue<1 ){
         document.getElementById("span1").innerText="* Tallet må være 1 eller større "
         document.getElementById("span1").style.display="inline"

@@ -276,8 +276,9 @@ label {
 ------------------------------------------------*/
 .videos {
     border-radius: 25px;
-    width: 90%;
-    height: inherit;
+    width: 100%;
+    height: 298px;
+    border: none;
 }
 
 .paragraphs {

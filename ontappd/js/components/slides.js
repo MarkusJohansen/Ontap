@@ -34,7 +34,8 @@ function change(){
 
     if (i < images.length - 1){ //indeksen øker så lenge den ikke går lenger enn indeksen til antall bilder
         i++;  
-    }else{
+    }
+    else{
         i = 0; // når den øker til mer enn indeksen så går den tilbake til null
     }
     setTimeout('change()', time); //kjører funksjonen hvert tredje sekund

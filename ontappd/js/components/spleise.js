@@ -1,7 +1,6 @@
 const antallPersoner = document.getElementById("antallPersoner");
 const antallLiter = document.getElementById("antallLiter");
 const totalKostnad = document.getElementById("totalKostnad");
-const submit = document.getElementById("submit");
 const output1 = document.getElementById("literPerPers");
 const output2 = document.getElementById("kronerPerPers");
 const output3 = document.getElementById("kronerPerLiter");
@@ -40,8 +39,8 @@ function spleisKalkulator(){
     output1.value= literPerPerson
     output2.value= kronerPerPerson
     output3.value= kronerPerLiter
-    event.preventDefault()
 
     
 }
 
+spleisKalkulator()

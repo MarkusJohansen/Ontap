@@ -76,7 +76,6 @@ function navbar_component(){
             Object.assign(document.getElementById(nav_buttons[i][0]).style, current_buttons);
         }
     }
-    
 }
 
 //--------------------------------------------------

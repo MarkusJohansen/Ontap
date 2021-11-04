@@ -204,12 +204,6 @@ input[type="radio"]:checked:after {
   border: 2px solid white;
 }
 
-#promille_kalkulator_other_inputs_box {
-  /*!position denne boksen right og top*/
-  position: relative;
-  align-self: right;
-}
-
 .input_set {
   margin: 10px 0px;
 }
@@ -220,6 +214,14 @@ input[type="radio"]:checked:after {
 
 #promille_output_tekst {
   margin: 5px 10px 0px 0px;
+}
+
+#promille_error_box{
+  margin:25px 0px 0px 0px;
+}
+
+#p_output{
+  color: black;
 }
 /*------------------------------------------------
 --------------Spleise kalkulator------------------

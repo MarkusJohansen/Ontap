@@ -7,8 +7,6 @@ for (let i = 0; i < tutorial.length; i++) {
 
     let span = document.createElement("span")
     span.innerHTML = tutorial[i]
-    console.log(tutorial[i])
-    console.log(span)
 
     let checkbox = document.createElement("input");
     checkbox.type = "checkbox";

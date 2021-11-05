@@ -19,7 +19,7 @@ p {
   display: flex;
 }
 
-.flex_wrapper_secondary {
+.flex_wrapper_secondary {   /*Er det noe vits å ha flex_wrapper_secondary hvis den inneholder det samme som flex_wrapper*/
   display: flex;
 }
 
@@ -369,39 +369,41 @@ table{
 .videos {
     border-radius: 25px;
     width: 100%;
-    height: 298px;
+    aspect-ratio: 16 / 9;
     border: none;
+
 }
 
 .paragraphs {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding: 0px 0px 0px 50px;
+  padding: 0px 0px 0px 1cm;
 }
 
 .left {
   width: 50%;
-  height: 500px;
   float: left;
 }
 
 .right {
   width: 45%;
-  margin-left: 50%;
-  height: 500px;
+  
 }
 
 #tutorial_list {
     list-style-type: none;
-    margin-left: -30px;
+    margin-left: -1cm;
 }
 
 #tutorial_list, li {
-    margin-top: 10px;
+    margin-top: 0.3cm;
 }
 
-#tutorial_list, li, input[type="checkbox"]:before {
-    border-radius: 25px;
 
+
+
+.checkboxes {
+  color: red;
+  border-radius: 10px;
 }
 /*------------------------------------------------
 -------------------Media queries---------------------
@@ -417,8 +419,20 @@ table{
     display: block;
   }
 
+  
+
+  .left {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5cm;
+  }
+
+  .right {
+    width: 100%;
+  }
+
   .paragraphs {
-    margin: 30px 0px 0px 0px;
+    padding: 0;
   }
 }
 

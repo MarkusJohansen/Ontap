@@ -1,6 +1,6 @@
 Tutorial list for howto = Benjamin
 Scalability, responsiveness og generalisering av styling = Markus
-Spleise kalkulator = Naqibullah
+generalisering av styling = Naqibullah
 Rydde opp ved bruk av generell styling = Sander
 
 //////////////////////////////////////////////////////////////////////

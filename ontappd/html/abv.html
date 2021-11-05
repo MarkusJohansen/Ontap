@@ -18,25 +18,22 @@
                     <div class="elementbox flex_child">
                         <form id="abv_form">
 
-                            <label class="label-kalkulator"> Your staring gravity:
-                                <br>
-                                <input type="number" id="starting_gravity" placeholder="feks: 1.234" 
-                                onchange="ABV_calculator()" min="0.1" required>
-                            </label>
+                            <p class="input_title">Your staring gravity:</p>
+                            <input type="number" class="kalkulator_input_textfield" id="starting_gravity" placeholder="feks: 1.234" 
+                            onchange="ABV_calculator()" min="0.1" required>
+                            
                             <br><br>
 
-                            <label class="label-kalkulator"> Your ending gravity: 
-                                <br>
-                                <input type="number" id="end_gravity" placeholder="feks: 0.123" 
-                                onchange="ABV_calculator()" min="0.1" required>
-                            </label>
+                            <p class="input_title"> Your ending gravity: </p>
+                            
+                            <input type="number" class="kalkulator_input_textfield" id="end_gravity" placeholder="feks: 0.123" 
+                            onchange="ABV_calculator()" min="0.1" required>
                             <br><br>
 
                             <div id="whiteline"></div>
-                            <label class="label-kalkulator"> ABV i prosent: 
-                                <br>
-                                <input type="text" id="output_abv" disabled placeholder="ABV i prosent">
-                            </label>
+                            
+                            <p class="input_title">ABV i prosent:</p>
+                            <input type="text" class="kalkulator_input_textfield flex_child" id="output_abv" disabled placeholder="ABV i prosent">
                             
                         </form>
                     </div>

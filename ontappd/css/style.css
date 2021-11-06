@@ -338,28 +338,62 @@ table{
 /*------------------------------------------------
 -------------------Howto page---------------------
 ------------------------------------------------*/
+
+#intro {
+  margin: 0;
+}
+
+.underoverskrifter {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 0;
+}
+
 .videos {
-  border-radius: 25px;
-  width: 90%;
-  height: inherit;
+    border-radius: 25px;
+    aspect-ratio: 16/9;
+    width: 100%;
+    border: none;
+
 }
 
 .paragraphs {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0px 0px 0px 1cm;
+  margin: 0;
 }
 
 .left {
+
   width: 50%;
-  height: 500px;
   float: left;
+  
 }
 
 .right {
   width: 45%;
-  margin-left: 50%;
-  height: 500px;
+  
 }
 
+#tutorial_list {
+    list-style-type: none;
+    margin-left: -1cm;
+}
+
+#tutorial_list, li {
+    margin-top: 0.3cm;
+}
+
+.checkboxes:checked + span{
+  text-decoration: line-through;
+
+}
+
+
+.checkboxes {
+  color: red;
+  border-radius: 10px;
+}
 /*------------------------------------------------
 -------------------Media queries---------------------
 ------------------------------------------------*/
@@ -373,9 +407,36 @@ table{
   .flex_wrapper {
     display: block;
   }
-} 
+
+  
+
+  .left {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5cm;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .paragraphs {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 789px) {
+  nav {
+    height: 240px;
+  }
+}
 
 
+@media only screen and (max-width: 529px) {
+  nav {
+    height: 400px;
+  }
+}
 /*---------------------------------------------------
 ----------------------Kontaktside--------------------
 ---------------------------------------------------*/
@@ -413,4 +474,9 @@ table{
   outline: none;
   padding: 20px;
   width: 100%;
+}
+
+
+#antallchecked {
+    margin-left: 1%;
 }

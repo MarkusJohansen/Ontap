@@ -32,6 +32,7 @@ body {
 
 p {
   font-size: 25px;
+  margin: 10px;
 }
 
 .flex_wrapper {
@@ -55,7 +56,7 @@ p {
 ------------------------------------------------*/
 #topbox {
   background-color: #0d5474;
-  height: 320px;
+  height: auto;
 }
 
 #ontap_logo {
@@ -79,6 +80,18 @@ p {
   left: 150px;
 }
 
+/*Secondary topbox*/
+#ontap_logo_barrel{
+  height: 75px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#secondary_topbox {
+  padding: 30px 10px;
+  display: none;
+}
 /*------------------------------------------------
 ---------------------Navbar-----------------------
 ------------------------------------------------*/
@@ -381,50 +394,6 @@ table{
   height: 500px;
 }
 
-/*------------------------------------------------
--------------------Media queries---------------------
-------------------------------------------------*/
-@media only screen and (max-width: 1156px) {
-  .skaal {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 1115px) {
-  .flex_wrapper {
-    display: block;
-  }
-} 
-
-@media only screen and (max-width: 590px) {
-  p{
-    font-size:4vw;
-  }
-
-  .textbox{
-    margin: 10vw 6vw;
-    padding: 3vw;
-  }
-
-  .flex_child:first-child {
-    margin-right: 10px;
-  }
-
-  .flex_wrapper_secondary {
-    display: block;
-  }
-  .input_title{
-    font-size: 5vw;
-  }
-  
-  .section_titles{
-    font-size: 6vw;
-  }
-
-  #online_logo_footer{
-    display: none;
-  }
-}
 /*---------------------------------------------------
 ----------------------Kontaktside--------------------
 ---------------------------------------------------*/
@@ -462,3 +431,61 @@ table{
   padding: 20px;
   width: 100%;
 }
+/*------------------------------------------------
+-------------------Media queries---------------------
+------------------------------------------------*/
+@media only screen and (max-width: 1156px) {
+  .skaal {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1115px) {
+  .flex_wrapper {
+    display: block;
+  }
+} 
+
+/**Phone mode*/
+@media only screen and (max-width: 590px) {
+  /*Generell styling*/
+  p{
+    font-size:4vw;
+  }
+
+  .textbox{
+    margin: 10vw 6vw;
+    padding: 3vw;
+  }
+
+  .flex_child:first-child {
+    margin-right: 10px;
+  }
+
+  .flex_wrapper_secondary {
+    display: block;
+  }
+  .input_title{
+    font-size: 5vw;
+  }
+  
+  .section_titles{
+    font-size: 6vw;
+  }
+  /*Navbar*/
+
+  /*Footer*/
+  #online_logo_footer{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 529px) {
+  #main_topbox {
+    display: none;
+  }
+  #secondary_topbox{
+    display: block;
+  }
+}
+

@@ -10,16 +10,19 @@ function topbox_component(){
     let topbox_div = document.createElement("div");
     topbox_div.id = "topbox";
     head.appendChild(topbox_div);
+    
+    let main_topbox = document.createElement("div");
+    main_topbox.id = "main_topbox"
+    topbox_div.appendChild(main_topbox);
 
-    //*SETTING PICTURE ATTRIBUTES IN LIST IMAGES
+    //*SETTING PICTURE ATTRIBUTES IN LIST IMAGES FOR MAIN_TOPBOX
     let images = [
         ["skaal1", "skaal", "skaal.png", "Skål1"],
         ["ontap_logo", "", "Ontap_logo_white.png", "Ontap logo"],
         ["skaal2", "skaal", "skaal.png", "Skål2"]
     ];
 
-    //*APPENDING PICTURES AS CHILDS TO TOPBOX, WITH ATTRIBUTES
-    console.log(images.length);
+    //*APPENDING PICTURES AS CHILDS TO MAIN_TOPBOX, WITH ATTRIBUTES
     for(let i = 0; i < images.length; i++){
         const img = document.createElement("img");
 
@@ -28,7 +31,25 @@ function topbox_component(){
         img.src = "../image/" + images[i][2];
         img.setAttribute("alt", images[i][3]);
 
-        topbox_div.appendChild(img);
+        main_topbox.appendChild(img);
+    }
+
+    //*CONSTRUCTING TOPBOX ADJUSTED FOR MOBILE
+    let secondary_topbox = document.createElement("div");
+    secondary_topbox.id = "secondary_topbox"
+    topbox_div.appendChild(secondary_topbox);
+    
+    //*SETTING CONTENT ATTRIBUTES IN LIST FOR SECONDARY_TOPBOX
+    let mobile_topbox_content = [
+        ["ontap_logo_barrel", "Ontap_Barrel.png"],
+    ];
+
+    //*APPENDING PICTURES AS CHILDS TO SECONDARY_TOPBOX, WITH ATTRIBUTES
+    for(let i = 0; i < mobile_topbox_content.length; i++){
+        const x = document.createElement("img");
+        x.id = mobile_topbox_content[i][0];
+        x.src = "../image/" + mobile_topbox_content[i][1];
+        secondary_topbox.appendChild(x);
     }
 }
 

@@ -257,13 +257,9 @@ table{
 ------------------------------------------------*/
 
 
-#leftContainer {
-    margin: 90px 50px;
+#leftContainer, #rightContainer{
+  margin: 90px 50px;
 } 
-#rightContainer{
-  margin-right: 10px;
-  
-}
 
 /*------------------------------------------------
 -------------------Slideshow V2---------------------
@@ -286,10 +282,9 @@ table{
   
   
   /* Skjuler alle bilder som default */
-  .mySlides {
-    margin: 90px 0px;
-    display: none;
-  }
+.mySlides {
+  display: none;
+}
   
 /* Neste & Forrige knapper */
 .prev, .next {
@@ -306,8 +301,7 @@ table{
   
 /* Posisjonere neste-knappen helt til høyre */
 .next {
-  right: 0;
-  margin-right: -2px;
+  right: -2px;
   border-radius: 10px 0px 0px 10px;
 }
 
@@ -378,13 +372,6 @@ table{
 @media only screen and (max-width: 1156px) {
   .skaal {
     display: none;
-  }
-  #mainContainer{
-    display: block;
-  }
-  #rightContainer{
-    margin: auto;
-    
   }
 }
 

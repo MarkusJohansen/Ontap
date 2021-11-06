@@ -102,7 +102,7 @@ nav {
   height: auto;
 }
 
-nav > button {
+#navbar_buttons > button{
   background-color: #083448;
   color: white;
   border-color: #083448;
@@ -114,12 +114,14 @@ nav > button {
   font-size: 20px;
 }
 
-nav button:hover {
+#navbar_buttons > button:hover {
   background-color: #0d5474;
   color: white;
   border: white solid 2px;
   border-radius: 10px;
 }
+
+/*dropdown*/
 
 /*------------------------------------------------
 ---------------------Main Content----------------

@@ -66,6 +66,9 @@ function navbar_component(){
 
     //*CONSTRUCTING BUTTONS IN NAVBAR
     console.log("nav buttons is being constructed");
+    let navbar_buttons = document.createElement("div")
+    navbar_buttons.id = "navbar_buttons"
+    y.appendChild(navbar_buttons)
 
     let nav_buttons = [
         ["main.html", "Hjem"],
@@ -80,8 +83,25 @@ function navbar_component(){
         const x = document.createElement("button");
         x.setAttribute("onclick","window.location.href='../html/" + nav_buttons[i][0] + "';");
         x.innerHTML = nav_buttons[i][1];
-        x.setAttribute("id", nav_buttons[i][0]);
-        y.appendChild(x);
+        x.id = nav_buttons[i][0];
+        x.setAttribute("class","navbar_buttons")
+        navbar_buttons.appendChild(x);
+    }
+    //*CONSTRUCTING DROPDOWN SECTION FOR MOBILE
+    let dropdown = document.createElement("div")
+    dropdown.id ="dropdown"
+    y.appendChild(dropdown)
+
+    let dropdown_arrows = [
+        ["dropdown_up", "arrow-up.png"],
+        ["dropdown_down","arrow-down.png"]
+    ];
+
+    for(let i = 0; i < dropdown_arrows.length; i++){
+        const x = document.createElement("img");
+        x.id = dropdown_arrows[i][0];
+        x.src = "../image/" + dropdown_arrows[i][1];
+        dropdown.appendChild(x);
     }
 
     //*Stylingvisited buttons

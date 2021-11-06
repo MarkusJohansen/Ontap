@@ -258,12 +258,7 @@ table{
 
 
 #leftContainer {
-    flex: 1;
-    border: 2px solid;
-    background-color: #083448;
-    margin-left: 75px;
-    margin-top: 50px;
-    border-radius: 25px;
+    margin: 90px 50px;
 } 
 
 #rightContainer{
@@ -308,7 +303,7 @@ table{
   
   /* Skjuler alle bilder som default */
   .mySlides {
-    margin-top: 50px;
+    margin: 90px 0px;
     display: none;
   }
   
@@ -359,12 +354,12 @@ table{
 }
   
 @-webkit-keyframes fade {
-  from {opacity: .2} 
+  from {opacity: .5} 
   to {opacity: 1}
 }
   
 @keyframes fade {
-  from {opacity: .2} 
+  from {opacity: .5} 
   to {opacity: 1}
 }
 

@@ -237,14 +237,7 @@ input[type="radio"]:checked:after {
   width: 80%;
   height: 30px;
 }
-.outputs-spleis {
-  width: 0100%;
-  height: 30px;
-  margin-left: 5%;
-  margin-top: 10px;
-  background-color: white;
-  color: black;
-}
+
 
 table{
   width: 100%;

@@ -402,6 +402,13 @@ table{
   .skaal {
     display: none;
   }
+  #mainContainer{
+    display: block;
+  }
+  #rightContainer{
+    margin: auto;
+    
+  }
 }
 
 @media only screen and (max-width: 877px) {

@@ -257,39 +257,19 @@ table{
 ------------------------------------------------*/
 
 
-#firstContainer {
-  flex: 1;
-  border: 2px solid;
-  background-color: #083448;
-  border-radius: 10%;
-  margin-left: 75px;
-  margin-top: 50px;
-}  
-
-.overskrift{
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.imagetext {
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  text-align: center;
-}
-.about{
-  margin: 50px;
-    
-}
+#leftContainer, #rightContainer{
+  margin: 90px 50px;
+} 
 
 /*------------------------------------------------
 -------------------Slideshow V2---------------------
 ------------------------------------------------*/
 
 .bildeSlide{
-  border-radius: 15%;
-  width: 100%;
-  border: #083448 2px solid;
+    border-radius: 25px;
+    width: 100%;
+    border: #083448 2px solid;
+    
 }
 
 
@@ -300,9 +280,9 @@ table{
   margin: auto;
 }
   
-/* Skjuler alle bilder som default */
+  
+  /* Skjuler alle bilder som default */
 .mySlides {
-  margin-top: 50px;
   display: none;
 }
   
@@ -321,8 +301,7 @@ table{
   
 /* Posisjonere neste-knappen helt til høyre */
 .next {
-  right: 0;
-  margin-right: -2px;
+  right: -2px;
   border-radius: 10px 0px 0px 10px;
 }
 
@@ -353,12 +332,12 @@ table{
 }
   
 @-webkit-keyframes fade {
-  from {opacity: .2} 
+  from {opacity: .5} 
   to {opacity: 1}
 }
   
 @keyframes fade {
-  from {opacity: .2} 
+  from {opacity: .5} 
   to {opacity: 1}
 }
 

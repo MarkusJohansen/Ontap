@@ -12,25 +12,25 @@ function spleisKalkulator(){
     const antallLiterValue = antallLiter.value 
     const totalKostnadValue = totalKostnad.value
     
-    if (antallPersonerValue<1 ){
+    if (antallPersonerValue<1 || antallPersonerValue=="" ){
         document.getElementById("span1").innerText="* Tallet må være 1 eller større "
-        document.getElementById("span1").style.display="inline"
+        document.getElementById("span1").style.display="block"
     }
     else{
         document.getElementById("span1").style.display="none"
 
     }
-    if (antallLiterValue<1 ){
+    if (antallLiterValue<1 || antallLiterValue=="" ){
         document.getElementById("span2").innerText="*Tallet må være 1 eller større "
-        document.getElementById("span2").style.display="inline"
+        document.getElementById("span2").style.display="block"
     }
     else{
         document.getElementById("span2").style.display="none"
     }
 
-    if ( totalKostnadValue <1 ){
+    if ( totalKostnadValue <1 || totalKostnadValue ==""  ){
         document.getElementById("span3").innerText="*Tallet må være 1 eller større "
-        document.getElementById("span3").style.display="inline"
+        document.getElementById("span3").style.display="block"
     }
     else{
         document.getElementById("span3").style.display="none"

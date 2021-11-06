@@ -17,9 +17,11 @@ function BAC_calculation(alcohol_by_units, weight, hours_from_start, output, fem
     //?Why shouldnt i declare x before conditional statements?
     if(female_button.checked){
         x = (parseFloat(alcohol_by_units.value)* 12.8 )/(parseFloat(weight.value) * 0.60); // 12.8g alkohol/per enhet * antall enheter = antall gram alkohol
-    }else if(male_button.checked){
+    }
+    else if(male_button.checked){
         x = (parseFloat(alcohol_by_units.value)* 12.8 )/(parseFloat(weight.value) * 0.70); 
-    }else{
+    }
+    else{
         console.log("ERROR: No gender checked");
         output.value = "No gender picked. Try again, pick a gender.";
         return false
@@ -32,7 +34,8 @@ function BAC_calculation(alcohol_by_units, weight, hours_from_start, output, fem
     //*CHECKS IF VALUE = 0, THEN DOES OUTPUT
     if(promille_value <= 0){
         output.value = "Promille = 0";//Dersom promillen er 0 eller mindre utifra formelen er minste mulige verdi av promille i blodet 0 eller tilnærmet null og derfor setter vi verdien til 0 i dette intervallet.
-    }else{
+    }
+    else{
         output.value = "Promille = " + parseFloat(promille_value).toFixed(3); //viser promille verdien på nettsiden, med opptil tre decimaler.
     }
 

@@ -3,8 +3,7 @@
 ------------------------------------------------*/
 body {
   color: white;
-  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",sans-serif;
   margin: 0%;
   min-height: 100vh;
   display: flex;
@@ -228,19 +227,19 @@ input[type="radio"]:checked:after {
 --------------Spleise kalkulator------------------
 ------------------------------------------------*/
 
-
 .spans {
   display: none;
 }
 
 .inputs-spleis{
-  width: 50%;
+  
+  width: 80%;
   height: 30px;
 }
 .outputs-spleis {
-  width: 60%;
+  width: 0100%;
   height: 30px;
-  margin-left: 100px;
+  margin-left: 5%;
   margin-top: 10px;
   background-color: white;
 }
@@ -274,8 +273,8 @@ table{
 }
 
 .overskrift{
-    text-align: center;
-    margin-bottom: 50px;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .imagetext {
@@ -302,10 +301,10 @@ table{
 
 /* Slideshow container */
 .slideshow-container {
-    max-width: 500px;
-    position: relative;
-    margin: auto;
-  }
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
   
   
   /* Skjuler alle bilder som default */
@@ -314,61 +313,61 @@ table{
     display: none;
   }
   
-  /* Neste & Forrige knapper */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    margin-top: -22px;
-    padding: 20px;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    background-color: rgba(0,0,0,0.2)
-  }
+/* Neste & Forrige knapper */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -22px;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  background-color: rgba(0,0,0,0.2)
+}
   
-  /* Posisjonere neste-knappen helt til høyre */
-  .next {
-    right: 0;
-    margin-right: -2px;
-    border-radius: 10px 0px 0px 10px;
-  }
+/* Posisjonere neste-knappen helt til høyre */
+.next {
+  right: 0;
+  margin-right: -2px;
+  border-radius: 10px 0px 0px 10px;
+}
 
-  .prev{
-    border-radius: 0px 10px 10px 0px;
-  }
+.prev{
+  border-radius: 0px 10px 10px 0px;
+}
   
-  /* Når musepeker er over knappene */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.8);
-  }
+/* Når musepeker er over knappene */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
   
-  /* Bildetekst */
-  .text {
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-  }
+/* Bildetekst */
+.text {
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
   
-  /* Bildene fader inn */
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1s;
-    animation-name: fade;
-    animation-duration: 1s;
-  }
+/* Bildene fader inn */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1s;
+  animation-name: fade;
+  animation-duration: 1s;
+}
   
-  @-webkit-keyframes fade {
-    from {opacity: .2} 
-    to {opacity: 1}
-  }
+@-webkit-keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
+}
   
-  @keyframes fade {
-    from {opacity: .2} 
-    to {opacity: 1}
-  }
+@keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
+}
 
 /*------------------------------------------------
 -------------------Howto page---------------------
@@ -416,6 +415,8 @@ table{
     display: block;
   }
 } 
+
+
 /*---------------------------------------------------
 ----------------------Kontaktside--------------------
 ---------------------------------------------------*/
@@ -431,7 +432,8 @@ table{
 .form_group {
   width: 100%;
   margin-top: 10px;
-  font-size: 20px;
+  font-size: 25px;
+  text-decoration: underline;
 }
 
 .form_group input,
@@ -451,4 +453,5 @@ table{
   border: none;
   outline: none;
   padding: 20px;
+  width: 100%;
 }

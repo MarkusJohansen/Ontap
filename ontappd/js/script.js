@@ -111,7 +111,8 @@ function footer_div(){
             y.setAttribute("target", "_blank");
             y.innerHTML = footer_content[i][1];
             x.appendChild(y);
-        }   else {
+        }   
+        else {
             x.innerHTML = footer_content[i][1];
         }
     }

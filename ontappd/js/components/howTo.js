@@ -1,6 +1,7 @@
 
 const ul = document.getElementById("tutorial_list");
-const tutorial = ["a", "b", "c", "d", "e"];    
+const tutorial = ["Lage eller kjøpe ferdig maltet korn.", "Putte kornet i bryggemaskinen for mesking.", "Starte kokeprosessen i bryggemaskinen og tilsette humle gjennom humlenettet.",
+ "Gjære ølen i sterilisert ballong.", "Overføre ølen til flasker og tilsette sukker for karbonering.", "Flaske ølen vha. en flaskemaskin.", "Vaske brukt utstyr."];    
 
 for (let i = 0; i < tutorial.length; i++) {
     let li = document.createElement("li")
@@ -20,7 +21,7 @@ for (let i = 0; i < tutorial.length; i++) {
 
 
 const antallsjekket = document.getElementById("antallchecked")
-antallsjekket.innerHTML = "0/5 steg gjennomført"
+antallsjekket.innerHTML = "0/7 steg gjennomført"
 
 
 function checked_boxes() {

@@ -365,10 +365,21 @@ table{
 /*------------------------------------------------
 -------------------Howto page---------------------
 ------------------------------------------------*/
+
+#intro {
+  margin: 0;
+}
+
+.underoverskrifter {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 0;
+}
+
 .videos {
     border-radius: 25px;
+    aspect-ratio: 16/9;
     width: 100%;
-    aspect-ratio: 16 / 9;
     border: none;
 
 }
@@ -376,11 +387,14 @@ table{
 .paragraphs {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 0px 0px 0px 1cm;
+  margin: 0;
 }
 
 .left {
+
   width: 50%;
   float: left;
+  
 }
 
 .right {

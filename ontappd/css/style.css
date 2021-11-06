@@ -18,7 +18,7 @@ p {
   display: flex;
 }
 
-.flex_wrapper_secondary {   /*Er det noe vits å ha flex_wrapper_secondary hvis den inneholder det samme som flex_wrapper*/
+.flex_wrapper_secondary {
   display: flex;
 }
 
@@ -390,7 +390,10 @@ table{
     margin-top: 0.3cm;
 }
 
+.checkboxes:checked + span{
+  text-decoration: line-through;
 
+}
 
 
 .checkboxes {

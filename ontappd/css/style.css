@@ -258,14 +258,20 @@ table{
 ------------------------------------------------*/
 
 
-#firstContainer {
+#leftContainer {
     flex: 1;
     border: 2px solid;
     background-color: #083448;
     border-radius: 10%;
     margin-left: 75px;
     margin-top: 50px;
-}  
+    
+} 
+
+#rightContainer{
+  margin-right: 75px;
+  
+}
 
 .overskrift{
     text-align: center;
@@ -280,7 +286,6 @@ table{
 }
 .about{
     margin: 50px;
-    
 }
 
 /*------------------------------------------------
@@ -291,6 +296,7 @@ table{
     border-radius: 15%;
     width: 100%;
     border: #083448 2px solid;
+    
 }
 
 
@@ -300,6 +306,7 @@ table{
     position: relative;
     margin: auto;
   }
+  
   
   /* Skjuler alle bilder som default */
   .mySlides {

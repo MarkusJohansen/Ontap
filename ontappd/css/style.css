@@ -172,6 +172,7 @@ footer p h3 {
   height: 30px;
   color: black;
   background-color: white;
+  outline: 0;
 }
 /*------------------------------------------------
 --------------Promille kalkulator-----------------
@@ -233,11 +234,9 @@ input[type="radio"]:checked:after {
 }
 
 .inputs-spleis{
-  
   width: 80%;
   height: 30px;
 }
-
 
 table{
   width: 100%;

@@ -129,9 +129,6 @@ function footer_div(){
 
     pagebottom.appendChild(footerDiv);
 }
-//*FILL DIV WITH PARAGRAPHS AND HEADINGS
-//*ADD ONLINE LOGO
-
 //--------------------------------------------------
 //Main functions/function calls
 //--------------------------------------------------

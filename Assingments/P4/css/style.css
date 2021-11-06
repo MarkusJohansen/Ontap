@@ -1,0 +1,74 @@
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    color: black;
+    margin: 0%;
+  }
+  
+  #pagetop {
+    background-color: rgb(13, 84, 116);
+    padding: 20px 15%;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #pagetop h1 {
+    font-size: 40px;
+  }
+  
+  ul {
+    list-style-type: circle;
+  }
+  
+  article {
+    padding: 5px;
+    max-width: 100%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: large;
+    line-height: 1.6;
+  }
+  
+  footer {
+    padding: 5px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .bilder {
+    position: relative;
+    padding: 20px;
+    max-width: 50%;
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+  }
+  
+  table,
+  th,
+  td {
+    border: 1px solid black;
+  }
+  
+  th,
+  td {
+    padding: 5px;
+  }
+  
+  table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    margin-bottom: 20px;
+  }
+  
+  #table_header {
+    margin-top: 50px;
+  }
+
+  

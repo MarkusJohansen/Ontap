@@ -372,6 +372,10 @@ table{
 -------------------Howto page---------------------
 ------------------------------------------------*/
 
+.flex_wrapper_howto {
+  display: flex;
+}
+
 #intro {
   margin: 0;
 }
@@ -456,36 +460,6 @@ table{
   background-color: #ffa500;
 }
 
-/*------------------------------------------------
--------------------Media queries---------------------
-------------------------------------------------*/
-@media only screen and (max-width: 1156px) {
-  .skaal {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 877px) {
-  .flex_wrapper {
-    display: block;
-  }
-
-  .left {
-    display: block;
-    width: 100%;
-    margin-bottom: 0.5cm;
-  }
-
-  .right {
-    width: 100%;
-  }
-
-  .paragraphs {
-    padding: 0;
-  }
-}
-
-
 /*---------------------------------------------------
 ----------------------Kontaktside--------------------
 ---------------------------------------------------*/
@@ -530,6 +504,16 @@ table{
 /*------------------------------------------------
 -------------------Media queries---------------------
 ------------------------------------------------*/
+
+@media only screen and (max-width: 1400px){
+  .flex_wrapper_howto {
+    display: block;
+  }
+  .right {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 1156px) {
   .skaal {
     display: none;
@@ -541,6 +525,19 @@ table{
     display: block;
   }
 } 
+
+@media only screen and (max-width: 877px) {
+
+  .left {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5cm;
+  }
+
+  .paragraphs {
+    padding: 0;
+  }
+}
 
 /**Phone mode*/
 @media only screen and (max-width: 590px) {

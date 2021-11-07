@@ -277,39 +277,19 @@ table{
 ------------------------------------------------*/
 
 
-#firstContainer {
-  flex: 1;
-  border: 2px solid;
-  background-color: #083448;
-  border-radius: 10%;
-  margin-left: 75px;
-  margin-top: 50px;
-}  
-
-.overskrift{
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.imagetext {
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  text-align: center;
-}
-.about{
-  margin: 50px;
-    
-}
+#leftContainer, #rightContainer{
+  margin: 90px 50px;
+} 
 
 /*------------------------------------------------
 -------------------Slideshow V2---------------------
 ------------------------------------------------*/
 
 .bildeSlide{
-  border-radius: 15%;
-  width: 100%;
-  border: #083448 2px solid;
+    border-radius: 25px;
+    width: 100%;
+    border: #083448 2px solid;
+    
 }
 
 
@@ -320,9 +300,9 @@ table{
   margin: auto;
 }
   
-/* Skjuler alle bilder som default */
+  
+  /* Skjuler alle bilder som default */
 .mySlides {
-  margin-top: 50px;
   display: none;
 }
   
@@ -341,8 +321,7 @@ table{
   
 /* Posisjonere neste-knappen helt til høyre */
 .next {
-  right: 0;
-  margin-right: -2px;
+  right: -2px;
   border-radius: 10px 0px 0px 10px;
 }
 
@@ -373,40 +352,120 @@ table{
 }
   
 @-webkit-keyframes fade {
-  from {opacity: .2} 
+  from {opacity: .5} 
   to {opacity: 1}
 }
   
 @keyframes fade {
-  from {opacity: .2} 
+  from {opacity: .5} 
   to {opacity: 1}
 }
 
 /*------------------------------------------------
 -------------------Howto page---------------------
 ------------------------------------------------*/
+
+#intro {
+  margin: 0;
+}
+
+.underoverskrifter {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 0;
+}
+
 .videos {
-  border-radius: 25px;
-  width: 90%;
-  height: inherit;
+    border-radius: 25px;
+    aspect-ratio: 16/9;
+    width: 100%;
+    border: none;
+
 }
 
 .paragraphs {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0px 0px 0px 1cm;
+  margin: 0;
 }
 
 .left {
+
   width: 50%;
-  height: 500px;
   float: left;
+  
 }
 
 .right {
   width: 45%;
-  margin-left: 50%;
-  height: 500px;
+  
 }
 
+#tutorial_list {
+    list-style-type: none;
+    margin-left: -1cm;
+}
+
+#tutorial_list, li {
+    margin-top: 0.3cm;
+}
+
+.checkboxes:checked + span{
+  text-decoration: line-through;
+
+}
+
+<<<<<<< HEAD
+=======
+
+.checkboxes {
+  color: red;
+  border-radius: 10px;
+}
+/*------------------------------------------------
+-------------------Media queries---------------------
+------------------------------------------------*/
+@media only screen and (max-width: 1156px) {
+  .skaal {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 877px) {
+  .flex_wrapper {
+    display: block;
+  }
+
+  
+
+  .left {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5cm;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .paragraphs {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 789px) {
+  nav {
+    height: 240px;
+  }
+}
+
+
+@media only screen and (max-width: 529px) {
+  nav {
+    height: 400px;
+  }
+}
+>>>>>>> d781b8abd8cfcfd49abe4ac0c90dbb6f0e1654b3
 /*---------------------------------------------------
 ----------------------Kontaktside--------------------
 ---------------------------------------------------*/
@@ -444,6 +503,7 @@ table{
   padding: 20px;
   width: 100%;
 }
+<<<<<<< HEAD
 /*------------------------------------------------
 -------------------Media queries---------------------
 ------------------------------------------------*/
@@ -515,3 +575,10 @@ table{
   }
 }
 
+=======
+
+
+#antallchecked {
+    margin-left: 1%;
+}
+>>>>>>> d781b8abd8cfcfd49abe4ac0c90dbb6f0e1654b3

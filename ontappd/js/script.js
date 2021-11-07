@@ -93,15 +93,31 @@ function navbar_component(){
     y.appendChild(dropdown)
 
     let dropdown_arrows = [
-        ["dropdown_up", "arrow-up.png"],
-        ["dropdown_down","arrow-down.png"]
+        ["dropdown_up", "arrow-up.png","dropdown_menu_up()"],
+        ["dropdown_down","arrow-down.png","dropdown_menu_down()"]
     ];
 
     for(let i = 0; i < dropdown_arrows.length; i++){
         const x = document.createElement("img");
         x.id = dropdown_arrows[i][0];
         x.src = "../image/" + dropdown_arrows[i][1];
+        x.setAttribute("class","dropdown_arrows")
         dropdown.appendChild(x);
+    }
+
+    const up = document.getElementById("dropdown_up");
+    const down = document.getElementById("dropdown_down");
+    const navbar_buttons_section = document.getElementById("navbar_buttons")
+
+    down.onclick = function() {
+        navbar_buttons_section.style = "display: block;"
+        down.style  = "display: none;"
+        up.style = "display: block;"
+    }
+    up.onclick = function() {
+        navbar_buttons_section.style = "display: none;"
+        down.style  = "display: block;"
+        up.style = "display: none;"
     }
 
     //*Stylingvisited buttons

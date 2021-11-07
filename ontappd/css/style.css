@@ -82,7 +82,7 @@ p {
 
 /*Secondary topbox*/
 #ontap_logo_barrel{
-  height: 75px;
+  height: 100px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -114,7 +114,7 @@ nav {
   font-size: 20px;
 }
 
-#navbar_buttons > button:hover {
+#navbar_buttons button:hover {
   background-color: #0d5474;
   color: white;
   border: white solid 2px;
@@ -122,6 +122,17 @@ nav {
 }
 
 /*dropdown*/
+#dropdown{
+  padding: 5px;
+  display: none;
+}
+
+.dropdown_arrows{
+  height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 /*------------------------------------------------
 ---------------------Main Content----------------
@@ -483,11 +494,24 @@ table{
 }
 
 @media only screen and (max-width: 529px) {
+
+  /*Topbox*/
   #main_topbox {
     display: none;
   }
   #secondary_topbox{
     display: block;
+  }
+
+  /*Dropdown*/
+  #navbar_buttons{
+    display: none;
+  }
+  #dropdown{
+    display: block;
+  }
+  #dropdown_up{
+    display: none;
   }
 }
 

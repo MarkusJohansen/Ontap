@@ -12,3 +12,11 @@ Rydde opp ved bruk av generell styling = Sander
     -   fjerne unødvendig kode i html (classes og id etc)
     -   gjøre ferdig text content
 //////////////////////////////////////////////////////////////////////
+
+Ting som kan sjekkes ut:
+//////////////////////////////////////////////////////////////////////
+Contact us burde ha width: auto; på begge tekstboksene
+Fjerne mail inputfield i contact us
+Kanskje fjerne elementbox fra sjekkliste på howto.
+Fiks dropdown: om man åpner og lukker dropdown og så gjør vinduet bredere, så bugger dropdown seg.
+//////////////////////////////////////////////////////////////////////

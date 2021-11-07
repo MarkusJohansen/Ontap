@@ -277,8 +277,8 @@ table{
 ------------------------------------------------*/
 
 
-#leftContainer, #rightContainer{
-  margin: 90px 50px;
+#leftContainer{
+  background-color: #083448;
 } 
 
 /*------------------------------------------------
@@ -434,8 +434,6 @@ table{
     display: block;
   }
 
-  
-
   .left {
     display: block;
     width: 100%;
@@ -451,18 +449,7 @@ table{
   }
 }
 
-@media only screen and (max-width: 789px) {
-  nav {
-    height: 240px;
-  }
-}
 
-
-@media only screen and (max-width: 529px) {
-  nav {
-    height: 400px;
-  }
-}
 /*---------------------------------------------------
 ----------------------Kontaktside--------------------
 ---------------------------------------------------*/
@@ -551,6 +538,10 @@ table{
   #online_logo_footer{
     display: none;
   }
+
+  #leftContainer{
+    margin: 10vw 6vw 10vw 6vw; 
+  } 
 }
 
 @media only screen and (max-width: 529px) {

@@ -120,6 +120,18 @@ function navbar_component(){
         up.style = "display: none;"
     }
 
+    //* Fixes going from dropdown to normal format (hopefully)
+    function UpscaleFromDropdown(mediaQuery) {
+        if (mediaQuery.matches) {
+            navbar_buttons_section.style = "display: none;"
+        }else{
+            navbar_buttons_section.style = "display: block;"
+        }
+    }
+
+    let mediaQuery = window.matchMedia('(max-width: 529px)')
+    mediaQuery.addListener(UpscaleFromDropdown)
+
     //*Stylingvisited buttons
     const current_buttons = {
         backgroundColor: '#0d5474',

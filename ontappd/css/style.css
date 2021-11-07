@@ -145,10 +145,6 @@ main {
   margin: 20px 0px;
 }
 
-#slideshow-container-box{
-  padding: 0px;
-}
-
 /*------------------------------------------------
 ---------------------Footer-----------------------
 ------------------------------------------------*/
@@ -511,7 +507,7 @@ table{
   }
 }
 
-@media only screen and (max-width: 1115px) {
+@media only screen and (max-width: 1115px){
   .flex_wrapper {
     display: block;
   }
@@ -556,7 +552,6 @@ table{
 }
 
 @media only screen and (max-width: 529px) {
-
   /*Topbox*/
   #main_topbox {
     display: none;
@@ -566,9 +561,6 @@ table{
   }
 
   /*Dropdown*/
-  #navbar_buttons{
-    display: none;
-  }
   #dropdown{
     display: block;
   }

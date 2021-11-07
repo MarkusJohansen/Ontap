@@ -17,27 +17,32 @@
                         <div id="promille_kalkulator_section">
                             <div class="flex_wrapper_secondary">
                                 <div id="gender_selection_box">
+
                                     <div class="input_set">
                                         <p class="input_title">Kjønn</p>
                                         <input type="radio" class="gender" id="mann" name="gender" onchange="promille()">Mann
                                         <br>
                                         <input type="radio" class="gender" id="kvinne" name="gender" onchange="promille()">Kvinne
                                     </div>
+
                                 </div>
+
                                 <div id="promille_kalkulator_other_inputs_box" class="flex_child">
                                     <div class = "input_set">
                                         <p class="input_title">Vekt</p>
-                                        <input class="kalkulator_input_textfield" id="kroppsvekt" type="number" step="any" onchange="promille()" min="0"><br>
+                                        <input class="kalkulator_input_textfield" id="kroppsvekt" type="number" step="any" onchange="promille()" min="0" autofocus><br>
                                     </div>      
                                     <div class = "input_set">
                                         <p class="input_title">Antall enheter</p>
-                                        <input class="kalkulator_input_textfield" id="enheter" type="number" step="any" onchange="promille()"  min="0"><br>
+                                        <input class="kalkulator_input_textfield" id="enheter" type="number" step="any" onchange="promille()" min="0" ><br>
                                     </div>
+
                                     <div class = "input_set">
                                         <p class="input_title">Antall timer fra drikkestart</p>
                                         <input class="kalkulator_input_textfield" id="drikkestart" type="number" step="any" onchange="promille()" min="0">      
                                     </div>
                                 </div>
+
                             </div>
                             <div id="whiteline"></div>
                             <div class="flex_wrapper_secondary">
@@ -48,14 +53,38 @@
                     </div>
                     <div class="flex_child">
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Ducimus tenetur, cumque tempore maiores eius nisi vero 
-                            molestiae voluptates. Laboriosam facilis quisquam excepturi 
-                            dignissimos, rem expedita laborum officia at reprehenderit 
-                            similique. Lorem ipsum dolor sit amet consectetur adipisicing 
-                            elit. Ad laborum voluptates enim? Cumque aut unde molestiae 
-                            distinctio vitae porro repellendus, enim necessitatibus consectetur 
-                            fugit voluptas nam, itaque et quasi similique?
+                            Etter at bryggeprosessen er ferdig, så er det på sin plass at man
+                            feirer! Med promillekalkulatoren er det mulig å regne ut promillen man får.
+                            Uavhengig om du skal drikke med måte, eller om målet er høyest mulig promille,
+                            kan dette være et nyttig verktøy i felt! Måten det beregnes enheter
+                            i henhold til formelen som benyttes er:
+                            <ul id="alcohol_unit_explanation">
+                                <li>0.5L øl (4,5 vol%) = 1,5 enhet</li>
+                                <li>0.33L øl (4,5 vol%) = 1 enhet</li>
+                                <li>Et lite vinglass (12,5cl) = 1 enhet</li>
+                                <li>Et stort vinglass (17,5cl)= 1,5 enhet</li>
+                                <li>En shot (4cl) med sprit (40 vol%) = 1 enhet</li>
+                                <li>Ett svært lite glass(7.5cl) med sterkvin (20 vol%) = 1 enhet</li>
+                            </ul>
+                        </p>
+
+                        <br>
+
+                        <p>
+                            Formelen for promilleberegningen er hentet fra
+                            <a href="https://nhi.no/sykdommer/psykisk-helse/alkohol/alkoholpromille-beregning/?page=all" target="_blank">NHI sine nettsteder</a>.
+                            Den regnes som en god modell for utregning, men gir ikke helt
+                            nøyaktige resultater og kan derfor ikke brukes for å
+                            svare på om man er i kjøredyktig tilstand etc.
+                        </p>
+
+                        <br>
+
+                        <p>
+                            FUNFACT : 
+                            in the 1980s, Microsoft supposedly discovered that programmers
+                            will gain superior coding abilities if they have a blood-alcohol
+                            concentration between 0.129% and 0.138%.
                         </p>
                     </div>     
                 </div>

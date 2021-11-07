@@ -5,13 +5,38 @@ body {
   color: white;
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",sans-serif;
   margin: 0%;
-  min-height: 100vh;
-  display: flex;
+  /*min-height: 100vh; 
+  width: 100vw;
+  display: flex;*/ /*!er dette voodoo code?*/
   flex-direction: column;
+}
+
+a {
+  color: rgb(195, 194, 194);
+}
+
+.textbox {
+  background-color: #0d5474;
+  padding: 30px;
+  margin: 90px 50px;
+  border-radius: 25px;
+}
+
+.elementbox {
+  background-color: #083448;
+  padding: 30px;
+  margin: 10px;
+  border-radius: 25px;
+}
+
+.section_titles {
+  text-align: center;
+  font-size: 40px;
 }
 
 p {
   font-size: 25px;
+  margin: 10px;
 }
 
 .flex_wrapper {
@@ -35,7 +60,7 @@ p {
 ------------------------------------------------*/
 #topbox {
   background-color: #0d5474;
-  height: 320px;
+  height: auto;
 }
 
 #ontap_logo {
@@ -59,6 +84,18 @@ p {
   left: 150px;
 }
 
+/*Secondary topbox*/
+#ontap_logo_barrel{
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#secondary_topbox {
+  padding: 30px 10px;
+  display: none;
+}
 /*------------------------------------------------
 ---------------------Navbar-----------------------
 ------------------------------------------------*/
@@ -69,7 +106,7 @@ nav {
   height: auto;
 }
 
-nav > button {
+#navbar_buttons > button{
   background-color: #083448;
   color: white;
   border-color: #083448;
@@ -81,19 +118,25 @@ nav > button {
   font-size: 20px;
 }
 
-nav button:hover {
+#navbar_buttons button:hover {
   background-color: #0d5474;
   color: white;
   border: white solid 2px;
   border-radius: 10px;
 }
 
-#current_page {
-  background-color: #0d5474;
-  color: white;
-  border-style: solid;
-  border-color: white;
+/*dropdown*/
+#dropdown{
+  padding: 5px;
+  display: none;
 }
+
+.dropdown_arrows{
+  height: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 /*------------------------------------------------
 ---------------------Main Content----------------
@@ -102,23 +145,8 @@ main {
   margin: 20px 0px;
 }
 
-.textbox {
-  background-color: #0d5474;
-  padding: 30px;
-  margin: 90px 50px;
-  border-radius: 25px;
-}
-
-.elementbox {
-  background-color: #083448;
-  padding: 30px;
-  margin: 10px;
-  border-radius: 25px;
-}
-
-.section_titles {
-  text-align: center;
-  font-size: 40px;
+#slideshow-container-box{
+  padding: 0px;
 }
 
 /*------------------------------------------------
@@ -153,9 +181,6 @@ footer p h3 {
   padding: 10px 20px;
 }
 
-#contact_info a {
-  color: white;
-}
 /*------------------------------------------------
 ------------------Alle kalkulatorer-----------------
 ------------------------------------------------*/
@@ -220,6 +245,12 @@ input[type="radio"]:checked:after {
   margin:25px 0px 0px 0px;
 }
 
+#alcohol_unit_explanation{
+  list-style: none;
+  padding: 0px;
+  margin: 10px;
+}
+
 #p_output{
   color: black;
 }
@@ -257,8 +288,8 @@ table{
 ------------------------------------------------*/
 
 
-#leftContainer, #rightContainer{
-  margin: 90px 50px;
+#leftContainer{
+  background-color: #083448;
 } 
 
 /*------------------------------------------------
@@ -443,8 +474,6 @@ table{
     display: block;
   }
 
-  
-
   .left {
     display: block;
     width: 100%;
@@ -460,18 +489,7 @@ table{
   }
 }
 
-@media only screen and (max-width: 789px) {
-  nav {
-    height: 240px;
-  }
-}
 
-
-@media only screen and (max-width: 529px) {
-  nav {
-    height: 400px;
-  }
-}
 /*---------------------------------------------------
 ----------------------Kontaktside--------------------
 ---------------------------------------------------*/
@@ -480,7 +498,6 @@ table{
   width: 90%;
   max-width: 500px;
   margin: 0 auto;
-  padding: 20px;
   border-radius: 20px;
 }
 
@@ -491,7 +508,7 @@ table{
   text-decoration: underline;
 }
 
-.form_group input,
+.form_group input, 
 .form_group textarea {
   width: 100%;
   padding: 5px;
@@ -511,7 +528,80 @@ table{
   width: 100%;
 }
 
-
 #antallchecked {
-    margin-left: 1%;
+  margin-left: 1%;
+}
+/*------------------------------------------------
+-------------------Media queries---------------------
+------------------------------------------------*/
+@media only screen and (max-width: 1156px) {
+  .skaal {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1115px) {
+  .flex_wrapper {
+    display: block;
+  }
+} 
+
+/**Phone mode*/
+@media only screen and (max-width: 590px) {
+  /*Generell styling*/
+  p{
+    font-size:4vw;
+  }
+
+  .textbox{
+    margin: 10vw 6vw;
+    padding: 3vw;
+  }
+
+  .flex_child:first-child {
+    margin-right: 10px;
+  }
+
+  .flex_wrapper_secondary {
+    display: block;
+  }
+  .input_title{
+    font-size: 5vw;
+  }
+  
+  .section_titles{
+    font-size: 6vw;
+  }
+  /*Navbar*/
+
+  /*Footer*/
+  #online_logo_footer{
+    display: none;
+  }
+
+  #leftContainer{
+    margin: 10vw 6vw 10vw 6vw; 
+  } 
+}
+
+@media only screen and (max-width: 529px) {
+
+  /*Topbox*/
+  #main_topbox {
+    display: none;
+  }
+  #secondary_topbox{
+    display: block;
+  }
+
+  /*Dropdown*/
+  #navbar_buttons{
+    display: none;
+  }
+  #dropdown{
+    display: block;
+  }
+  #dropdown_up{
+    display: none;
+  }
 }

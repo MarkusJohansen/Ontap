@@ -10,16 +10,19 @@ function topbox_component(){
     let topbox_div = document.createElement("div");
     topbox_div.id = "topbox";
     head.appendChild(topbox_div);
+    
+    let main_topbox = document.createElement("div");
+    main_topbox.id = "main_topbox"
+    topbox_div.appendChild(main_topbox);
 
-    //*SETTING PICTURE ATTRIBUTES IN LIST IMAGES
+    //*SETTING PICTURE ATTRIBUTES IN LIST IMAGES FOR MAIN_TOPBOX
     let images = [
         ["skaal1", "skaal", "skaal.png", "Skål1"],
         ["ontap_logo", "", "Ontap_logo_white.png", "Ontap logo"],
         ["skaal2", "skaal", "skaal.png", "Skål2"]
     ];
 
-    //*APPENDING PICTURES AS CHILDS TO TOPBOX, WITH ATTRIBUTES
-    console.log(images.length);
+    //*APPENDING PICTURES AS CHILDS TO MAIN_TOPBOX, WITH ATTRIBUTES
     for(let i = 0; i < images.length; i++){
         const img = document.createElement("img");
 
@@ -28,7 +31,25 @@ function topbox_component(){
         img.src = "../image/" + images[i][2];
         img.setAttribute("alt", images[i][3]);
 
-        topbox_div.appendChild(img);
+        main_topbox.appendChild(img);
+    }
+
+    //*CONSTRUCTING TOPBOX ADJUSTED FOR MOBILE
+    let secondary_topbox = document.createElement("div");
+    secondary_topbox.id = "secondary_topbox"
+    topbox_div.appendChild(secondary_topbox);
+    
+    //*SETTING CONTENT ATTRIBUTES IN LIST FOR SECONDARY_TOPBOX
+    let mobile_topbox_content = [
+        ["ontap_logo_barrel", "Ontap_Barrel.png"],
+    ];
+
+    //*APPENDING PICTURES AS CHILDS TO SECONDARY_TOPBOX, WITH ATTRIBUTES
+    for(let i = 0; i < mobile_topbox_content.length; i++){
+        const x = document.createElement("img");
+        x.id = mobile_topbox_content[i][0];
+        x.src = "../image/" + mobile_topbox_content[i][1];
+        secondary_topbox.appendChild(x);
     }
 }
 
@@ -45,6 +66,9 @@ function navbar_component(){
 
     //*CONSTRUCTING BUTTONS IN NAVBAR
     console.log("nav buttons is being constructed");
+    let navbar_buttons = document.createElement("div")
+    navbar_buttons.id = "navbar_buttons"
+    y.appendChild(navbar_buttons)
 
     let nav_buttons = [
         ["main.html", "Hjem"],
@@ -59,8 +83,41 @@ function navbar_component(){
         const x = document.createElement("button");
         x.setAttribute("onclick","window.location.href='../html/" + nav_buttons[i][0] + "';");
         x.innerHTML = nav_buttons[i][1];
-        x.setAttribute("id", nav_buttons[i][0]);
-        y.appendChild(x);
+        x.id = nav_buttons[i][0];
+        x.setAttribute("class","navbar_buttons")
+        navbar_buttons.appendChild(x);
+    }
+    //*CONSTRUCTING DROPDOWN SECTION FOR MOBILE
+    let dropdown = document.createElement("div")
+    dropdown.id ="dropdown"
+    y.appendChild(dropdown)
+
+    let dropdown_arrows = [
+        ["dropdown_up", "arrow-up.png","dropdown_menu_up()"],
+        ["dropdown_down","arrow-down.png","dropdown_menu_down()"]
+    ];
+
+    for(let i = 0; i < dropdown_arrows.length; i++){
+        const x = document.createElement("img");
+        x.id = dropdown_arrows[i][0];
+        x.src = "../image/" + dropdown_arrows[i][1];
+        x.setAttribute("class","dropdown_arrows")
+        dropdown.appendChild(x);
+    }
+
+    const up = document.getElementById("dropdown_up");
+    const down = document.getElementById("dropdown_down");
+    const navbar_buttons_section = document.getElementById("navbar_buttons")
+
+    down.onclick = function() {
+        navbar_buttons_section.style = "display: block;"
+        down.style  = "display: none;"
+        up.style = "display: block;"
+    }
+    up.onclick = function() {
+        navbar_buttons_section.style = "display: none;"
+        down.style  = "display: block;"
+        up.style = "display: none;"
     }
 
     //*Stylingvisited buttons

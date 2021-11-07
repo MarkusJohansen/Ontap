@@ -11,6 +11,10 @@ body {
   flex-direction: column;
 }
 
+a {
+  color: rgb(195, 194, 194);
+}
+
 .textbox {
   background-color: #0d5474;
   padding: 30px;
@@ -173,9 +177,6 @@ footer p h3 {
   padding: 10px 20px;
 }
 
-#contact_info a {
-  color: white;
-}
 /*------------------------------------------------
 ------------------Alle kalkulatorer-----------------
 ------------------------------------------------*/
@@ -238,6 +239,12 @@ input[type="radio"]:checked:after {
 
 #promille_error_box{
   margin:25px 0px 0px 0px;
+}
+
+#alcohol_unit_explanation{
+  list-style: none;
+  padding: 0px;
+  margin: 10px;
 }
 
 #p_output{

@@ -275,7 +275,7 @@ table{
 #leftContainer{
   background-color: #083448;
 } 
-#leftContainer, #rightContainer{
+#rightContainer{
   margin: 90px 50px;
 } 
 

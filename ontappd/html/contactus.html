@@ -16,44 +16,38 @@
                 <div>
                     <h1 class="section_titles">Kontakt oss!</h1>
                     <p>Send oss en melding så skal vi svare på spørsmålet ditt så fort som mulig!</p>
-                </div>
+                    <div class="elementbox">
+                        <form name="contact_form" id="contact_form" method="POST" onsubmit="return sendEmail()">
+                            
+                            <div class="form_group">
+                                <label>Navn
+                                    <br>
+                                    <input id="form_name" name="form_name" type="text" placeholder="Ditt navn" required autofocus>
+                                </label>
+                            </div>
 
-                <div class="elementbox">
-                    <form name="contact_form" id="contact_form" method="POST" onsubmit="return sendEmail()">
-                        <div class="form_group">
-                            <label>Navn
-                                <br>
-                                <input id="form_name" name="form_name" type="text" placeholder="Ditt navn" required autofocus>
-                            </label>
-                        </div>
+                            <div class="form_group">
+                                <label>Emne
+                                    <br>
+                                    <input id="form_subject" name="form_subject" type="text" placeholder="Skriv emne her" required>
+                                </label>
+                            </div>
 
-                        <div class="form_group">
-                            <label> Mail 
-                                <br>
-                                <input type="email" name="form_email" id="form_mail" placeholder="examplemail@mail.com" required>
-                            </label>
-                        </div>
+                            <div class="form_group">
+                                <label>Melding<br>
+                                    <textarea id="form_message" name="form_message" placeholder="Skriv din melding her..." rows="8" spellcheck="false" required></textarea>
+                                </label>
+                            </div>
 
-                        <div class="form_group">
-                            <label>Emne
-                                <br>
-                                <input id="form_subject" name="form_subject" type="text" placeholder="Skriv emne her" required>
-                            </label>
-                        </div>
+                            <div class="form_group">
+                                <input id="form_submit" name="form_submit" type="submit" value="Send">
+                            </div>
+                        </form>
+                    </div>
 
-                        <div class="form_group">
-                            <label>Melding<br>
-                                <textarea id="form_message" name="form_message" placeholder="Skriv din melding her..." rows="8" spellcheck="false" required></textarea>
-                            </label>
-                        </div>
-
-                        <div class="form_group">
-                            <input id="form_submit" name="form_submit" type="submit" value="Send">
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </main>
+                </section>
+            </main>
+        </div>
 
         <footer id="footer"></footer>
         

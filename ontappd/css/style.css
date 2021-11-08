@@ -60,7 +60,6 @@ p {
 ------------------------------------------------*/
 #topbox {
   background-color: #0d5474;
-  height: auto;
 }
 
 #ontap_logo {
@@ -93,7 +92,7 @@ p {
 }
 
 #secondary_topbox {
-  padding: 30px 10px;
+  padding: 25px 10px;
   display: none;
 }
 /*------------------------------------------------
@@ -125,7 +124,7 @@ nav {
   border-radius: 10px;
 }
 
-/*dropdown*/
+/**dropdown*/
 #dropdown{
   padding: 5px;
   display: none;
@@ -141,9 +140,6 @@ nav {
 /*------------------------------------------------
 ---------------------Main Content----------------
 ------------------------------------------------*/
-main {
-  margin: 20px 0px;
-}
 
 /*------------------------------------------------
 ---------------------Footer-----------------------
@@ -157,12 +153,8 @@ main {
 
 footer {
   background-color: #0d5474;
-  bottom: 0%;
-  left: 0%;
-  width: 100%;
   position: relative;
   line-height: 10px;
-  margin-top: auto;
 }
 
 #footer p {
@@ -183,7 +175,6 @@ footer p h3 {
 #whiteline {
   background-color: white;
   height: 2px;
-  width: 100%;
   margin: 10px 0px;
 }
 
@@ -466,7 +457,6 @@ table{
 ---------------------------------------------------*/
 
 #contact_form {
-  width: 90%;
   max-width: 500px;
   margin: 0 auto;
   border-radius: 20px;

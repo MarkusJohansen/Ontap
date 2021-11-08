@@ -12,29 +12,32 @@
         <header id="header"></header>
 
         <main>
-            <section class="textbox">
+            <div class="textbox">
                 <h2 class="section_titles">ABV Calculator</h2><br>
+
                 <div class ="flex_wrapper">
                     <div class="elementbox flex_child">
                         <form id="abv_form">
+                            <div>
+                                <p class="input_title">Your staring gravity</p>
+                                <input type="number" class="kalkulator_input_textfield" id="starting_gravity" placeholder="feks: 1.234" onchange="ABV_calculator()" min="0" required autofocus>
+                            </div>
 
-                            <p class="input_title">Your staring gravity</p>
-                            <input type="number" class="kalkulator_input_textfield" id="starting_gravity" placeholder="feks: 1.234" 
-                            onchange="ABV_calculator()" min="0" required autofocus>
-                            
                             <br><br>
 
-                            <p class="input_title"> Your ending gravity </p>
+                            <div>
+                                <p class="input_title"> Your ending gravity </p>
+                                <input type="number" class="kalkulator_input_textfield" id="end_gravity" placeholder="feks: 0.123" onchange="ABV_calculator()" min="0" required>
+                            </div>
                             
-                            <input type="number" class="kalkulator_input_textfield" id="end_gravity" placeholder="feks: 0.123" 
-                            onchange="ABV_calculator()" min="0" required>
                             <br><br>
 
                             <div id="whiteline"></div>
-                            
-                            <p class="input_title">ABV i prosent</p>
-                            <input type="text" class="kalkulator_input_textfield flex_child" id="output_abv" disabled placeholder="ABV i prosent">
-                            
+
+                            <div>
+                                <p class="input_title">ABV i prosent</p>
+                                <input type="text" class="kalkulator_input_textfield flex_child" id="output_abv" disabled placeholder="ABV i prosent">
+                            </div>
                         </form>
                     </div>
 
@@ -57,7 +60,7 @@
                         </div>
                     </div>
                 </div>
-            </section>  
+            </div>  
         </main>
 
         <footer id="footer"></footer>

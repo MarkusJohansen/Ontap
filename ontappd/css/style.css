@@ -60,7 +60,6 @@ p {
 ------------------------------------------------*/
 #topbox {
   background-color: #0d5474;
-  height: auto;
 }
 
 #ontap_logo {
@@ -93,7 +92,7 @@ p {
 }
 
 #secondary_topbox {
-  padding: 30px 10px;
+  padding: 25px 10px;
   display: none;
 }
 /*------------------------------------------------
@@ -125,7 +124,7 @@ nav {
   border-radius: 10px;
 }
 
-/*dropdown*/
+/**dropdown*/
 #dropdown{
   padding: 5px;
   display: none;
@@ -141,9 +140,6 @@ nav {
 /*------------------------------------------------
 ---------------------Main Content----------------
 ------------------------------------------------*/
-main {
-  margin: 20px 0px;
-}
 
 /*------------------------------------------------
 ---------------------Footer-----------------------
@@ -157,12 +153,8 @@ main {
 
 footer {
   background-color: #0d5474;
-  bottom: 0%;
-  left: 0%;
-  width: 100%;
   position: relative;
   line-height: 10px;
-  margin-top: auto;
 }
 
 #footer p {
@@ -183,13 +175,16 @@ footer p h3 {
 #whiteline {
   background-color: white;
   height: 2px;
-  width: 100%;
   margin: 10px 0px;
 }
+
 
 .kalkulator_input_textfield {
   width: 100%;
   height: 30px;
+  color: black;
+  background-color: white;
+  outline: 0;
 }
 /*------------------------------------------------
 --------------Promille kalkulator-----------------
@@ -256,19 +251,12 @@ input[type="radio"]:checked:after {
 
 .spans {
   display: none;
+
 }
 
 .inputs-spleis{
-  
   width: 80%;
   height: 30px;
-}
-.outputs-spleis {
-  width: 0100%;
-  height: 30px;
-  margin-left: 5%;
-  margin-top: 10px;
-  background-color: white;
 }
 
 table{
@@ -280,37 +268,30 @@ table{
 ------------------------------------------------*/
 
 /*------------------------------------------------
--------------------Main page----------------------
+-------------------Index----------------------
 ------------------------------------------------*/
-
 
 #leftContainer{
   background-color: #083448;
 } 
 
-/*------------------------------------------------
--------------------Slideshow V2---------------------
-------------------------------------------------*/
+#rightContainer{
+  margin: 90px 50px;
+} 
 
+/* Styling til bilde */
 .bildeSlide{
     border-radius: 25px;
     width: 100%;
     border: #083448 2px solid;
-    
 }
-
 
 /* Slideshow container */
 .slideshow-container {
   max-width: 500px;
+  max-height: 673px;
   position: relative;
   margin: auto;
-}
-  
-  
-  /* Skjuler alle bilder som default */
-.mySlides {
-  display: none;
 }
   
 /* Neste & Forrige knapper */
@@ -372,6 +353,10 @@ table{
 -------------------Howto page---------------------
 ------------------------------------------------*/
 
+.flex_wrapper_howto {
+  display: flex;
+}
+
 #intro {
   margin: 0;
 }
@@ -379,12 +364,12 @@ table{
 .underoverskrifter {
   text-align: center;
   font-size: 25px;
-  margin-top: 0;
+  
 }
 
 .videos {
     border-radius: 25px;
-    aspect-ratio: 16/9;
+    /*aspect-ratio: 16/9;*/
     width: 100%;
     border: none;
 
@@ -456,42 +441,11 @@ table{
   background-color: #ffa500;
 }
 
-/*------------------------------------------------
--------------------Media queries---------------------
-------------------------------------------------*/
-@media only screen and (max-width: 1156px) {
-  .skaal {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 877px) {
-  .flex_wrapper {
-    display: block;
-  }
-
-  .left {
-    display: block;
-    width: 100%;
-    margin-bottom: 0.5cm;
-  }
-
-  .right {
-    width: 100%;
-  }
-
-  .paragraphs {
-    padding: 0;
-  }
-}
-
-
 /*---------------------------------------------------
 ----------------------Kontaktside--------------------
 ---------------------------------------------------*/
 
 #contact_form {
-  width: 90%;
   max-width: 500px;
   margin: 0 auto;
   border-radius: 20px;
@@ -527,9 +481,25 @@ table{
 #antallchecked {
   margin-left: 1%;
 }
+
 /*------------------------------------------------
 -------------------Media queries---------------------
 ------------------------------------------------*/
+@media only screen and (max-width: 1281px) {
+  #flex_wrapper_index {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 1400px){
+  .flex_wrapper_howto {
+    display: block;
+  }
+  .right {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 1156px) {
   .skaal {
     display: none;
@@ -541,6 +511,19 @@ table{
     display: block;
   }
 } 
+
+@media only screen and (max-width: 877px) {
+
+  .left {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5cm;
+  }
+
+  .paragraphs {
+    padding: 0;
+  }
+}
 
 /**Phone mode*/
 @media only screen and (max-width: 590px) {

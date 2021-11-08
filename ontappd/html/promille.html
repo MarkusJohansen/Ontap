@@ -17,14 +17,12 @@
                         <div id="promille_kalkulator_section">
                             <div class="flex_wrapper_secondary">
                                 <div id="gender_selection_box">
-
                                     <div class="input_set">
                                         <p class="input_title">Kjønn</p>
                                         <input type="radio" class="gender" id="mann" name="gender" onchange="promille()">Mann
                                         <br>
                                         <input type="radio" class="gender" id="kvinne" name="gender" onchange="promille()">Kvinne
                                     </div>
-
                                 </div>
 
                                 <div id="promille_kalkulator_other_inputs_box" class="flex_child">
@@ -39,12 +37,13 @@
 
                                     <div class = "input_set">
                                         <p class="input_title">Antall timer fra drikkestart</p>
-                                        <input class="kalkulator_input_textfield" id="drikkestart" type="number" step="any" onchange="promille()" min="0">      
+                                        <input class="kalkulator_input_textfield" id="drikkestart" type="number" step="any" onchange="promille()" min="1">      
                                     </div>
                                 </div>
-
                             </div>
+
                             <div id="whiteline"></div>
+
                             <div class="flex_wrapper_secondary">
                                 <p id="promille_output_tekst">Promille ‰</p>
                                 <input class="kalkulator_input_textfield flex_child" id="p_output" type="text" placeholder="BAC målt i promille" disabled >

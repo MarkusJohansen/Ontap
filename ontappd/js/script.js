@@ -1,142 +1,176 @@
 let head = document.querySelector("#header"); 
 let pagebottom = document.getElementById("footer");
 
-//--------------------------------------------------
-//Topbox
-//--------------------------------------------------
+//*--------------------------------------------------
+//*TOPBOX
+//*--------------------------------------------------
 
-//*CONSTRUCTING TOPBOX DIV
 function topbox_component(){
-    let topbox_div = document.createElement("div");
+    //*------------------------------------------------------
+    //*MAIN TOPBOX
+    //*------------------------------------------------------
+
+    //constructing div within header id "topbox"
+    const topbox_div = document.createElement("div");
     topbox_div.id = "topbox";
     head.appendChild(topbox_div);
     
-    let main_topbox = document.createElement("div");
+    //constructing div within "topbox" with id "main_topbox"
+    const main_topbox = document.createElement("div");
     main_topbox.id = "main_topbox"
     topbox_div.appendChild(main_topbox);
 
-    //*SETTING PICTURE ATTRIBUTES IN LIST IMAGES FOR MAIN_TOPBOX
-    let images = [
+    //setting picture attributes in a matrice, with the attributes in order; "id","class","image name","alternative tekst"
+    const images = [
         ["skaal1", "skaal", "skaal.png", "Skål1"],
         ["ontap_logo", "", "Ontap_logo_white.png", "Ontap logo"],
         ["skaal2", "skaal", "skaal.png", "Skål2"]
     ];
 
-    //*APPENDING PICTURES AS CHILDS TO MAIN_TOPBOX, WITH ATTRIBUTES
+    //using a for loop to append images to the div with id "main_topbox"
     for(let i = 0; i < images.length; i++){
         const img = document.createElement("img");
 
+        //setting all attributes  
         img.id = images[i][0];
-        img.setAttribute("class", images[i][1]);
+        img.className = images[i][1];
         img.src = "../image/" + images[i][2];
-        img.setAttribute("alt", images[i][3]);
+        img.alt = images[i][3];
 
+        //appending image to the "main_topbox" div
         main_topbox.appendChild(img);
     }
 
-    //*CONSTRUCTING TOPBOX ADJUSTED FOR MOBILE
-    let secondary_topbox = document.createElement("div");
-    secondary_topbox.id = "secondary_topbox"
+    //*------------------------------------------------------
+    //*MOBILE TOPBOX
+    //*------------------------------------------------------
+
+    //constructing div within "topbox" with id "secondary_topbox"
+    const secondary_topbox = document.createElement("div");
+    secondary_topbox.id = "secondary_topbox";
     topbox_div.appendChild(secondary_topbox);
     
-    //*SETTING CONTENT ATTRIBUTES IN LIST FOR SECONDARY_TOPBOX
-    let mobile_topbox_content = [
-        ["ontap_logo_barrel", "Ontap_Barrel.png"],
-    ];
+    //setting attributes for header image in a list: ["id","name of the img file","alt"]
+    const mobile_topbox_content = ["ontap_logo_barrel", "Ontap_Barrel.png","Ontap logo compressed version"];
 
-    //*APPENDING PICTURES AS CHILDS TO SECONDARY_TOPBOX, WITH ATTRIBUTES
-    for(let i = 0; i < mobile_topbox_content.length; i++){
-        const x = document.createElement("img");
-        x.id = mobile_topbox_content[i][0];
-        x.src = "../image/" + mobile_topbox_content[i][1];
-        secondary_topbox.appendChild(x);
-    }
+    //appending images to the div with id "secondary_topbox"
+    const x = document.createElement("img");
+    x.id = mobile_topbox_content[0];
+    x.src = "../image/" + mobile_topbox_content[1];
+    x.alt = mobile_topbox_content[2];
+    secondary_topbox.appendChild(x);
 }
 
-//--------------------------------------------------
-//Navbar
-//--------------------------------------------------
+//*--------------------------------------------------
+//*NAVBAR
+//*--------------------------------------------------
 
-//*CONSTRUCTING NAVBAR
 function navbar_component(){
-    console.log("navbar being constructed");
-    let y = document.createElement("nav");
-    y.setAttribute("id", "navbar");
-    head.appendChild(y);
+    //*------------------------------
+    //*BUTTONS AND MAIN NAVBAR
+    //*------------------------------
+    
+    //constructing nav element and appends it to header
+    const nav = document.createElement("nav");
+    nav.setAttribute("id", "navbar");
+    head.appendChild(nav);
 
-    //*CONSTRUCTING BUTTONS IN NAVBAR
-    console.log("nav buttons is being constructed");
-    let navbar_buttons = document.createElement("div")
-    navbar_buttons.id = "navbar_buttons"
-    y.appendChild(navbar_buttons)
+    //constructing div with id navbar_buttons and appends it to nav
+    const navbar_buttons = document.createElement("div")
+    navbar_buttons.id = "navbar_buttons";
+    nav.appendChild(navbar_buttons);
 
-    let nav_buttons = [
-        ["main.html", "Hjem"],
+    //putting the navbuttons in a matrice, where every list is a button that contains properties: ["document to link to","text in button"]
+    const nav_buttons = [
+        ["index.html", "Hjem"],
         ["abv.html","ABV Kalkulator"],
         ["promille.html","Promille kalkulator"],
         ["spleise.html","Spleise Kalkulator"],
         ["howto.html","How to"],
-        ["contactus.html","Contact us"]
+        ["contactus.html","Kontakt Oss"]
     ];
     
+    //using a for loop to append the buttons with properties from the matrice, to the navbar_buttons div
     for(let i = 0; i < nav_buttons.length; i++){
         const x = document.createElement("button");
+
         x.setAttribute("onclick","window.location.href='../html/" + nav_buttons[i][0] + "';");
         x.innerHTML = nav_buttons[i][1];
         x.id = nav_buttons[i][0];
-        x.setAttribute("class","navbar_buttons")
+        x.className = "navbar_buttons";
+
         navbar_buttons.appendChild(x);
     }
-    //*CONSTRUCTING DROPDOWN SECTION FOR MOBILE
-    let dropdown = document.createElement("div")
-    dropdown.id ="dropdown"
-    y.appendChild(dropdown)
 
-    let dropdown_arrows = [
-        ["dropdown_up", "arrow-up.png","dropdown_menu_up()"],
-        ["dropdown_down","arrow-down.png","dropdown_menu_down()"]
+    //constructing div with id dropdown, and appends it to nav
+    const dropdown = document.createElement("div")
+    dropdown.id ="dropdown"
+    nav.appendChild(dropdown)
+
+    //putting the navbuttons in a matrice, where every list is a a arrow that contains properties: ["id","img file"]
+    const dropdown_arrows = [
+        ["dropdown_up", "arrow-up.png"],
+        ["dropdown_down","arrow-down.png"]
     ];
 
+    //appending arrows as images to dropdown div with attributes from the matrice
     for(let i = 0; i < dropdown_arrows.length; i++){
         const x = document.createElement("img");
+
         x.id = dropdown_arrows[i][0];
         x.src = "../image/" + dropdown_arrows[i][1];
         x.setAttribute("class","dropdown_arrows")
+
         dropdown.appendChild(x);
     }
 
+    //variables for the two arrows6
     const up = document.getElementById("dropdown_up");
     const down = document.getElementById("dropdown_down");
-    const navbar_buttons_section = document.getElementById("navbar_buttons")
 
+    //when down arrow is clicked, navbar_buttons is displayed and up arrow is displayed, down arrow is hidden
     down.onclick = function() {
-        navbar_buttons_section.style = "display: block;"
+        navbar_buttons.style = "display: block;" 
         down.style  = "display: none;"
         up.style = "display: block;"
     }
+
+    //when up arrow is clicked, navbar_buttons is not displayed and down arrow is displayed, up arrow is hidden
     up.onclick = function() {
-        navbar_buttons_section.style = "display: none;"
+        navbar_buttons.style = "display: none;"
         down.style  = "display: block;"
         up.style = "display: none;"
     }
 
-    //* Fixes going from dropdown to normal format (hopefully)
+    //Going from dropdown to normal format you need to make sure that the navbar_buttons div isnt hidden, it also resets the arrows
     function UpscaleFromDropdown(mediaQuery) {
         if (mediaQuery.matches) {
-            navbar_buttons_section.style = "display: none;"
+            navbar_buttons.style = "display: none;"
+            down.style  = "display: block;"
+            up.style = "display: none;"
         }else{
-            navbar_buttons_section.style = "display: block;"
+            navbar_buttons.style = "display: block;"
         }
     }
 
     let mediaQuery = window.matchMedia('(max-width: 529px)')
     mediaQuery.addListener(UpscaleFromDropdown)
 
-    //*Stylingvisited buttons
+    //making sure that the arrows have the correct position when page is loaded
+    if(navbar_buttons.style == "display: block"){
+        console.log("navbuttons is displayed")
+    }
+
+    //makng sure arrows dont reset such that arrow down is shown when menu is down
+    function newpage_dropdown_style(){
+        down.style  = "display: none;"
+        up.style = "display: block;"
+    }
+    newpage_dropdown_style()
+
+    //Styling buttons for currently visited page
     const current_buttons = {
         backgroundColor: '#0d5474',
-        color : 'white',
-        borderStyle : 'solid',
         borderColor : 'white',
         borderRadius: '10px'
     };
@@ -144,18 +178,18 @@ function navbar_component(){
     var pathname = window.location.pathname;
     for (let i = 0; i < nav_buttons.length; i++) {
         let aTagHref = nav_buttons[i][0];
+
         if (pathname.includes(aTagHref)) {
             Object.assign(document.getElementById(nav_buttons[i][0]).style, current_buttons);
         }
     }
 }
 
-//--------------------------------------------------
-//Footer
-//--------------------------------------------------
+//*--------------------------------------------------
+//*FOOTER
+//*--------------------------------------------------
 
-//*CONSTRUCTS DIV WITHIN FOOTER
-
+//CONSTRUCTS DIV WITHIN FOOTER
 function footer_div(){
     console.log("Footer is being constructed.");
 
@@ -198,9 +232,10 @@ function footer_div(){
 
     pagebottom.appendChild(footerDiv);
 }
-//--------------------------------------------------
-//Main functions/function calls
-//--------------------------------------------------
+
+//*--------------------------------------------------
+//*FUNCTION CALLS
+//*--------------------------------------------------
 function header(){
     topbox_component();
     navbar_component();

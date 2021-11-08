@@ -6,8 +6,8 @@ const tutorial = ["Lage eller kjøpe ferdig maltet korn.", "Putte kornet i brygg
 for (let i = 0; i < tutorial.length; i++) {
     let li = document.createElement("li")
 
-    let span = document.createElement("span");
-    span.innerHTML = tutorial[i];
+    let span = document.createElement("span")
+    span.innerHTML = tutorial[i]
     span.className = "list_span";
 
     let checkbox = document.createElement("input");

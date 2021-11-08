@@ -387,12 +387,12 @@ table{
 .underoverskrifter {
   text-align: center;
   font-size: 25px;
-  margin-top: 0;
+  
 }
 
 .videos {
     border-radius: 25px;
-    aspect-ratio: 16/9;
+    /*aspect-ratio: 16/9;*/
     width: 100%;
     border: none;
 

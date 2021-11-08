@@ -12,7 +12,7 @@ function changeSlides(n) {
 }
 // Hovedfunksjonen
 function showSlides(n) {
-  let slides = document.getElementsByClassName("mySlides"); //henter alt med class mySlides fra html
+  let slides = document.getElementsByClassName("slides"); //henter alt med class mySlides fra html
   
   if (n > slides.length){ // Dersom telleren blir større en antall bilder blir indexen 1 og første bilde vises
     slideIndex = 1

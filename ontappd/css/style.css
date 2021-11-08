@@ -268,41 +268,29 @@ table{
 ------------------------------------------------*/
 
 /*------------------------------------------------
--------------------Main page----------------------
+-------------------Index----------------------
 ------------------------------------------------*/
-
 
 #leftContainer{
   background-color: #083448;
 } 
+
 #rightContainer{
   margin: 90px 50px;
 } 
 
-
-/*------------------------------------------------
--------------------Slideshow V2---------------------
-------------------------------------------------*/
-
+/* Styling til bilde */
 .bildeSlide{
     border-radius: 25px;
     width: 100%;
     border: #083448 2px solid;
-    
 }
-
 
 /* Slideshow container */
 .slideshow-container {
   max-width: 500px;
   position: relative;
   margin: auto;
-}
-  
-  
-  /* Skjuler alle bilder som default */
-.mySlides {
-  display: none;
 }
   
 /* Neste & Forrige knapper */

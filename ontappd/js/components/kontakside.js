@@ -1,6 +1,6 @@
 function sendEmail(){
     const name = document.querySelector("#form_name").value;
-    const mail = document.querySelector("#form_mail").value;
+    //const mail = document.querySelector("#form_mail").value;
     const subject = document.querySelector("#form_subject").value;
     const message = document.querySelector("#form_message").value;
 

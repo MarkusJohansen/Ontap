@@ -76,7 +76,7 @@ function navbar_component(){
         ["promille.html","Promille kalkulator"],
         ["spleise.html","Spleise Kalkulator"],
         ["howto.html","How to"],
-        ["contactus.html","Contact us"]
+        ["contactus.html","Kontakt Oss"]
     ];
     
     for(let i = 0; i < nav_buttons.length; i++){

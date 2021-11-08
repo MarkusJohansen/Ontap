@@ -167,7 +167,7 @@ function navbar_component(){
         up.style = "display: block;"
     }
     newpage_dropdown_style()
-    
+
     //Styling buttons for currently visited page
     const current_buttons = {
         backgroundColor: '#0d5474',

@@ -135,8 +135,6 @@ function navbar_component(){
     //*Stylingvisited buttons
     const current_buttons = {
         backgroundColor: '#0d5474',
-        color : 'white',
-        borderStyle : 'solid',
         borderColor : 'white',
         borderRadius: '10px'
     };

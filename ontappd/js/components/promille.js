@@ -14,7 +14,6 @@ function BAC_calculation(alcohol_by_units, weight, hours_from_start, output, fem
     }
     
     //*CALCULATION OF BAC PART 1: GENDER DIFFERENCE
-    //?Why shouldnt i declare x before conditional statements?
     if(female_button.checked){
         x = (parseFloat(alcohol_by_units.value)* 12.8 )/(parseFloat(weight.value) * 0.60); // 12.8g alkohol/per enhet * antall enheter = antall gram alkohol
     }

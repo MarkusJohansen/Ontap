@@ -13,23 +13,28 @@
         <main>
             <div class="textbox">
                 <h1 class="section_titles">Spleise Kalkulator</h1>
+
                 <div class="flex_wrapper">
                     <div class="elementbox flex_child">
                         <p class="input_title">Antall personer som deler</p>
                         <input type="number" id="antallPersoner" min="1" class="inputs-spleis" onchange="spleisKalkulator()" required autofocus> 
-                        <span id="span1" class="spans"></span>               
-                        <br>
-                        <br>
+                        <span id="span1" class="spans"></span>     
+
+                        <br><br>
+
                         <p class="input_title" >Antall liter</p>
+
                         <input type="number" id="antallLiter" class="inputs-spleis" onchange="spleisKalkulator()" required >
                         <span id="span2" class="spans"></span>
-                        <br>
-                        <br>
+
+                        <br><br>
+
                         <p class="input_title">Totale kostnader</p>
                         <input type="number" id="totalKostnad"  class="inputs-spleis" onchange="spleisKalkulator()" required>
                         <span id="span3" class="spans"></span>
                         
                         <div id="whiteline"></div>
+
                         <table>
                             <tr>
                                 <td>
@@ -39,6 +44,7 @@
                                     <input type="number" class="outputs-spleis" id="literPerPers" disabled>
                                 </td>
                             </tr>
+
                             <tr>
                                 <td>
                                     <p class="input_title">Kroner/person</p>
@@ -47,6 +53,7 @@
                                     <input type="number" class="outputs-spleis" id="kronerPerPers" disabled>
                                 </td>
                             </tr>
+
                             <tr>
                                 <td>
                                     <p class="input_title">Kroner/liter</p>
@@ -56,8 +63,6 @@
                                 </td>
                             </tr>
                         </table>  
-
-                        
                     </div>
     
                     <div class="flex_child">
@@ -65,16 +70,12 @@
                             Denne Kalkulatoren brukes når flere brygger sammen. I den første inputen må man 
                             skrive antall folk som brygger sammen, i den andre inputen må man skrive antall liter 
                             øl og i den tredje inputen må man skrive den totale kostnaden.  
-                            <br>
-                            <br>
+                            <br><br>
                             De tre siste inputene brukes til å skrive ut resultatet. Det er ikke mulig å fylle disse 
                             inputene. Når du trykker på på enter får du resultatet.
-
                         </p>
                     </div>
                 </div>
-
-                
             </div>
         </main>
 

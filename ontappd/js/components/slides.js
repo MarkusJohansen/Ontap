@@ -15,12 +15,12 @@ function showSlides(n) {
   let slides = document.getElementsByClassName("slides"); //henter alt med class mySlides fra html
   
   if (n > slides.length){ // Dersom telleren blir større en antall bilder blir indexen 1 og første bilde vises
-    slideIndex = 1
+    slideIndex = 1;
   } 
   if (n < 1){
     slideIndex = slides.length; // Dersom telleren blir mindre enn 1 blir indexen til antall bilder og siste bilde vises
   }
-  for (i = 0; i < slides.length; i++) {
+  for (let i = 0; i < slides.length; i++) {
       slides[i].style.display = "none"; // Skjuler alle bildene
   }
   

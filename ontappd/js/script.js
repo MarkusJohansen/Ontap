@@ -179,7 +179,7 @@ function navbar_component(){
     for (let i = 0; i < nav_buttons.length; i++) {
         let aTagHref = nav_buttons[i][0];
 
-        if (pathname.includes(aTagHref)) {
+        if (pathname.includes(aTagHref)) { //Sjekker om dokumentnavnet finnes i pathname til siden. Hvis den gjør det så styler den knappen med "curren_buttons"
             Object.assign(document.getElementById(nav_buttons[i][0]).style, current_buttons);
         }
     }
@@ -191,43 +191,44 @@ function navbar_component(){
 
 //CONSTRUCTS DIV WITHIN FOOTER
 function footer_div(){
-    console.log("Footer is being constructed.");
+    console.log("Footer is being constructed."); //Sjekker at funksjonen blir kalt i consollen.
 
     let footerDiv = document.createElement("div");
     footerDiv.id = "contact_info";
 
-    let footer_content = [
+    let footer_content = [ //Her har vi en array med tag, navn og addresse
         ["h3","Kontakt oss!"],
         ["p", "Mail: Ontappd@gmail.com ", "Mailto:Ontappd@gmail.com"],
         ["p", "Chat med oss på Slack", "https://app.slack.com/client/T03S8TX18/C357EQS3U"],
         ["p", "Adresse: NTNU Gløshaugen, Realfagsbygget, A4-137", "https://use.mazemap.com/#v=1&zlevel=4&center=10.405053,63.415402&zoom=18.4&campusid=1&sharepoitype=poi&sharepoi=1000292593"]
     ];
 
-    for (let i = 0;i<footer_content.length;i++){
+    for (let i = 0;i<footer_content.length;i++){ //loopen går gjennom footer_content
         const x = document.createElement(footer_content[i][0]);
         footerDiv.appendChild(x);
 
-        if (footer_content[i].length > 2){
+        if (footer_content[i].length > 2){ // her blir de listene i footer_content som er lenger enn 2 om til en link som brukeren kan trykke på.
             const y = document.createElement("a");
-            y.setAttribute("href", footer_content[i][2]);
-            y.setAttribute("target", "_blank");
-            y.innerHTML = footer_content[i][1];
+            y.setAttribute("href", footer_content[i][2]); //Linken hentes fra footer_content.
+            y.setAttribute("target", "_blank"); //Dette passer på at man blir sendt til en ny side.
+            y.innerHTML = footer_content[i][1]; //Det som skal stå hentes fra footer_content.
             x.appendChild(y);
         }   
         else {
-            x.innerHTML = footer_content[i][1];
+            x.innerHTML = footer_content[i][1]; //Her blir overskriften i footeren printet.
         }
     }
+    //Under ble det gjort annerledes enn over siden bildet hadde litt mer attributes.
     const online_logo_link = document.createElement("a");
     online_logo_link.setAttribute("href", "https://online.ntnu.no/");
     online_logo_link.setAttribute("target", "_blank");
     footerDiv.appendChild(online_logo_link);
 
-    const pic = document.createElement("img");
+    const pic = document.createElement("img"); // lager en img tag og setter forskjellige attributes.
     pic.setAttribute("src", "../image/online_logo.svg");
     pic.setAttribute("id", "online_logo_footer");
     pic.setAttribute("alt", "Online linjeforening sin logo");
-    online_logo_link.appendChild(pic);
+    online_logo_link.appendChild(pic); // legger til bilde i "a" taggen slik at hvis man trykker på bildet blir man sendt til Online sin hjemmeside.
 
     pagebottom.appendChild(footerDiv);
 }

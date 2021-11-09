@@ -340,13 +340,13 @@ table{
 }
   
 @-webkit-keyframes fade {
-  from {opacity: .5} 
-  to {opacity: 1}
+  0% {opacity: .5} 
+  100% {opacity: 1}
 }
   
 @keyframes fade {
-  from {opacity: .5} 
-  to {opacity: 1}
+  0% {opacity: .5} 
+  100% {opacity: 1}
 }
 
 /*------------------------------------------------

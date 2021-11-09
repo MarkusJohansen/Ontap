@@ -169,7 +169,11 @@ function navbar_component(){
         navbar_buttons.style = "display: none;";
         down.style  = "display: block;";
     }
-    newpage_dropdown_style();
+
+    //if mediaQuery is matched then run function
+    if(mediaQuery.matches) {
+        newpage_dropdown_style();
+    }
 
     //Styling buttons for currently visited page
     const current_buttons = {

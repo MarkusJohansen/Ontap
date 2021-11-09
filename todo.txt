@@ -18,4 +18,5 @@ Ting som kan sjekkes ut:
 Contact us burde ha width: auto; på begge tekstboksene
 Kanskje fjerne elementbox fra sjekkliste på howto.
 Fiks dropdown: om man åpner og lukker dropdown og så gjør vinduet bredere, så bugger dropdown seg.
+Dropdown meny kan kanskje aktiveres tidligere
 //////////////////////////////////////////////////////////////////////

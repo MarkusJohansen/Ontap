@@ -199,7 +199,6 @@ function footer_div(){
     let footer_content = [
         ["h3","Kontakt oss!"],
         ["p", "Mail: Ontappd@gmail.com ", "Mailto:Ontappd@gmail.com"],
-        ["p", "Tlf: +4747474747 ", "TEL:+4747474747"],
         ["p", "Chat med oss på Slack", "https://app.slack.com/client/T03S8TX18/C357EQS3U"],
         ["p", "Adresse: NTNU Gløshaugen, Realfagsbygget, A4-137", "https://use.mazemap.com/#v=1&zlevel=4&center=10.405053,63.415402&zoom=18.4&campusid=1&sharepoitype=poi&sharepoi=1000292593"]
     ];

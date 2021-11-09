@@ -385,7 +385,7 @@ table {
 }
 
 #intro {
-  margin: 0;
+  margin: 0 25px 0 25px;
 }
 
 .underoverskrifter {
@@ -509,12 +509,29 @@ li {
 -------------------Media queries---------------------
 ------------------------------------------------*/
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1300px) {
   .flex_wrapper_howto {
     display: block;
   }
+  /*.right {
+    width: 100%;
+  }*/
+  .left {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5cm;
+    aspect-ratio: 16 / 9;
+  }
+  .videos {
+    aspect-ratio: inherit;
+  }
+
   .right {
     width: 100%;
+  }
+
+  .paragraphs {
+    padding: 0;
   }
 }
 
@@ -527,18 +544,6 @@ li {
 @media only screen and (max-width: 1115px) {
   .flex_wrapper {
     display: block;
-  }
-}
-
-@media only screen and (max-width: 877px) {
-  .left {
-    display: block;
-    width: 100%;
-    margin-bottom: 0.5cm;
-  }
-
-  .paragraphs {
-    padding: 0;
   }
 }
 

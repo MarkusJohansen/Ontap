@@ -55,6 +55,10 @@ p {
   margin-right: 50px;
 }
 
+li {
+  font-size: 25px;
+}
+
 /*------------------------------------------------
 ---------------------header-----------------------
 ------------------------------------------------*/
@@ -415,6 +419,11 @@ table{
   margin-top: 2%;
 }
 
+#antallchecked {
+  margin-left: 1%;
+  font-size: 25px;
+}
+
 .checkboxes[type="checkbox"] {
   -webkit-appearance: none;
   appearance: none;
@@ -472,9 +481,7 @@ table{
   width: 100%;
 }
 
-#antallchecked {
-  margin-left: 1%;
-}
+
 
 /*------------------------------------------------
 -------------------Media queries---------------------

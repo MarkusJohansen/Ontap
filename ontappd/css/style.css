@@ -358,7 +358,11 @@ table{
 }
 
 #intro {
-  margin: 0;
+  margin: 0, 3vw, 0, 3vw;
+}
+
+#first_h3 {
+  margin-top: 0;
 }
 
 .underoverskrifter {
@@ -377,7 +381,7 @@ table{
 
 .paragraphs {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding: 0px 0px 0px 1cm;
+  padding: 0px 0px 0px 2.7vw;
   margin: 0;
 }
 
@@ -399,13 +403,16 @@ table{
 }
 
 .list_span {
-    margin-left: 10px;
-    margin-bottom: 50px;
+    margin-left: 1%;
 }
 
 .checkboxes:checked + span{
   text-decoration: line-through;
 
+}
+
+.top-margin {
+  margin-top: 7%;
 }
 
 #tutorial_list, li{

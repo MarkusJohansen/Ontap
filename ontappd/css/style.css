@@ -199,29 +199,30 @@ footer p h3 {
   text-decoration: underline;
 }
 /*lager et felt som overlapper radio buttons*/
-
-input[type="radio"] {
-  -webkit-appearance: none;
-  appearance: none;
+input[type="radio"]:after {
+  /*?hva gjør after? */
+  width: 12px;
+  height: 12px;
+  border-radius: 5px;
+  left: -2px; /** flytter felt litt vekk fra label*/
+  position: relative;
   background-color: #d1d3d1;
-  font: inherit;
-  color: currentColor;
-  width: 0.8em;
-  height: 0.8em;
-  border: 1px solid currentColor;
-  border-radius: 0.2em;
-  /*transform: translateY(-0.075em);*/
-  margin-right: 5px;
-  place-content: center;
+  content: ""; /*? forstår koden er avhengig av denne men forstår den ikek*/
+  display: inline-block;
+  border: 2px solid white;
 }
 
-
-input[type="radio"]:checked {
+input[type="radio"]:checked:after {
+  width: 12px;
+  height: 12px;
+  border-radius: 5px;
+  left: -2px;
+  position: relative;
   background-color: #ffa500;
+  content: "";
+  display: inline-block;
+  border: 2px solid white;
 }
-
-
-
 
 .input_set {
   margin: 10px 0px;
@@ -271,30 +272,41 @@ table{
 ------------------------------------------------*/
 
 /*------------------------------------------------
--------------------Index----------------------
+-------------------Main page----------------------
 ------------------------------------------------*/
+
 
 #leftContainer{
   background-color: #083448;
 } 
-
-#rightContainer{
+#leftContainer, #rightContainer{
   margin: 90px 50px;
 } 
 
-/* Styling til bilde */
+
+/*------------------------------------------------
+-------------------Slideshow V2---------------------
+------------------------------------------------*/
+
 .bildeSlide{
     border-radius: 25px;
     width: 100%;
     border: #083448 2px solid;
+    
 }
+
 
 /* Slideshow container */
 .slideshow-container {
   max-width: 500px;
-  max-height: 673px;
   position: relative;
   margin: auto;
+}
+  
+  
+  /* Skjuler alle bilder som default */
+.mySlides {
+  display: none;
 }
   
 /* Neste & Forrige knapper */
@@ -343,13 +355,13 @@ table{
 }
   
 @-webkit-keyframes fade {
-  from {opacity: .5} 
-  to {opacity: 1}
+  0% {opacity: .5} 
+  100% {opacity: 1}
 }
   
 @keyframes fade {
-  from {opacity: .5} 
-  to {opacity: 1}
+  0% {opacity: .5} 
+  100% {opacity: 1}
 }
 
 /*------------------------------------------------
@@ -361,9 +373,8 @@ table{
 }
 
 #intro {
-  margin: 0, 3vw, 0, 3vw;
+  margin: 0;
 }
-
 
 .underoverskrifter {
   text-align: center;
@@ -373,7 +384,7 @@ table{
 
 .videos {
     border-radius: 25px;
-    aspect-ratio: 16/9;
+    /*aspect-ratio: 16/9;*/
     width: 100%;
     border: none;
 
@@ -381,7 +392,7 @@ table{
 
 .paragraphs {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding: 0px 0px 0px 2.7vw;
+  padding: 0px 0px 0px 1cm;
   margin: 0;
 }
 
@@ -403,16 +414,13 @@ table{
 }
 
 .list_span {
-    margin-left: 1%;
+    margin-left: 10px;
+    margin-bottom: 50px;
 }
 
 .checkboxes:checked + span{
   text-decoration: line-through;
 
-}
-
-.top-margin {
-  margin-top: 7%;
 }
 
 #tutorial_list, li{
@@ -439,6 +447,15 @@ table{
   place-content: center;
 }
 
+/*.checkboxes[type="checkbox"]::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  background-color: black;
+  box-shadow: inset 0.5em 0.5em burlywood;
+}*/
 
 .checkboxes[type="checkbox"]:checked {
   background-color: #ffa500;
@@ -487,36 +504,12 @@ table{
 -------------------Media queries---------------------
 ------------------------------------------------*/
 
-
 @media only screen and (max-width: 1400px){
   .flex_wrapper_howto {
     display: block;
   }
-  /*.right {
-    width: 100%;
-  }*/
-  .left {
-    display: block;
-    width: 100%;
-    margin-bottom: 0.5cm;
-    aspect-ratio: 16 / 9;
-  }
-  .videos {
-    aspect-ratio: inherit;
-  }
-
   .right {
     width: 100%;
-  }
-
-  .paragraphs {
-    padding: 0;
-  }
-}
-
-@media only screen and (max-width: 1281px) {
-  #flex_wrapper_index {
-    display: block;
   }
 }
 
@@ -532,6 +525,18 @@ table{
   }
 } 
 
+@media only screen and (max-width: 877px) {
+
+  .left {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5cm;
+  }
+
+  .paragraphs {
+    padding: 0;
+  }
+}
 
 /**Phone mode*/
 @media only screen and (max-width: 590px) {

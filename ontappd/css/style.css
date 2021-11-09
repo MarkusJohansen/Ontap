@@ -372,6 +372,10 @@ table{
   display: flex;
 }
 
+.top-margin {
+  margin-top: 5%;
+}
+
 #intro {
   margin: 0;
 }

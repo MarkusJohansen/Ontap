@@ -86,7 +86,7 @@ function navbar_component(){
         ["abv.html","ABV Kalkulator"],
         ["promille.html","Promille kalkulator"],
         ["spleise.html","Spleise Kalkulator"],
-        ["howto.html","How to"],
+        ["howto.html","Brygge selv"],
         ["contactus.html","Kontakt Oss"]
     ];
     

@@ -1,30 +1,23 @@
 //--------------------------------------------------
 //ABV kalkulator
 //--------------------------------------------------
-
+//Henter inn elementer fra html dokumentet
 const starting_gravity = document.getElementById("starting_gravity");
 const end_gravity = document.getElementById("end_gravity");
 const output_abv = document.getElementById("output_abv");
 
+//Funskjonen som regner ut abv verdien.
 function ABV_calculator(){
-    if (starting_gravity == 0 || end_gravity == 0){
-        output_abv.value = "Fyll ut begge felt."
-    } 
-    else{
-        const abv = ((starting_gravity.value)-(end_gravity.value))*131.25;
-        if (abv < 0){
-            output_abv.value = "Uyldig verdi";
+    if (starting_gravity.value == "" || end_gravity.value == ""){ // Her sjekker funksjonen om begge feltene er fylt ut.
+        output_abv.value = "Vennligst fyll ut begge felt.";
+        return false; //Breaks function call
+    }else{
+        const abv = ((starting_gravity.value)-(end_gravity.value))*131.25; //Selve regneoperasjonen i funksjonen.
+        if (abv <= 0){
+            output_abv.value = "Ending gravity må være mindre enn starting gravity."; //Dette er en ugyldig verdig og derfor får man feilmelding.
         }
         else {
-            output_abv.value = abv;
+            output_abv.value = abv; //Her skrives abv verdien ut
         }
-    }
-    const abv = ((starting_gravity.value)-(end_gravity.value))*131.25;
-    const insufficient_values = "Uyldig verdi"
-    if (abv < 0){
-        output_abv.value = insufficient_values;
-    }
-    else{
-        output_abv.value = abv;
-    }   
+    } 
 }

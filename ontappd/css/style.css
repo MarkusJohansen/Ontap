@@ -509,6 +509,7 @@ li {
 -------------------Media queries---------------------
 ------------------------------------------------*/
 
+
 @media only screen and (max-width: 1300px) {
   .flex_wrapper_howto {
     display: block;
@@ -543,6 +544,11 @@ li {
 
 @media only screen and (max-width: 1115px) {
   .flex_wrapper {
+    display: block;
+  }
+}
+@media only screen and (max-width: 1281px) {
+  #flex_wrapper_index {
     display: block;
   }
 }

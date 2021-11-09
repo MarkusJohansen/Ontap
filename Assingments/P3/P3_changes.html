@@ -31,6 +31,15 @@
             Our group sent an email asking Ontap if they wanted us to build a new website for them. They wanted a website, so we sat up a meeting, where they explained what they were requiring from this website.</p>
     </section>
 
+    <section id="link_to_main">
+        <header>
+            <h3>
+                Link to main page
+            </h3>
+        </header>
+        <a href="../../ontappd/html/index.html" target="_blank" >Click here to get to our main page</a>
+    </section>
+
     <section id="changes">
         <header>
             <h2 class="contentheader">
@@ -72,7 +81,7 @@
                 <li>abv.js</li>
                 <li>howTo.js</li>
                 <li>kontakside.js</li>
-                <li>main.js</li>
+                <li>index.js</li>
                 <li>promille.js</li>
                 <li>spleise.js</li>
             </ul>
@@ -80,7 +89,15 @@
         <h3>Removals</h3>
         <h4>Navbar underlining</h4>
             <p>
-                In the navigationbar we initially had lines under each of the subsections of the site. This is illustrated in Figma. We changed this because we found it not to be the most asteticly pleasing design.
+                In the navigationbar we initially had lines under each of the subsections of the site. This is illustrated in Figma. 
+                We changed this because we found it not to be the most asteticly pleasing design.
+            </p>
+        <h4>Slideshow</h4>
+            <p>
+                In the minimum requirements it was specified that the slideshow would be automatic, with the ability to change slide whenever the user wanted, with
+                the use of buttons. We figured that for a better user experience it would be better to abandon the idea of an automatic slideshow. We found that
+                it was frustrating to have the slide automatically change, if we wanted to read the text and observe the image for a longer time. Therefore we ended 
+                up with a slideshow that only changes when the user wants it to, by clicking buttons.
             </p>
     </section>
 
@@ -91,10 +108,11 @@
             </h2>
         </header>
         <p>
-            Markus fulfilled his minimum requiremenst by making the navigationbar in JS. He also made the "promille kalkulator".
-            Naqib made the "spleise kalkulator". He also contributed alot on the design of the website through CSS. Benjamin made the 
+            Markus fulfilled his minimum requiremenst by making the navigationbar in JS, aswell as the topbox. He also made the "promille kalkulator". Markus worked alot on the responsiveness of the site.
+            Naqib made the "spleise kalkulator". He also contributed alot on the design of the website through CSS. Benjamin made the how to page with vidoes and text. 
+            Here he also made a checklist JS function that lets the user easily have controll over where they are in the process of making the beer.
+            Sander made the slideshow in JS for the main page of our website. Oskar fulfilled his minimum requirements by making the the footer in JS. He also made abv calculator, aswell as the function for sending a mail on "kontakt oss".
         </p>
-
     </section>
 
     <section id="updated_organizational_scheme">
@@ -104,11 +122,11 @@
             </h2>
         </header>
         <p>Under you will be able to so the updated organizational structure.</p>
-        <p>Here you will se a list of the files and folders. They are all included inside a folder "ontappd".</p>
+        <p>Here you will se a list of the folders and files. They are all included inside a folder "ontappd".</p>
         <ul>
             <li> html/
                 <ul>
-                    <li>main.html</li>
+                    <li>index.html</li>
                     <li>promille.html</li>
                     <li>spleise.html</li>
                     <li>abv.html</li>
@@ -147,7 +165,6 @@
                             <li>abv.js</li>
                             <li>howTo.js</li>
                             <li>kontaktside.js</li>
-                            <li>main.js</li>
                             <li>promille.js</li>
                             <li>slides.js</li>
                             <li>spleise.js</li>
@@ -162,7 +179,7 @@
     <section id="work_division">
         <header id=table_header><h2>Work division</h2></header>
         <p>
-            In the table under you will find who worked on what file is illustrated. Here you can se what teammember that worked on what files and what they did on that file.
+            In the table under who worked on what file is illustrated. Here you can se what teammember worked on what file and what they did on that file.
         </p>
         <table>
             <tr>
@@ -172,12 +189,12 @@
             </tr>
 
             <tr>
-                <td>main.html</td>
+                <td>index.html</td>
                 <td>This will be the main page for the website. It will introduce Ontappd and explain what the group does. Additionally, there will be pictures displayed which show some of
                     the equipment Ontappd use.</td>
                 <td>Sander</td>
             <tr>
-                <td>main.js</td>
+                <td>slides.js</td>
                 <td>This is the script for the slideshow on the mainpage of the website.</td>
                 <td>Sander</td>
             </tr>
@@ -248,6 +265,12 @@
                 The funcion for different color based on what page you are on the website in the navigationbar. This functionality was made by Oskar and is inside the navbar_component() under "Stylingvisited buttons".</td>
                 <td>Markus, Oskar</td>
             </tr>
+
+            <tr>
+                <td>Artwork</td>
+                <td>The logo that can be found in the topbox on each of the pages were made with Photoshop.</td>
+                <td>Markus</td>
+            </tr>
         </table>
     </section>  
 
@@ -260,6 +283,7 @@
         <p>
             In order to ensure we fulfilled the requirement for modularity we made a js file called "script.js" which had all the functions that were present on more than one page. 
             This includes the navigationbar which can send the user to all the different pages on our site, the topbox with the Ontappd logo and the two beers, and the footer which has links to Ontappd on different platforms.
+            This was primarily done by Markus and Oskar, but everyone played a part here helping each other.
         </p>
     </section>
 

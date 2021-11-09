@@ -1,13 +1,13 @@
 //*----------------------------------------------------------------
-//*DECLARING GLOBAL VARIABLes
+//*DECLARING GLOBAL VARIABLES
 //*----------------------------------------------------------------
 
 let kvinne = document.getElementById("kvinne");
 let mann = document.getElementById("mann");
-let vekt = document.getElementById("kroppsvekt")
-let alkohol = document.getElementById("enheter")
-let drikkestart = document.getElementById("drikkestart")
-let prom = document.getElementById("p_output")
+let vekt = document.getElementById("kroppsvekt");
+let alkohol = document.getElementById("enheter");
+let drikkestart = document.getElementById("drikkestart");
+let prom = document.getElementById("p_output");
 
 //*----------------------------------------------------------------
 //*FUNCTION FOR CALCULATION AND INVALID VALUE CHECK
@@ -18,8 +18,8 @@ function BAC_calculation(alcohol_by_units, weight, hours_from_start, output, fem
     //*INPUT FIELD CHECK
     //*----------------------------------------------------------------
     if(alcohol_by_units.value == "" || weight.value == "" || hours_from_start.value == ""){ //if any text input is blank, the give error output
-        output.value = "Alle feltene må fylles ut! Prøv igjen."
-        return false //breaks function call
+        output.value = "Alle feltene må fylles ut! Prøv igjen.";
+        return false; //breaks function call
     }
     
     //*----------------------------------------------------------------
@@ -33,7 +33,7 @@ function BAC_calculation(alcohol_by_units, weight, hours_from_start, output, fem
         x = (parseFloat(alcohol_by_units.value)* 12.8 )/(parseFloat(weight.value) * 0.70); //alkoholen fordeles på 70% av kroppsvekten hos menn
     }else{
         output.value = "No gender picked. Try again, pick a gender."; //error output for no gender checked
-        return false //breaks function
+        return false; //breaks function
     }
 
     //*----------------------------------------------------------------
@@ -56,5 +56,5 @@ function BAC_calculation(alcohol_by_units, weight, hours_from_start, output, fem
 //*Function is called through another function
 //*----------------------------------------------------------------
 function promille(){
-    BAC_calculation(alkohol, vekt, drikkestart, prom, kvinne, mann)
+    BAC_calculation(alkohol, vekt, drikkestart, prom, kvinne, mann);
 }

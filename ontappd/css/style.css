@@ -268,30 +268,41 @@ table{
 ------------------------------------------------*/
 
 /*------------------------------------------------
--------------------Index----------------------
+-------------------Main page----------------------
 ------------------------------------------------*/
+
 
 #leftContainer{
   background-color: #083448;
 } 
-
-#rightContainer{
+#leftContainer, #rightContainer{
   margin: 90px 50px;
 } 
 
-/* Styling til bilde */
+
+/*------------------------------------------------
+-------------------Slideshow V2---------------------
+------------------------------------------------*/
+
 .bildeSlide{
     border-radius: 25px;
     width: 100%;
     border: #083448 2px solid;
+    
 }
+
 
 /* Slideshow container */
 .slideshow-container {
   max-width: 500px;
-  max-height: 673px;
   position: relative;
   margin: auto;
+}
+  
+  
+  /* Skjuler alle bilder som default */
+.mySlides {
+  display: none;
 }
   
 /* Neste & Forrige knapper */
@@ -358,11 +369,7 @@ table{
 }
 
 #intro {
-  margin: 0, 3vw, 0, 3vw;
-}
-
-#first_h3 {
-  margin-top: 0;
+  margin: 0;
 }
 
 .underoverskrifter {
@@ -381,7 +388,7 @@ table{
 
 .paragraphs {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding: 0px 0px 0px 2.7vw;
+  padding: 0px 0px 0px 1cm;
   margin: 0;
 }
 
@@ -403,16 +410,13 @@ table{
 }
 
 .list_span {
-    margin-left: 1%;
+    margin-left: 10px;
+    margin-bottom: 50px;
 }
 
 .checkboxes:checked + span{
   text-decoration: line-through;
 
-}
-
-.top-margin {
-  margin-top: 7%;
 }
 
 #tutorial_list, li{
@@ -492,35 +496,13 @@ table{
 /*------------------------------------------------
 -------------------Media queries---------------------
 ------------------------------------------------*/
-@media only screen and (max-width: 1281px) {
-  #flex_wrapper_index {
-    display: block;
-  }
-}
 
-@media only screen and (max-width: 930px){
+@media only screen and (max-width: 1400px){
   .flex_wrapper_howto {
     display: block;
   }
-  /*.right {
-    width: 100%;
-  }*/
-  .left {
-    display: block;
-    width: 100%;
-    margin-bottom: 0.5cm;
-    aspect-ratio: 16 / 9;
-  }
-  .videos {
-    aspect-ratio: inherit;
-  }
-
   .right {
     width: 100%;
-  }
-
-  .paragraphs {
-    padding: 0;
   }
 }
 
@@ -536,7 +518,7 @@ table{
   }
 } 
 
-/*@media only screen and (max-width: 877px) {
+@media only screen and (max-width: 877px) {
 
   .left {
     display: block;
@@ -547,7 +529,7 @@ table{
   .paragraphs {
     padding: 0;
   }
-}*/
+}
 
 /**Phone mode*/
 @media only screen and (max-width: 590px) {

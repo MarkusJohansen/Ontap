@@ -102,6 +102,9 @@ function navbar_component(){
         navbar_buttons.appendChild(x);
     }
 
+    //*------------------------------
+    //*DROPDOWN MENU
+    //*------------------------------
     //constructing div with id dropdown, and appends it to nav
     const dropdown = document.createElement("div");
     dropdown.id ="dropdown";
@@ -163,8 +166,8 @@ function navbar_component(){
 
     //makng sure arrows dont reset such that arrow down is shown when menu is down
     function newpage_dropdown_style(){
-        down.style  = "display: none;";
-        up.style = "display: block;";
+        navbar_buttons.style = "display: none;";
+        down.style  = "display: block;";
     }
     newpage_dropdown_style();
 

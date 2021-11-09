@@ -17,7 +17,7 @@ function topbox_component(){
     
     //constructing div within "topbox" with id "main_topbox"
     const main_topbox = document.createElement("div");
-    main_topbox.id = "main_topbox"
+    main_topbox.id = "main_topbox";
     topbox_div.appendChild(main_topbox);
 
     //setting picture attributes in a matrice, with the attributes in order; "id","class","image name","alternative tekst"
@@ -76,7 +76,7 @@ function navbar_component(){
     head.appendChild(nav);
 
     //constructing div with id navbar_buttons and appends it to nav
-    const navbar_buttons = document.createElement("div")
+    const navbar_buttons = document.createElement("div");
     navbar_buttons.id = "navbar_buttons";
     nav.appendChild(navbar_buttons);
 
@@ -103,9 +103,9 @@ function navbar_component(){
     }
 
     //constructing div with id dropdown, and appends it to nav
-    const dropdown = document.createElement("div")
-    dropdown.id ="dropdown"
-    nav.appendChild(dropdown)
+    const dropdown = document.createElement("div");
+    dropdown.id ="dropdown";
+    nav.appendChild(dropdown);
 
     //putting the navbuttons in a matrice, where every list is a a arrow that contains properties: ["id","img file"]
     const dropdown_arrows = [
@@ -119,7 +119,7 @@ function navbar_component(){
 
         x.id = dropdown_arrows[i][0];
         x.src = "../image/" + dropdown_arrows[i][1];
-        x.setAttribute("class","dropdown_arrows")
+        x.setAttribute("class","dropdown_arrows");
 
         dropdown.appendChild(x);
     }
@@ -130,43 +130,43 @@ function navbar_component(){
 
     //when down arrow is clicked, navbar_buttons is displayed and up arrow is displayed, down arrow is hidden
     down.onclick = function() {
-        navbar_buttons.style = "display: block;" 
-        down.style  = "display: none;"
-        up.style = "display: block;"
-    }
+        navbar_buttons.style = "display: block;";
+        down.style  = "display: none;";
+        up.style = "display: block;";
+    };
 
     //when up arrow is clicked, navbar_buttons is not displayed and down arrow is displayed, up arrow is hidden
     up.onclick = function() {
-        navbar_buttons.style = "display: none;"
-        down.style  = "display: block;"
-        up.style = "display: none;"
-    }
+        navbar_buttons.style = "display: none;";
+        down.style  = "display: block;";
+        up.style = "display: none;";
+    };
 
     //Going from dropdown to normal format you need to make sure that the navbar_buttons div isnt hidden, it also resets the arrows
     function UpscaleFromDropdown(mediaQuery) {
         if (mediaQuery.matches) {
-            navbar_buttons.style = "display: none;"
-            down.style  = "display: block;"
-            up.style = "display: none;"
+            navbar_buttons.style = "display: none;";
+            down.style  = "display: block;";
+            up.style = "display: none;";
         }else{
-            navbar_buttons.style = "display: block;"
+            navbar_buttons.style = "display: block;";
         }
     }
 
-    let mediaQuery = window.matchMedia('(max-width: 529px)')
-    mediaQuery.addListener(UpscaleFromDropdown)
+    let mediaQuery = window.matchMedia('(max-width: 529px)');
+    mediaQuery.addListener(UpscaleFromDropdown);
 
     //making sure that the arrows have the correct position when page is loaded
     if(navbar_buttons.style == "display: block"){
-        console.log("navbuttons is displayed")
+        console.log("navbuttons is displayed");
     }
 
     //makng sure arrows dont reset such that arrow down is shown when menu is down
     function newpage_dropdown_style(){
-        down.style  = "display: none;"
-        up.style = "display: block;"
+        down.style  = "display: none;";
+        up.style = "display: block;";
     }
-    newpage_dropdown_style()
+    newpage_dropdown_style();
 
     //Styling buttons for currently visited page
     const current_buttons = {

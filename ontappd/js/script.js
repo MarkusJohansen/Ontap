@@ -83,9 +83,9 @@ function navbar_component(){
     //putting the navbuttons in a matrice, where every list is a button that contains properties: ["document to link to","text in button"]
     const nav_buttons = [
         ["index.html", "Hjem"],
-        ["abv.html","ABV Kalkulator"],
-        ["promille.html","Promille kalkulator"],
-        ["spleise.html","Spleise Kalkulator"],
+        ["abv.html","ABV-kalkulator"],
+        ["promille.html","Promillekalkulator"],
+        ["spleise.html","Spleisekalkulator"],
         ["howto.html","Brygge selv"],
         ["contactus.html","Kontakt Oss"]
     ];

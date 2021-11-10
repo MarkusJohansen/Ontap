@@ -87,7 +87,7 @@ function navbar_component(){
         ["promille.html","Promillekalkulator"],
         ["spleise.html","Spleisekalkulator"],
         ["howto.html","Brygge selv"],
-        ["contactus.html","Kontakt Oss"]
+        ["contactus.html","Kontakt oss"]
     ];
     
     //using a for loop to append the buttons with properties from the matrice, to the navbar_buttons div

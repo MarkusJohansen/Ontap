@@ -19,9 +19,17 @@ a {
 .textbox {
   background-color: #0d5474;
   padding: 30px;
+  margin: 45px auto;
+  border-radius: 25px;
+  max-width: 1366px;
+}
+
+/* .textbox {
+  background-color: #0d5474;
+  padding: 30px;
   margin: 90px 50px;
   border-radius: 25px;
-}
+} */
 
 .elementbox {
   background-color: #083448;
@@ -375,6 +383,10 @@ table {
 /*------------------------------------------------
 -------------------Howto page---------------------
 ------------------------------------------------*/
+/* #motherbox{
+  max-width: 1366px;
+  margin: 90px auto;
+} */
 
 .flex_wrapper_howto {
   display: flex;
@@ -401,7 +413,6 @@ table {
 }
 
 .paragraphs {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 0px 0px 0px 1cm;
   margin: 0;
 }
@@ -454,15 +465,6 @@ li {
   place-content: center;
 }
 
-/*.checkboxes[type="checkbox"]::before {
-  content: "";
-  width: 0.65em;
-  height: 0.65em;
-  transform: scale(0);
-  transition: 120ms transform ease-in-out;
-  background-color: black;
-  box-shadow: inset 0.5em 0.5em burlywood;
-}*/
 
 .checkboxes[type="checkbox"]:checked {
   background-color: #ffa500;

@@ -71,7 +71,7 @@ li {
   width: 20px;
   height: 20px;
   border: 1px solid currentColor;
-  border-radius: 0.2em;
+  border-radius: 5px;
   margin: 0px;
 }
 
@@ -505,6 +505,8 @@ dersom siden blir så smal at liste teksten må på to linjer. */
 -------------------Media queries---------------------
 ------------------------------------------------*/
 
+/* Når skjermen blir mindre enn 1300px i bredden, så går teksten under videoen og de tar opp hele bredden av boksen. Noe padding forsvinner,
+mens noe margin blir lagt til for at siden skal se bra ut.*/
 @media only screen and (max-width: 1300px) {
   .flex_wrapper_howto {
     display: block;
@@ -522,6 +524,7 @@ dersom siden blir så smal at liste teksten må på to linjer. */
 
   .right {
     width: 100%;
+    padding-left: 0;
   }
 
   .paragraphs {
@@ -549,7 +552,7 @@ dersom siden blir så smal at liste teksten må på to linjer. */
 /**Phone mode*/
 @media only screen and (max-width: 590px) {
   /*Generell styling*/
-  p {
+  p, .list_elements, #antallchecked {
     font-size: 4vw;
   }
 
@@ -581,6 +584,16 @@ dersom siden blir så smal at liste teksten må på to linjer. */
 
   #leftContainer {
     margin: 10vw 6vw 10vw 6vw;
+  }
+
+  /* Howto */
+  .checkboxes {
+    height: 13px;
+    width: 13px;
+  }
+
+  .list_span{
+    margin-left: 5px;
   }
 }
 

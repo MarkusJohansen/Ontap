@@ -25,6 +25,7 @@ const tutorial = ["Lage eller kjøpe ferdig maltet korn.", "Putte kornet i brygg
     let checkbox = document.createElement("input");
     checkbox.type = "checkbox";
     checkbox.className = "checkboxes";
+    checkbox.setAttribute("onclick", "checked_boxes()");
 
     //Liste elementet appender både sjekboksene og span elementene. Liste elementene appendes inn i ul-elementet.
     li.appendChild(checkbox);
@@ -42,6 +43,3 @@ function checked_boxes() {
     let avhuketbokser = document.querySelectorAll("input[type=checkbox]:checked");
     antallsjekket.innerHTML = avhuketbokser.length + "/" + allebokser.length + " steg gjennomført";
 }
-
-//En eventlistener som gjør at funksjonen checked_boxes() aktiveres når en av sjekkboksene avhukes.
-document.addEventListener("onclick", checked_boxes());

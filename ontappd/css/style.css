@@ -6,10 +6,10 @@ body {
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
   margin: 0%;
-  /*min-height: 100vh; 
+  min-height: 100vh; /*Dette passer på at hvis det ikke hadde vært noe content så hadde footeren blitt på bunnen av siden.*/
   width: 100vw;
-  display: flex;*/ /*!er dette voodoo code?*/
-  flex-direction: column;
+  display: flex;
+  flex-direction: column;   
 }
 
 a {
@@ -23,13 +23,6 @@ a {
   border-radius: 25px;
   max-width: 1366px;
 }
-
-/* .textbox {
-  background-color: #0d5474;
-  padding: 30px;
-  margin: 90px 50px;
-  border-radius: 25px;
-} */
 
 .elementbox {
   background-color: #083448;
@@ -100,7 +93,7 @@ button, .checkboxes {
 }
 
 #ontap_logo {
-  height: 350px;
+  height: 280px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -108,7 +101,7 @@ button, .checkboxes {
 
 .skaal {
   position: absolute;
-  height: 250px;
+  height: 230px;
   top: 20px;
 }
 
@@ -269,11 +262,12 @@ footer h3 {
 /*------------------------------------------------
 --------------Spleise kalkulator------------------
 ------------------------------------------------*/
-
+/* Tre spans som skal bli synlig dersom brukeren skriver inn tall som er mindre enn null eller inputet er tom  */
 .spans {
   display: none;
 }
 
+/* inputene til spleise kalkulator */
 .inputs-spleis {
   width: 80%;
   height: 30px;
@@ -509,7 +503,6 @@ til en annen div. Float left for at div'en skal være på venstre siden*/
 /*------------------------------------------------
 -------------------Media queries---------------------
 ------------------------------------------------*/
-
 
 @media only screen and (max-width: 1300px) {
   .flex_wrapper_howto {

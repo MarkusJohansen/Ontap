@@ -263,11 +263,12 @@ input[type="radio"]:checked:after {
 /*------------------------------------------------
 --------------Spleise kalkulator------------------
 ------------------------------------------------*/
-
+/* Tre spans som skal bli synlig dersom brukeren skriver inn tall som er mindre enn null eller inputet er tom  */
 .spans {
   display: none;
 }
 
+/* inputene til spleise kalkulator */
 .inputs-spleis {
   width: 80%;
   height: 30px;

@@ -6,10 +6,10 @@ body {
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
   margin: 0%;
-  min-height: 100vh; 
+  min-height: 100vh; /*Dette passer på at hvis det ikke hadde vært noe content så hadde footeren blitt på bunnen av siden.*/
   width: 100vw;
-  display: flex; 
-  flex-direction: column;
+  display: flex;
+  flex-direction: column;   
 }
 
 a {

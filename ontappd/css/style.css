@@ -76,7 +76,7 @@ li {
 }
 
 #ontap_logo {
-  height: 350px;
+  height: 280px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -84,7 +84,7 @@ li {
 
 .skaal {
   position: absolute;
-  height: 250px;
+  height: 230px;
   top: 20px;
 }
 
@@ -468,7 +468,6 @@ li {
   place-content: center;
 }
 
-
 .checkboxes[type="checkbox"]:checked {
   background-color: #ffa500;
 }
@@ -513,7 +512,6 @@ li {
 /*------------------------------------------------
 -------------------Media queries---------------------
 ------------------------------------------------*/
-
 
 @media only screen and (max-width: 1300px) {
   .flex_wrapper_howto {

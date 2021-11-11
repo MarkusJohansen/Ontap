@@ -6,9 +6,9 @@ body {
   font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
     sans-serif;
   margin: 0%;
-  /*min-height: 100vh; 
+  min-height: 100vh; /*Dette passer på at hvis det ikke hadde vært noe content så hadde footeren blitt på bunnen av siden.*/
   width: 100vw;
-  display: flex;*/ /*!er dette voodoo code?*/
+  display: flex;
   flex-direction: column;
 }
 
@@ -23,13 +23,6 @@ a {
   border-radius: 25px;
   max-width: 1366px;
 }
-
-/* .textbox {
-  background-color: #0d5474;
-  padding: 30px;
-  margin: 90px 50px;
-  border-radius: 25px;
-} */
 
 .elementbox {
   background-color: #083448;

@@ -11,6 +11,7 @@ const tutorial = ["Lage eller kjøpe ferdig maltet korn.", "Putte kornet i brygg
     
     //Lager liste-elementene som sjekklisten skal bestå av.
     let li = document.createElement("li");
+    li.className = "list_elements";
 
     //Lager et span-element med listeverdiene som indre HTML. Velger å bruke span fordi det er lett å påvirke med CSS. Gir den class navn slik at man kan bruke CSS.
     let span = document.createElement("span");

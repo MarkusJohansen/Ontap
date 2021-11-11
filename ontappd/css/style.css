@@ -68,6 +68,30 @@ li {
   font-size: 25px;
 }
 
+/* Lager nye radio og checkbox inputter for Promillekalkulator og Brygge selv */
+.checkboxes {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #d1d3d1;
+  font: inherit;
+  color: currentColor;
+  width: 20px;
+  height: 20px;
+  border: 1px solid currentColor;
+  border-radius: 0.2em;
+  margin: 0px;
+}
+
+/* Fyller inputtene med gul farge når de er blitt "checked" */
+.checkboxes:checked {
+  background-color: #ffa500;
+}
+
+
+/* Får pointer når man skal trykke på knappene i navbaren eller når man skal trykke radio og checkbox inputene */
+button, .checkboxes {
+  cursor: pointer;
+}
 /*------------------------------------------------
 ---------------------header-----------------------
 ------------------------------------------------*/
@@ -209,31 +233,7 @@ footer h3 {
   margin: 0%;
   text-decoration: underline;
 }
-/*lager et felt som overlapper radio buttons*/
-input[type="radio"]:after {
-  /*?hva gjør after? */
-  width: 12px;
-  height: 12px;
-  border-radius: 5px;
-  left: -2px; /** flytter felt litt vekk fra label*/
-  position: relative;
-  background-color: #d1d3d1;
-  content: ""; /*? forstår koden er avhengig av denne men forstår den ikek*/
-  display: inline-block;
-  border: 2px solid white;
-}
 
-input[type="radio"]:checked:after {
-  width: 12px;
-  height: 12px;
-  border-radius: 5px;
-  left: -2px;
-  position: relative;
-  background-color: #ffa500;
-  content: "";
-  display: inline-block;
-  border: 2px solid white;
-}
 
 .input_set {
   margin: 10px 0px;
@@ -259,6 +259,12 @@ input[type="radio"]:checked:after {
 
 #p_output {
   color: black;
+}
+
+/* Gir radio inputene en høyde og bredde som matcher font-størrelsen og holder seg lik uansett hvilken bredde browser vinduet har */
+.gender {
+  width: 13px !important;
+  height: 13px !important;
 }
 /*------------------------------------------------
 --------------Spleise kalkulator------------------
@@ -406,77 +412,61 @@ Kan egentlig fjerne det, men er greit å ha hvis noen bruker Opera */
   margin: 0 25px;
 }
 
+/* Brygge selv er den eneste siden med underoverskrifter. Får overskriftene til å være i midten av den mørkeblå boksen og gir den større font */
 .underoverskrifter {
   text-align: center;
   font-size: 25px;
 }
 
+/* Videoene blir avrundet på hjørnene og har ingen border */
 .videos {
   border-radius: 25px;
-  /*aspect-ratio: 16/9;*/
   width: 100%;
   border: none;
 }
 
-.paragraphs {
-  padding: 0px 0px 0px 1cm;
-  margin: 0;
-}
-
+/* Skal gi videoene riktig riktig aspect-ratio, men ser at den 2. videoen sin høyde tekst høyden. Kunne fikset det slik at videoen hadde en
+bestemt høyde, men det skaper veldig mye luft under videoen og det så bedre ut med en høyere video. Setter også en width slik det blir plass
+til en annen div. Float left for at div'en skal være på venstre siden*/
 .left {
+  aspect-ratio: 16/9;
   width: 50%;
   float: left;
 }
 
+
+/*  */
 .right {
   width: 45%;
+  padding-left: 0.8cm;
 }
 
-/* #tutorial_list { */
-  /* list-style-type: none; */
-  /* margin-left: -0.9cm; */
-/* } */
 
+/*  */
 .list_span {
   margin-left: 10px;
-  /* margin-bottom: 50px; */
 }
 
+
+/*  */
 .checkboxes:checked + span {
   text-decoration: line-through;
 }
 
-#tutorial_list,
-li {
+
+/*  */
+#tutorial_list, .list_elements{
   margin-top: 2%;
   padding-left: 0.9em;
   text-indent: -1.2em;
   list-style-type: none;
 }
 
+
+/*  */
 #antallchecked {
   margin-left: 0.3em;
   font-size: 25px;
-}
-
-.checkboxes[type="checkbox"] {
-  /* -webkit-appearance: none; */
-  appearance: none;
-  background-color: #d1d3d1;
-  font: inherit;
-  color: currentColor;
-  width: 0.8em;
-  height: 0.8em;
-  border: 1px solid currentColor;
-  border-radius: 0.2em;
-  /*transform: translateY(-0.075em);*/
-  margin: 0px;
-  /* place-content: center; */
-}
-
-
-.checkboxes[type="checkbox"]:checked {
-  background-color: #ffa500;
 }
 
 /*---------------------------------------------------
@@ -525,9 +515,7 @@ li {
   .flex_wrapper_howto {
     display: block;
   }
-  /*.right {
-    width: 100%;
-  }*/
+  
   .left {
     display: block;
     width: 100%;

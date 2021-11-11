@@ -505,6 +505,20 @@ dersom siden blir så smal at liste teksten må på to linjer. */
 -------------------Media queries---------------------
 ------------------------------------------------*/
 
+
+
+@media only screen and (max-width: 1366px) {
+  .textbox {
+    margin: 45px 50px;
+  }
+}
+
+@media only screen and (max-width: 1346px) {
+  #flex_wrapper_index {
+    display: block;
+  }
+}
+
 /* Når skjermen blir mindre enn 1300px i bredden, så går teksten under videoen og de tar opp hele bredden av boksen. Noe padding forsvinner,
 mens noe margin blir lagt til for at siden skal se bra ut.*/
 @media only screen and (max-width: 1300px) {
@@ -532,6 +546,7 @@ mens noe margin blir lagt til for at siden skal se bra ut.*/
   }
 }
 
+
 @media only screen and (max-width: 1156px) {
   .skaal {
     display: none;
@@ -543,11 +558,7 @@ mens noe margin blir lagt til for at siden skal se bra ut.*/
     display: block;
   }
 }
-@media only screen and (max-width: 1346px) {
-  #flex_wrapper_index {
-    display: block;
-  }
-}
+
 
 /**Phone mode*/
 @media only screen and (max-width: 590px) {

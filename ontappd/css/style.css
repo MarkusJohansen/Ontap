@@ -388,16 +388,20 @@ table {
   margin: 90px auto;
 } */
 
+/* Egen flex wrapper som skal brukes i en media query. */
 .flex_wrapper_howto {
   display: flex;
 }
 
+/* Skaper rom mellom hver div, slik at avsnittene, videoene og sjekklisten ikke klumper seg opp */
 .top-margin {
   margin-top: 5%;
 }
 
+
+/* Teksten utenfor den mørkeblå boksen blir ca. like bred som boksen */
 #intro {
-  margin: 0 25px 0 25px;
+  margin: 0 25px;
 }
 
 .underoverskrifter {
@@ -426,14 +430,14 @@ table {
   width: 45%;
 }
 
-#tutorial_list {
-  list-style-type: none;
-  margin-left: -0.9cm;
-}
+/* #tutorial_list { */
+  /* list-style-type: none; */
+  /* margin-left: -0.9cm; */
+/* } */
 
 .list_span {
   margin-left: 10px;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }
 
 .checkboxes:checked + span {
@@ -443,15 +447,18 @@ table {
 #tutorial_list,
 li {
   margin-top: 2%;
+  padding-left: 0.9em;
+  text-indent: -1.2em;
+  list-style-type: none;
 }
 
 #antallchecked {
-  margin-left: 1%;
+  margin-left: 0.3em;
   font-size: 25px;
 }
 
 .checkboxes[type="checkbox"] {
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
   appearance: none;
   background-color: #d1d3d1;
   font: inherit;
@@ -462,7 +469,7 @@ li {
   border-radius: 0.2em;
   /*transform: translateY(-0.075em);*/
   margin: 0px;
-  place-content: center;
+  /* place-content: center; */
 }
 
 

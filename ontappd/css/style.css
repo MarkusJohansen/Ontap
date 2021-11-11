@@ -290,7 +290,7 @@ table {
 }
 #leftContainer,
 #rightContainer {
-  margin: 90px 50px;
+  margin: 45px;
 }
 
 /*------------------------------------------------
@@ -355,6 +355,8 @@ table {
 }
 
 /* Bildene fader inn */
+/* Vi har ikke testet på Opera, men tydeligvis må man ha webkit prefix for at det skal funke der.
+Kan egentlig fjerne det, men er greit å ha hvis noen bruker Opera */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1s;

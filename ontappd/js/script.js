@@ -34,7 +34,7 @@ function topbox_component(){
         //setting all attributes  
         img.id = images[i][0];
         img.className = images[i][1];
-        img.src = "../image/" + images[i][2];
+        img.src = "image/" + images[i][2];
         img.alt = images[i][3];
 
         //appending image to the "main_topbox" div
@@ -56,7 +56,7 @@ function topbox_component(){
     //appending images to the div with id "secondary_topbox"
     const x = document.createElement("img");
     x.id = mobile_topbox_content[0];
-    x.src = "../image/" + mobile_topbox_content[1];
+    x.src = "image/" + mobile_topbox_content[1];
     x.alt = mobile_topbox_content[2];
     secondary_topbox.appendChild(x);
 }
@@ -94,11 +94,10 @@ function navbar_component(){
     for(let i = 0; i < nav_buttons.length; i++){
         const x = document.createElement("button");
 
-        x.setAttribute("onclick","window.location.href='../html/" + nav_buttons[i][0] + "';");
+        x.setAttribute("onclick","window.location.href='" + nav_buttons[i][0] + "';");
         x.innerHTML = nav_buttons[i][1];
         x.id = nav_buttons[i][0];
         x.className = "navbar_buttons";
-
         navbar_buttons.appendChild(x);
     }
 
@@ -121,7 +120,7 @@ function navbar_component(){
         const x = document.createElement("img");
 
         x.id = dropdown_arrows[i][0];
-        x.src = "../image/" + dropdown_arrows[i][1];
+        x.src = "image/" + dropdown_arrows[i][1];
         x.setAttribute("class","dropdown_arrows");
 
         dropdown.appendChild(x);
@@ -232,7 +231,7 @@ function footer_div(){
     footerDiv.appendChild(online_logo_link);
 
     const pic = document.createElement("img"); // lager en img tag og setter forskjellige attributes.
-    pic.setAttribute("src", "../image/online_logo.svg");
+    pic.setAttribute("src", "image/online_logo.svg");
     pic.setAttribute("id", "online_logo_footer");
     pic.setAttribute("alt", "Online linjeforening sin logo");
     online_logo_link.appendChild(pic); // legger til bilde i "a" taggen slik at hvis man trykker på bildet blir man sendt til Online sin hjemmeside.
